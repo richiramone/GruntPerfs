@@ -1,19 +1,19 @@
 /* FUTURA */
 @font-face {
   font-family: 'FuturaBT-Light';
-  src: url('/fonts/223F71_0_0.eot');
-  src: url('/fonts/223F71_0_0.eot?#iefix') format('embedded-opentype'), url('/fonts/223F71_0_0.woff') format('woff'), url('/fonts/223F71_0_0.ttf') format('truetype');
+  src: url('./../fonts/223F71_0_0.eot');
+  src: url('./../fonts/223F71_0_0.eot?#iefix') format('embedded-opentype'), url('./../fonts/223F71_0_0.woff') format('woff'), url('./../fonts/223F71_0_0.ttf') format('truetype');
 }
 @font-face {
   font-family: 'FuturaBT-Bold';
-  src: url('/fonts/223F71_2_0.eot');
-  src: url('/fonts/223F71_2_0.eot?#iefix') format('embedded-opentype'), url('/fonts/223F71_2_0.woff') format('woff'), url('/fonts/223F71_2_0.ttf') format('truetype');
+  src: url('./../fonts/223F71_2_0.eot');
+  src: url('./../fonts/223F71_2_0.eot?#iefix') format('embedded-opentype'), url('./../fonts/223F71_2_0.woff') format('woff'), url('./../fonts/223F71_2_0.ttf') format('truetype');
 }
 /* WIRED ICON */
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icomoon.eot');
-  src: url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf') format('truetype'), url('/fonts/icomoon.woff') format('woff'), url('/fonts/icomoon.svg#icomoon') format('svg');
+  src: url('./../fonts/icomoon.eot');
+  src: url('./../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('./../fonts/icomoon.ttf') format('truetype'), url('./../fonts/icomoon.woff') format('woff'), url('./../fonts/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
