@@ -31,7 +31,7 @@
     display: block;
     width: 305px;
     height: 92px;
-    background: url('../img/wired-video-slider/wired-logo-live.png') no-repeat 50% 5px transparent;
+    background: url('../img/wired-logo-live.png') no-repeat 50% 5px transparent;
     float: left;
     min-height: 75px;
     margin: 15px auto;
@@ -108,7 +108,7 @@
     display: block;
     position: absolute;
     background-color: transparent;
-    background-image: url("../img/wired-video-slider/wired-arrow-slider.png");
+    background-image: url("../img/wired-arrow-slider.png");
     background-repeat: no-repeat;
 }
 .-wired-video-wrapper #-wired-video-container .-wired-slider-container .-wired-slider-video-item-container .-wired-video-arrow-preview .-wired-slider-arrow.-wired-left {

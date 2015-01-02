@@ -1,0 +1,50 @@
+.row.separator {text-align: left}
+#search-bar form.form-inline input#search.invaders{background: url(../img/wi.gif) right center no-repeat}
+#profilo-login, #profilo-logged-in {display: none}
+#creative_commons {font-size:10px; margin:0 0 26px 0}
+#main-article p strong em {font-weight: bold}
+#main-article .slider ul.slides li {text-align: center}
+#author-container .author-intro .social li {padding: 0 2px}
+.pagination ol.wp-paginate li {padding: 0 2px}
+
+/*
+LIVE BLOGGING
+*/
+#refresh_live {background-color: #E6E6E6; color: #B3B3B3; font-weight: bold; font-size: 18px; padding: 0 30px; line-height: 60px;}
+#refresh_live .btn .refresh-live {display: block; padding: 10px 20px; color: #000000; font-size: 20px; font-family: 'FuturaBT-Bold',sans-serif !important;}
+#refresh_live .btn .refresh-live .iconrefresh {background: url("../img/refresh.png"); width: 17px; height: 17px; display: inline-block;}
+#refresh_live a:hover {background-color: #B3B3B3;}
+
+/*
+BRANDED CONTENT
+*/
+#main-article .sponsored {min-height: 63px !important;}
+#home-container #main-home article.sponsored .sponsored_content, #list-container #main-list article.sponsored .sponsored_content {min-height: 63px !important;}
+#list-container #main-list .topic-head .sponsored {min-height: 135px !important;}
+
+/*
+STICKERS
+*/
+#list-container #main-list .topic-head .stickered {min-height: 135px !important;}
+#list-container #main-list .topic-head .stickered {margin-top: -20px;padding-top: 20px;position: static;}
+#list-container #main-list .topic-head .stickered .logo_sticker {position: absolute;top: 0;right: 20px;}
+
+/*
+EVENTI
+*/
+.wiredeventi-padding {padding-top: 20px !important}
+.page-wiredeventi.slug-hacktheexpo footer .widget > div {height: 500px;}
+#where {min-height: 210px}
+hr.sep {margin-top: 5px;margin-bottom: 8px;border: 0;border-top: 2px solid #e2001a;width: 10px;}
+.list-filters.big > li > a.clr-wiredeventi.compress {width: auto !important;font-size: 14px !important;padding: 8px 15px 0 !important;height: 50px;line-height: 10px;}
+@media (max-width: 1280px) {
+    .list-filters.big > li.calendar {display: none;}
+    .list-filters.big > li > a.clr-wiredeventi.compress {padding: 8px 13px 0 !important;}
+}
+
+/*
+SOLR
+*/
+header.search-head.solr {margin-top: 10px;padding-left: 0;margin-bottom: 30px;}
+header.search-head.solr a.dym {background-color: #ffed00 !important;padding: 0 3px;font-style: italic;}
+.page-container.row.solr em {background-color: #ffed00 !important;padding: 0 3px;font-style: italic;}
