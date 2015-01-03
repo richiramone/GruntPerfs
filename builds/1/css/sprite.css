@@ -1,0 +1,161 @@
+.sprite {
+  background-image: url(./../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.sprite-amazon-kindle {
+  width: 189px;
+  height: 54px;
+  background-position: -5px -5px;
+  float: left;
+}
+.sprite-app-store {
+  width: 149px;
+  height: 44px;
+  background-position: -204px -5px;
+  float: left;
+}
+.sprite-google-play {
+  width: 132px;
+  height: 50px;
+  background-position: -137px -71px;
+  float: left;
+}
+.sprite-bomba {
+  width: 15px;
+  height: 18px;
+  background-position: -353px 0;
+  margin-left: 2px;
+}
+.sprite-epicwin {
+  width: 18px;
+  height: 18px;
+  background-position: -355px -28px;
+  margin-left: 2px;
+}
+.sprite-conde-nast {
+  width: 107px;
+  height: 40px;
+  background-position: -5px -128px;
+  display: block
+}
+.sprite-default {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: -481px -5px;
+}
+.sprite-default-avatar {
+  width: 256px;
+  height: 256px;
+  background-position: -122px -143px;
+}
+.sprite-fabiopar {
+  width: 56px;
+  height: 56px;
+  background-position: -5px -71px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sprite-glippi {
+  width: 56px;
+  height: 56px;
+  background-position: -71px -71px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sprite-mboroni {
+  width: 56px;
+  height: 56px;
+  background-position: -5px -185px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sprite-mdellamico {
+  width: 56px;
+  height: 56px;
+  background-position: -524px -185px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sprite-mrusso {
+  width: 56px;
+  height: 56px;
+  background-position: -590px -185px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}.sprite-scosimi {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  background-position: -524px -251px;
+}
+.sprite-vniri {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  background-position: -590px -251px;
+}
+.sprite-fail {
+  width: 115px;
+  height: 66px;
+  background-position: -2px -414px
+}
+.sprite-antibufala {
+  width: 115px;
+  height: 93px;
+  background-position: -121px -408px
+}
+.sprite-feed {
+  width: 278px;
+  height: 114px;
+  background-position: -239px -409px;
+}
+.sprite-ipad {
+  width: 135px;
+  height: 170px;
+  background-position: -547px -5px;
+}
+.sprite-redazione {
+  width: 56px;
+  height: 56px;
+  background-position: -5px -251px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sprite-test {
+  width: 15px;
+  height: 18px;
+  background-position: -383px -2px;
+  margin-left: 2px;
+}
+.-wired-video-wrapper #-wired-video-container .-wired-slider-container .-wired-slider-video-item-container .-wired-video-arrow-preview .-wired-slider-arrow {
+  width: 100px;
+  height: 80px;
+  background-image: url(./../img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-position: -5px -317px;
+  display: inline-block;
+  width: 50px;
+}
+.-wired-video-wrapper #-wired-video-container .-wired-slider-container .-wired-slider-video-item-container .-wired-video-arrow-preview .-wired-slider-arrow.-wired-right {
+  background-position: -55px -317px;
+}
+.-wired-video-wrapper #-wired-video-container .-wired-slider-container .-wired-logo-live {
+  background-position: -527px -455px;
+  background-image: url(./../img/spritesheet.png);
+  background-repeat: no-repeat;
+  left: 80px
+}
