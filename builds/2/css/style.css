@@ -10069,7 +10069,7 @@ section.sidebar .post-prev-quote .aside.with-avatar .author .who {
   display: none;
 }
 .paged-carousel .pages a:after {
-  content: 'â€¢';
+  content: '\2022';
 }
 span.gradient {
   position: absolute;
