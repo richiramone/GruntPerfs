@@ -13,10 +13,36 @@ module.exports = function(grunt) {
           'js/cn_banner.min.js': ['js/cn_banner.js']
         }
       }
+    },
+    cssmin: {
+      target: {
+        files: {
+          'css/style.min.css': ['css/style.css']
+        }
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true,
+          removeCommentsFromCDATA: true,
+          removeAttributeQuotes: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          removeOptionalTags: true
+        },
+        files: {
+          'index.html': 'original_index.html'
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify','cssmin','htmlmin']);
 }

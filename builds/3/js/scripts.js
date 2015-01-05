@@ -2494,3 +2494,133 @@ var webtrekkConfig = {
 	mediaCode : "wt_mc",
 	contentId : ""
 };
+
+
+
+var authDelegate = new fyre.conv.RemoteAuthDelegate();
+
+	authDelegate.doLogin = function (authDelegateToken){
+      if (authDelegateToken) {
+        	try {
+          		fyre.conv.login(authDelegateToken);
+          		jQuery("#livefyre-comments").removeClass("livefyre-anon");
+          		console.log('Logging in...', authDelegateToken);
+        	} catch (e) {
+          		console.log("Error attempting to login with token value: ", authDelegateToken, " ", e);
+        	}
+    	}
+	};
+
+    authDelegate.login = function (handler){
+
+    	var textarea = "";
+    	
+    	if(jQuery(".fyre-editor-field").length > 0){
+    		textarea = jQuery(".fyre-editor-field").text();
+    	}else{
+    		textarea = jQuery(".fyre-editor-field-mobile").val();
+    	}
+    	
+        jQuery.cookie('newredirect', location.href );
+        jQuery.cookie('livefyre-comment-area', textarea );
+   
+    	jQuery('#profilo-login a').click();
+    	jQuery('#mobile-login').click();
+    	
+    	handler.success();
+    };
+
+    authDelegate.logout = function (handler) {
+		return true;
+    };
+
+    authDelegate.viewProfile =  function(handler,author) {
+		// location.href = "/profilo#" + author.id.split('@')[0];
+		handler.success();
+    }
+
+    authDelegate.editProfile = function(handler,author) {
+		// location.href = "/profilo#" + author.id.split('@')[0];
+		handler.success();
+    };
+    
+    livefyre_onload_handler = function(widget){
+   
+    	// translate
+    	var cc = jQuery("#livefyre-comments").eq(0);
+    	
+    	var translate = function() {
+    		
+    		console.log("Livefyre translator triggered ....");
+    		
+    		$(".fyre-share-button .fyre-button-right-inner-box",cc).livefyre_translate("Condividi","Share");
+    		$(".fyre-comment-count span", cc).livefyre_translate("commenti", "comments");
+    		$(".fyre-live-container .fyre-stream-livecount", cc).livefyre_translate("persone in ascolto", "people listening");
+    		$(".fyre-stream-sort-newest",cc).livefyre_translate("Nuovi");
+    		$(".fyre-stream-sort-oldest",cc).livefyre_translate("Vecchi");
+    		$(".fyre-comment-like-btn",cc).livefyre_translate("Mi piace");
+    		$(".fyre-share-link",cc).livefyre_translate("Condividi");
+    		$(".fyre-flag-link",cc).livefyre_translate("Segnala");
+    		$(".fyre-comment-date",cc).livefyre_translate("minuti", "minutes ago").livefyre_translate("minuto", "minute ago").livefyre_translate("adesso", "just now").livefyre_translate("giorni", "days ago").livefyre_translate("ore", "hours ago").livefyre_translate("giorno", "day ago").livefyre_translate("ora", "hour ago");
+    		$(".fyre-follow-button .fyre-button-left-inner-box",cc).livefyre_translate("Segui", "Follow").livefyre_translate("Non seguire", "Unfollow");
+    		$(".fyre-post-button .fyre-button-right-inner-box",cc).livefyre_translate("Commenta");
+    		$(".fyre-editor-error-message",cc).livefyre_translate("Prima scrivi qualcosa ...", "It seems you're attempting to post an empty review.");
+    		$(".fyre-comment-reply",cc).livefyre_translate("Rispondi");
+    		$(".fyre-delete-link",cc).livefyre_translate("Elimina");
+    		$(".fyre-provider-connections strong",cc).livefyre_translate("Per vedere e citare i tuoi amici");
+    		
+    		cc.one("DOMSubtreeModified", function(){ setTimeout(translate, 100); });
+
+			/* Fix Link Profilo */
+    		
+            jQuery(".fyre-box-list").remove();
+			// jQuery(".fyre-hovercard").remove();
+			jQuery(".fyre-hovercard-button").remove();
+            
+            jQuery(".fyre-user-drop").addClass("fyre-user");
+            jQuery(".fyre-user-drop").removeClass("fyre-user-drop");
+    		
+    	};
+    	
+    	cc.one("DOMSubtreeModified",translate);
+
+        textarea = jQuery.cookie('livefyre-comment-area');
+        if(typeof(textarea)!='undefined'){
+                setTimeout(function(){
+                        
+
+                    	if(jQuery(".fyre-editor-field").length > 0){
+                    		jQuery(".fyre-editor-field").text(textarea);
+                    	}else{
+                    		jQuery(".fyre-editor-field-mobile").val(textarea);
+                    		$("#showComm").hide();
+                    		jQuery("#livefyre-comments").show();
+                    	}
+
+                        jQuery.removeCookie('newredirect');
+                        jQuery.removeCookie('livefyre-comment-area');
+                        
+                }, 1000 );
+        }
+
+    };
+    
+    (function( $ ) {
+    
+	    $.fn.livefyre_translate = function(t, r) {
+	    	$(this).each(function(){
+	    		var q = $(this); 
+				var filter = function(){ return this.nodeType == 3; };
+	    		var node = q.contents().filter(filter)[0];
+	    		if(!node) node = q[0];
+				if(!node) return;
+				var v = node.nodeValue;
+				if(r) v = v.replace(r,t);
+				else v = t;
+	    		node.nodeValue = v;
+  				return;
+  			});
+  			return $(this);
+  		};
+  		
+    })(jQuery);
