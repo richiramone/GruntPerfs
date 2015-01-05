@@ -4,17 +4,14 @@ module.exports = function(grunt) {
     uglify: {
       options: {
         mangle: {
-          except: ['jQuery', '$', 'Modernizr']
+          except: ['jQuery', '$', 'Modernizr','_slot']
         }
       },
       my_target: {
-        files: [{
-            expand: true,
-            cwd: 'js',
-            src: '**/*.js',
-            dest: 'js/',
-            ext: '.min.js'
-        }]
+        files: {
+          'js/scripts.min.js': ['js/scripts.js'],
+          'js/cn_banner.min.js': ['js/cn_banner.js']
+        }
       }
     }
   });
