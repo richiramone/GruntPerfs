@@ -43,17 +43,13 @@
 
   <script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "url": "http://www.wired.it/", "potentialAction": { "@type": "SearchAction", "target": "http://www.wired.it/?s={search_term}", "query-input": "required name=search_term" } }</script>
   
-  <script async>var zone = "home", openGallery = "";</script>
-  <script src="./js/cn_banner.min.js"></script>
-  <script async>
-    (function() {
-    var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.googletagservices.com/tag/js/gpt.js';
-    var s = document.getElementsByTagName('script')[0]; 
-        s.parentNode.insertBefore(ga, s);
-  })();
+  <script src="./js/cn_banner.js"></script>
+  <script type='text/javascript'>
+    (function(){
+      var useSSL = 'https:' == document.location.protocol;
+      var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+      document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+    })();
   </script>
   <script src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js" async></script>
 </head>
