@@ -18,8 +18,8 @@ module.exports = function(grunt) {
       }
     }
   });
+  
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+  grunt.registerTask('default', ['imagemin']);
 }
-
-grunt.loadNpmTasks('grunt-contrib-imagemin');
-
-grunt.registerTask('default', ['imagemin']);
