@@ -1,19 +1,17 @@
 
 module.exports = function(grunt) {
   grunt.initConfig({
-    critical: {
-      dist: {
-        base: './', 
-        width: 1280,
-        height: 1200,
-        minify: true,
-        src: 'original-index.html',
-        dest: 'index.html'
+    colorguard: {
+      options: {
+        threshold : 3
+      },
+      files: {
+        src: ['css/style.css'],
       }
     }
   });
   
-  grunt.loadNpmTasks('grunt-critical');
+  grunt.loadNpmTasks('grunt-colorguard');
 
-  grunt.registerTask('default', ['critical']);
+  grunt.registerTask('default', ['colorguard']);
 }
