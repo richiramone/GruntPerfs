@@ -3,18 +3,12 @@ module.exports = function(grunt) {
   grunt.initConfig({
     critical: {
       dist: {
-        options: {
-            base: './',
-            css: ['css/style.css'],
-            width: 1280,
-            height: 900,
-            minify: true,
-            htmlTarget: 'index.html',
-            extract: true,
-            generateInline: true
-        },
+        base: './', 
+        width: 1280,
+        height: 1200,
+        minify: true,
         src: 'original-index.html',
-        dest: 'css/critical-styles.css'
+        dest: 'index.html'
       }
     }
   });
