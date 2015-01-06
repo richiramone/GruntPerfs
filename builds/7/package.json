@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-colorguard": "^0.2.0",
-    "grunt-perfbudget": "^0.1.6"
+    "grunt-pagespeed": "^0.4.1",
+    "grunt-perfbudget": "^0.1.6",
+    "grunt-phantomas": "^0.11.0"
   }
 }
