@@ -9,7 +9,9 @@ module.exports = function(grunt) {
             width: 1280,
             height: 900,
             minify: true,
-            htmlTarget: 'index.html'
+            htmlTarget: 'index.html',
+            extract: true,
+            generateInline: true
         },
         src: 'original-index.html',
         dest: 'css/critical-styles.css'
