@@ -2,18 +2,18 @@ var mozjpeg = require('imagemin-mozjpeg');
 
 module.exports = function(grunt) {
   grunt.initConfig({
-    imagemin: {                          // Task
-      dynamic: {                         // Another target
-        options: {                       // Target options
+    imagemin: {
+      dynamic: {
+        options: {
           optimizationLevel: 3,
           progressive: true,
           use: [mozjpeg()]
         },
         files: [{
-          expand: true,                 // Enable dynamic expansion
-          cwd: 'old_images/',           // Src matches are relative to this path
-          src: ['**/*.{png,jpg}'],      // Actual patterns to match
-          dest: 'img/'                  // Destination path prefix
+          expand: true,
+          cwd: 'old_images/',
+          src: ['**/*.{png,jpg}'],
+          dest: 'img/'
         }]
       }
     }
