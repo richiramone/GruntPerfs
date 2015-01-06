@@ -44,13 +44,21 @@ module.exports = function(grunt) {
           report       : 'max'
         },
         files: {
-          'css/clean-style.min.css': ['original-index.html']
+          'css/clean-style.css': ['original-index.html']
+        }
+      }
+    },
+    cssmin: {
+      target: {
+        files: {
+          'css/clean-style.min.css': ['css/clean-style.css']
         }
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('default', ['uncss']);
+  grunt.registerTask('default', ['uncss', 'cssmin']);
 }
