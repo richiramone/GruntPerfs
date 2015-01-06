@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/lucas/Sites/GruntPerfs/builds/6/js/scripts.min.js",
+        "/Users/lucas/Sites/GruntPerfs/builds/3/Gruntfile.js",
+        "/Users/lucas/Sites/GruntPerfs/builds/4/Gruntfile.js",
+        "/Users/lucas/Sites/GruntPerfs/builds/5/Gruntfile.js"
+    ]
+}
