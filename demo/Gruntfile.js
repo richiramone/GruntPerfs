@@ -17,19 +17,6 @@ module.exports = function(grunt) {
         }]
       }
     },
-    uglify: {
-      options: {
-        mangle: {
-          except: ['jQuery', '$', 'Modernizr','_slot']
-        }
-      },
-      my_target: {
-        files: {
-          'js/scripts.min.js': ['js/scripts.js'],
-          'js/cn_banner.min.js': ['js/cn_banner.js']
-        }
-      }
-    },
     colorguard: {
       options: {
         threshold : 3
@@ -85,6 +72,19 @@ module.exports = function(grunt) {
         }
       }
     },
+    uglify: {
+      options: {
+        mangle: {
+          except: ['jQuery', '$', 'Modernizr','_slot']
+        }
+      },
+      my_target: {
+        files: {
+          'js/scripts.min.js': ['js/scripts.js'],
+          'js/cn_banner.min.js': ['js/cn_banner.js']
+        }
+      }
+    },
     cssmin: {
       target: {
         options: {
@@ -122,6 +122,7 @@ module.exports = function(grunt) {
         dest: 'index.html'
       }
     },
+
     perfbudget: {
       default: {
         options: {
@@ -129,37 +130,6 @@ module.exports = function(grunt) {
           key: 'A.d01077156635968a5bd2637fda103bd2',
           runs: 2
         }
-      }
-    },
-    pagespeed: {
-      dev: {
-        options: {
-          nokey: true,
-          url: "http://lucasramos.me/gruntperfs/builds/7/index.html",
-          locale: "it_IT",
-          strategy: "desktop",
-          threshold: 70
-        }
-      }
-    },
-    phantomas: {
-      dev : {
-        options : {
-          indexPath : './phantomas/',
-          url       : 'http://lucasramos.me/gruntperfs/builds/7/index.html',
-          buildUi   : true
-        }
-      }
-    },
-    yslow_test: {
-      options: {
-        info: "grade",
-        format: "junit",
-        urls: ['http://google.com'],
-        reports: ['test/reports/yslow.xml']
-      },
-      your_target: {
-        files: []
       }
     },
     yslow: {
@@ -184,6 +154,158 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+
+    phantomas: {
+      dev : {
+        options : {
+          indexPath : './phantomas/',
+          //url       : 'http://gruntperfs.lucasramos.me:80/index.html',
+          url       : 'http://gruntperfs.demo:80',
+          buildUi   : true,
+          numberOfRuns: 1,
+          'timeout': 60,
+          //'allow-domain': 'cdn.yoursite.com.br,ajax.googleapis.com',
+          'no-externals': true,
+          assertions : {
+            bodyHTMLSize          : 10500,
+            jsErrors              : 15
+          },
+          group: {
+            'REQUESTS' : [
+              'requests',
+              'gzipRequests',
+              'postRequests',
+              'httpsRequests',
+              'notFound',
+              'multipleRequests',
+              'maxRequestsPerDomain',
+              'domains',
+              'medianRequestsPerDomain',
+              'redirects',
+              'redirectsTime',
+              'smallestResponse',
+              'biggestResponse',
+              'smallestLatency',
+              'biggestLatency',
+              'medianResponse',
+              'medianLatency',
+              'assetsNotGzipped'
+            ],
+            'TIMINGS' : [
+              'timeToFirstByte',
+              'timeToFirstImage',
+              'slowestResponse',
+              'onDOMReadyTime',
+              'onDOMReadyTimeEnd',
+              'windowOnLoadTime',
+              'windowOnLoadTimeEnd',
+              'httpTrafficCompleted',
+              'timeBackend',
+              'timeFrontend'
+            ],
+            'HTML' : [
+              'bodyHTMLSize',
+              'iframesCount',
+              'imagesScaledDown',
+              'imagesWithoutDimensions',
+              'commentsSize',
+              'hiddenContentSize',
+              'DOMelementsCount',
+              'nodesWithInlineCSS'
+            ],
+            'JAVASCRIPT' : [
+              'documentWriteCalls',
+              'evalCalls',
+              'jsErrors',
+              'consoleMessages',
+              'globalVariables',
+              'ajaxRequests'
+            ],
+            'DOM' : [
+              'DOMqueries',
+              'DOMqueriesById',
+              'DOMqueriesByClassName',
+              'DOMqueriesByTagName',
+              'DOMqueriesByQuerySelectorAll',
+              'DOMinserts',
+              'DOMqueriesDuplicated',
+              'domContentLoaded',
+              'domContentLoadedEnd',
+              'domComple',
+              'DOMidDuplicated'
+            ],
+            'HEADERS' : [
+              'headersCount',
+              'headersSentCount',
+              'headersRecvCount',
+              'headersSize',
+              'headersSentSize',
+              'headersRecvSize'
+            ],
+            'CACHING' : [
+              'cacheHits',
+              'cacheMisses',
+              'cachePasses',
+              'cachingNotSpecified',
+              'cachingTooShort',
+              'cachingDisabled'
+            ],
+            'COOKIES' : [
+              'cookiesSent',
+              'cookiesRecv',
+              'domainsWithCookies',
+              'documentCookiesLength',
+              'documentCookiesCount'
+            ],
+            'COUNTS & SIZES' : [
+              'contentLength',
+              'bodySize',
+              'htmlSize',
+              'htmlCount',
+              'cssSize',
+              'cssCount',
+              'jsSize',
+              'jsCount',
+              'jsonSize',
+              'jsonCount',
+              'imageSize',
+              'imageCount',
+              'webfontSize',
+              'webfontCount',
+              'base64Size',
+              'base64Count',
+              'otherCount',
+              'otherSize'
+            ],
+            'JQUERY' : [
+              'jQueryOnDOMReadyFunctions'
+            ]
+          }
+        }
+      }
+    },
+    yslow_test: {
+      options: {
+        info: "grade",
+        format: "junit",
+        urls: ['http://gruntperfs.lucasramos.me/'],
+        reports: ['./yslow-reports/yslow.xml']
+      },
+      your_target: {
+        files: []
+      }
+    },
+    pagespeed: {
+      dev: {
+        options: {
+          nokey: true,
+          url: "http://gruntperfs.lucasramos.me/",
+          locale: "it_IT",
+          strategy: "desktop",
+          threshold: 30
+        }
+      }
     }
   });
 
@@ -195,41 +317,30 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-critical');
-  
-  /**** REPORT TASKS ****/
-  grunt.loadNpmTasks('grunt-pagespeed');
-  grunt.loadNpmTasks('grunt-yslow');
-  grunt.loadNpmTasks('grunt-yslow-test');
-  grunt.loadNpmTasks('grunt-phantomas');
-  grunt.loadNpmTasks('grunt-perfbudget');
 
-  grunt.registerTask('tmpDemo', [
-    'imagemin'/*,
+  /**** PERFS BUDGET CONTROLS ****/
+  grunt.loadNpmTasks('grunt-perfbudget');
+  grunt.loadNpmTasks('grunt-yslow');
+
+  /**** REPORT TASKS ****/
+  grunt.loadNpmTasks('grunt-yslow-test');
+  grunt.loadNpmTasks('grunt-pagespeed');
+  grunt.loadNpmTasks('grunt-phantomas');
+
+  grunt.registerTask('default', [
+    /*'imagemin',
     'colorguard',
     'uncss',
     'uglify',
     'cssmin',
     'htmlmin',
     'critical',
+
     'perfbudget',
-    'pagespeed',
-    'phantomas',
-    'yslow_test',
-    'yslow'*/]);
-  
-  /*
-  grunt.registerTask('completeDemo', [
-    'imagemin',
-    'colorguard',
-    'uncss',
-    'uglify',
-    'cssmin',
-    'htmlmin',
-    'critical',
-    'perfbudget',
-    'pagespeed',
-    'phantomas',
-    'yslow_test',
-    'yslow']);
-  */
+    'yslow',*/
+    
+    //'yslow_test',
+    //'pagespeed',
+    'phantomas'
+  ]);
 }
