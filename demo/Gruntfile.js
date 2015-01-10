@@ -77,7 +77,7 @@ module.exports = function(grunt) {
                           '#abbonati .secondary .open .label-open',
                           '#header .secondary .open .label-open',
                           'hover'],
-          timeout      : 5000,
+          timeout      : 15000,
           report       : 'max'
         },
         files: {
@@ -108,7 +108,7 @@ module.exports = function(grunt) {
           removeOptionalTags: true
         },
         files: {
-          'index.html': 'original_index.html'
+          'index.html': 'index.html'
         }
       }
     },
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
         width: 1280,
         height: 1200,
         minify: true,
-        src: 'original-index.html',
+        src: 'index.html',
         dest: 'index.html'
       }
     },
