@@ -1,10 +1,12 @@
-builds/2/old_images/
-builds/4 copy/
+demo/node_modules/
+demo/old_images/
 diffux/
-builds/2/node_modules/
-builds/3/node_modules/
-builds/4/node_modules/
-builds/5/node_modules/
-builds/6/node_modules/
-builds/7/node_modules/
-builds/8/node_modules/
+results/
+single_builds/2/old_images/
+single_builds/2/node_modules/
+single_builds/3/node_modules/
+single_builds/4/node_modules/
+single_builds/5/node_modules/
+single_builds/6/node_modules/
+single_builds/7/node_modules/
+single_builds/7/phantomas/
