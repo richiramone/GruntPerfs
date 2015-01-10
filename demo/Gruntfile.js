@@ -150,19 +150,86 @@ module.exports = function(grunt) {
           buildUi   : true
         }
       }
+    },
+    yslow_test: {
+      options: {
+        info: "grade",
+        format: "junit",
+        urls: ['http://google.com'],
+        reports: ['test/reports/yslow.xml']
+      },
+      your_target: {
+        files: []
+      }
+    },
+    yslow: {
+      options: {
+        thresholds: {
+          weight: 180,
+          speed: 1000,
+          score: 80,
+          requests: 15
+        }
+      },
+      pages: {
+        files: [
+          {
+            src: 'http://andyshora.com'
+          },
+          {
+            src: 'http://www.google.co.uk',
+            thresholds: {
+              weight: 100
+            }
+          }
+        ]
+      }
     }
   });
-  
+
+  /**** PERFORMANCE TASKS ****/
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-colorguard');
   grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-critical');
-  grunt.loadNpmTasks('grunt-perfbudget');
+  
+  /**** REPORT TASKS ****/
   grunt.loadNpmTasks('grunt-pagespeed');
+  grunt.loadNpmTasks('grunt-yslow');
+  grunt.loadNpmTasks('grunt-yslow-test');
   grunt.loadNpmTasks('grunt-phantomas');
+  grunt.loadNpmTasks('grunt-perfbudget');
 
-  grunt.registerTask('default', ['imagemin','uglify','colorguard','uncss','cssmin','htmlmin','critical','perfbudget', 'pagespeed', 'phantomas']);
+  grunt.registerTask('tmpDemo', [
+    'imagemin'/*,
+    'colorguard',
+    'uncss',
+    'uglify',
+    'cssmin',
+    'htmlmin',
+    'critical',
+    'perfbudget',
+    'pagespeed',
+    'phantomas',
+    'yslow_test',
+    'yslow'*/]);
+  
+  /*
+  grunt.registerTask('completeDemo', [
+    'imagemin',
+    'colorguard',
+    'uncss',
+    'uglify',
+    'cssmin',
+    'htmlmin',
+    'critical',
+    'perfbudget',
+    'pagespeed',
+    'phantomas',
+    'yslow_test',
+    'yslow']);
+  */
 }
