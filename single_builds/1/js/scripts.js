@@ -1367,7 +1367,7 @@ jQuery(document).ready(function(){
 	}
 	
 	// show buttons
-	var ajax_url = "http://wired.it/wp-admin/admin-ajax.php";
+	var ajax_url = "/admin-ajax.php";
 	var data = {action: 'get_profile_image'};
 	
 	jQuery.getJSON(ajax_url, data, function(response) {

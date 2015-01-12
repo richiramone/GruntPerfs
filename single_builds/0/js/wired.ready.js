@@ -12,6 +12,7 @@ SITE.fileInputs = function() {
     }
 };
 
+
 var _galFulHeight = $(window).height();
 var _galFulWidth = $(window).width();
 
@@ -22,9 +23,9 @@ $(function () {
 
     function getUrlVars() {
         var vars = {};
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        /*var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
             vars[key] = value;
-        });
+        });*/
         return vars;
     }
 
@@ -138,6 +139,7 @@ $(function () {
     });
 
 
+
     // FILTRO LIST-ARTICLES
     //////////////////////////////////////////////////////////////////////////////
     var $list_articles = $('#list-articles');
@@ -221,6 +223,9 @@ $(function () {
             $(this).parents('.popover').prev().popover('hide');
         });
     }
+  
+
+
 
     // FOGLIA RELATED
     /////////////////////////////////////////////////////////////////////////////
@@ -315,7 +320,8 @@ $(function () {
         // apertura + paginazione da aperto
         // TO-DO
     }
-
+  
+  
 
 
     // POST SLIDER
@@ -341,6 +347,9 @@ $(function () {
 //     }
 //     return center;
 //   }
+  
+  
+  
 
 
     if ($('.prev-gallery ul.thumbs').length>0){
@@ -436,6 +445,8 @@ $(function () {
             return false;
         });
     }
+  
+  
 
     if($('.wide-carousel').length){
         $('.wide-carousel ul').each(function(){
@@ -545,6 +556,8 @@ $(function () {
         $(".fullscreen").show();
     }
 
+
+
     $(".fullscreen").click(function(e) {
         e.preventDefault();
         $("#bannerSpTop").hide();
@@ -615,6 +628,8 @@ $(function () {
     });
 
 
+
+
     // MENU
     /////////////////////////////////////////////////////////////////////////////
     function possubmenu()  {
@@ -636,6 +651,8 @@ $(function () {
         };
 
     }
+
+
 
 
     // DROPDOWN SCROLL CONTROL e MODULO ABBONATI
@@ -733,6 +750,7 @@ $(function () {
     if(search){
         $('.search-bar-toggle').click();
     }
+
 
 
     // FUNZIONI ALLO SCROLL
@@ -854,12 +872,13 @@ $(function () {
 
     });
 
+
     // INIZIALIZZAZIONE ELEMENTI LOCKTOP
     //////////////////////////////////////////////////////////////////////////////
     var $lcktop = $('.lcktop');
 
     function locktopScroll(){
-        var docViewTop = $(document).scrollTop();
+        var docViewTop = 0;//$(document).scrollTop();
         var docViewBottom = docViewTop + $(window).height();
         $lcktop.each(function(){
             var $scr = $(this), $scrfig = $scr.children(), scrh =$scr.offset(), $sep = $scr.next('');
@@ -879,6 +898,8 @@ $(function () {
             }
         });
     }
+
+
 
     /* funzione da richiamare quando viene modificata la struttura dell'aside $(window).trigger('locktopInit'); */
     function locktopInit(){
@@ -913,6 +934,8 @@ $(function () {
         $(window).on('locktopInit', locktopInit);
     }
 
+
+
     // LIVE BLOGGING
     //////////////////////////////////////////////////////////////////////////////
     if ($('#live').length>0){
@@ -942,6 +965,8 @@ $(function () {
         });
     }
 
+
+
     // LIVE BLOGGING
     //////////////////////////////////////////////////////////////////////////////
     if ($('#topic_list').length>0){
@@ -962,6 +987,8 @@ $(function () {
         });
         $('#topic_list .carousel ol').trigger("linkAnchors", ["#topic_list menu", "a"]);
     }
+
+
 
     // WIRED EVENTI PROGRAMMA
     //////////////////////////////////////////////////////////////////////////////
@@ -998,6 +1025,8 @@ $(function () {
     }
 
 });
+
+
 
 // GOOGLE CHARTS
 //////////////////////////////////////////////////////////////////////////////

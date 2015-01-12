@@ -160,13 +160,13 @@ module.exports = function(grunt) {
       dev : {
         options : {
           indexPath : './phantomas/',
-          //url       : 'http://gruntperfs.lucasramos.me:80/index.html',
-          url       : 'http://gruntperfs.demo:80',
+          url       : 'http://gruntperfs.demo',
           buildUi   : true,
           numberOfRuns: 1,
-          'timeout': 60,
-          //'allow-domain': 'cdn.yoursite.com.br,ajax.googleapis.com',
           'no-externals': true,
+          'allow-domain': 'connect.facebook.net,platform.twitter.com',
+          'timeout': 60,
+          verbose: true,
           assertions : {
             bodyHTMLSize          : 10500,
             jsErrors              : 15
@@ -340,7 +340,7 @@ module.exports = function(grunt) {
     'yslow',*/
     
     //'yslow_test',
-    //'pagespeed',
+    //'pagespeed'
     'phantomas'
   ]);
 }
