@@ -1,0 +1,2645 @@
+{
+  "assertions": {
+    "bodyHTMLSize": {
+      "type": ">",
+      "value": 10500
+    },
+    "jsErrors": {
+      "type": ">",
+      "value": 15
+    }
+  },
+  "metrics": {
+    "requests": {
+      "values": [
+        193,
+        null
+      ],
+      "sum": 193,
+      "min": 193,
+      "max": 193,
+      "median": 193,
+      "average": 193
+    },
+    "gzipRequests": {
+      "values": [
+        48,
+        null
+      ],
+      "sum": 48,
+      "min": 48,
+      "max": 48,
+      "median": 48,
+      "average": 48
+    },
+    "postRequests": {
+      "values": [
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "httpsRequests": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "notFound": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodySize": {
+      "values": [
+        4833566,
+        null
+      ],
+      "sum": 4833566,
+      "min": 4833566,
+      "max": 4833566,
+      "median": 4833566,
+      "average": 4833566
+    },
+    "contentLength": {
+      "values": [
+        4833565,
+        null
+      ],
+      "sum": 4833565,
+      "min": 4833565,
+      "max": 4833565,
+      "median": 4833565,
+      "average": 4833565
+    },
+    "httpTrafficCompleted": {
+      "values": [
+        11720,
+        null
+      ],
+      "sum": 11720,
+      "min": 11720,
+      "max": 11720,
+      "median": 11720,
+      "average": 11720
+    },
+    "timeToFirstByte": {
+      "values": [
+        73,
+        null
+      ],
+      "sum": 73,
+      "min": 73,
+      "max": 73,
+      "median": 73,
+      "average": 73
+    },
+    "timeToLastByte": {
+      "values": [
+        126,
+        null
+      ],
+      "sum": 126,
+      "min": 126,
+      "max": 126,
+      "median": 126,
+      "average": 126
+    },
+    "ajaxRequests": {
+      "values": [
+        2,
+        null
+      ],
+      "sum": 2,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "htmlCount": {
+      "values": [
+        7,
+        null
+      ],
+      "sum": 7,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "htmlSize": {
+      "values": [
+        342376,
+        null
+      ],
+      "sum": 342376,
+      "min": 342376,
+      "max": 342376,
+      "median": 342376,
+      "average": 342376
+    },
+    "cssCount": {
+      "values": [
+        13,
+        null
+      ],
+      "sum": 13,
+      "min": 13,
+      "max": 13,
+      "median": 13,
+      "average": 13
+    },
+    "cssSize": {
+      "values": [
+        409857,
+        null
+      ],
+      "sum": 409857,
+      "min": 409857,
+      "max": 409857,
+      "median": 409857,
+      "average": 409857
+    },
+    "jsCount": {
+      "values": [
+        42,
+        null
+      ],
+      "sum": 42,
+      "min": 42,
+      "max": 42,
+      "median": 42,
+      "average": 42
+    },
+    "jsSize": {
+      "values": [
+        873915,
+        null
+      ],
+      "sum": 873915,
+      "min": 873915,
+      "max": 873915,
+      "median": 873915,
+      "average": 873915
+    },
+    "jsonCount": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsonSize": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imageCount": {
+      "values": [
+        128,
+        null
+      ],
+      "sum": 128,
+      "min": 128,
+      "max": 128,
+      "median": 128,
+      "average": 128
+    },
+    "imageSize": {
+      "values": [
+        3144567,
+        null
+      ],
+      "sum": 3144567,
+      "min": 3144567,
+      "max": 3144567,
+      "median": 3144567,
+      "average": 3144567
+    },
+    "videoCount": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "videoSize": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontCount": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "webfontSize": {
+      "values": [
+        62850,
+        null
+      ],
+      "sum": 62850,
+      "min": 62850,
+      "max": 62850,
+      "median": 62850,
+      "average": 62850
+    },
+    "base64Count": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "base64Size": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "otherCount": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "otherSize": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cacheHits": {
+      "values": [
+        15,
+        null
+      ],
+      "sum": 15,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "cacheMisses": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachePasses": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingNotSpecified": {
+      "values": [
+        167,
+        null
+      ],
+      "sum": 167,
+      "min": 167,
+      "max": 167,
+      "median": 167,
+      "average": 167
+    },
+    "cachingTooShort": {
+      "values": [
+        15,
+        null
+      ],
+      "sum": 15,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "cachingDisabled": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "oldCachingHeaders": {
+      "values": [
+        189,
+        null
+      ],
+      "sum": 189,
+      "min": 189,
+      "max": 189,
+      "median": 189,
+      "average": 189
+    },
+    "consoleMessages": {
+      "values": [
+        12,
+        null
+      ],
+      "sum": 12,
+      "min": 12,
+      "max": 12,
+      "median": 12,
+      "average": 12
+    },
+    "cookiesSent": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesRecv": {
+      "values": [
+        559,
+        null
+      ],
+      "sum": 559,
+      "min": 559,
+      "max": 559,
+      "median": 559,
+      "average": 559
+    },
+    "domainsWithCookies": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "documentCookiesLength": {
+      "values": [
+        69,
+        null
+      ],
+      "sum": 69,
+      "min": 69,
+      "max": 69,
+      "median": 69,
+      "average": 69
+    },
+    "documentCookiesCount": {
+      "values": [
+        2,
+        null
+      ],
+      "sum": 2,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "documentHeight": {
+      "values": [
+        8056,
+        null
+      ],
+      "sum": 8056,
+      "min": 8056,
+      "max": 8056,
+      "median": 8056,
+      "average": 8056
+    },
+    "commentsSize": {
+      "values": [
+        2747,
+        null
+      ],
+      "sum": 2747,
+      "min": 2747,
+      "max": 2747,
+      "median": 2747,
+      "average": 2747
+    },
+    "whiteSpacesSize": {
+      "values": [
+        38612,
+        null
+      ],
+      "sum": 38612,
+      "min": 38612,
+      "max": 38612,
+      "median": 38612,
+      "average": 38612
+    },
+    "DOMelementsCount": {
+      "values": [
+        3282,
+        null
+      ],
+      "sum": 3282,
+      "min": 3282,
+      "max": 3282,
+      "median": 3282,
+      "average": 3282
+    },
+    "DOMelementMaxDepth": {
+      "values": [
+        16,
+        null
+      ],
+      "sum": 16,
+      "min": 16,
+      "max": 16,
+      "median": 16,
+      "average": 16
+    },
+    "nodesWithInlineCSS": {
+      "values": [
+        27,
+        null
+      ],
+      "sum": 27,
+      "min": 27,
+      "max": 27,
+      "median": 27,
+      "average": 27
+    },
+    "imagesScaledDown": {
+      "values": [
+        54,
+        null
+      ],
+      "sum": 54,
+      "min": 54,
+      "max": 54,
+      "median": 54,
+      "average": 54
+    },
+    "imagesWithoutDimensions": {
+      "values": [
+        20,
+        null
+      ],
+      "sum": 20,
+      "min": 20,
+      "max": 20,
+      "median": 20,
+      "average": 20
+    },
+    "DOMidDuplicated": {
+      "values": [
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "hiddenContentSize": {
+      "values": [
+        135663,
+        null
+      ],
+      "sum": 135663,
+      "min": 135663,
+      "max": 135663,
+      "median": 135663,
+      "average": 135663
+    },
+    "DOMmutationsInserts": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsRemoves": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsAttributes": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueries": {
+      "values": [
+        121,
+        null
+      ],
+      "sum": 121,
+      "min": 121,
+      "max": 121,
+      "median": 121,
+      "average": 121
+    },
+    "DOMqueriesById": {
+      "values": [
+        22,
+        null
+      ],
+      "sum": 22,
+      "min": 22,
+      "max": 22,
+      "median": 22,
+      "average": 22
+    },
+    "DOMqueriesByClassName": {
+      "values": [
+        15,
+        null
+      ],
+      "sum": 15,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "DOMqueriesByTagName": {
+      "values": [
+        81,
+        null
+      ],
+      "sum": 81,
+      "min": 81,
+      "max": 81,
+      "median": 81,
+      "average": 81
+    },
+    "DOMqueriesByQuerySelectorAll": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "DOMinserts": {
+      "values": [
+        26,
+        null
+      ],
+      "sum": 26,
+      "min": 26,
+      "max": 26,
+      "median": 26,
+      "average": 26
+    },
+    "DOMqueriesDuplicated": {
+      "values": [
+        23,
+        null
+      ],
+      "sum": 23,
+      "min": 23,
+      "max": 23,
+      "median": 23,
+      "average": 23
+    },
+    "DOMqueriesAvoidable": {
+      "values": [
+        56,
+        null
+      ],
+      "sum": 56,
+      "min": 56,
+      "max": 56,
+      "median": 56,
+      "average": 56
+    },
+    "domains": {
+      "values": [
+        24,
+        null
+      ],
+      "sum": 24,
+      "min": 24,
+      "max": 24,
+      "median": 24,
+      "average": 24
+    },
+    "maxRequestsPerDomain": {
+      "values": [
+        154,
+        null
+      ],
+      "sum": 154,
+      "min": 154,
+      "max": 154,
+      "median": 154,
+      "average": 154
+    },
+    "medianRequestsPerDomain": {
+      "values": [
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "eventsBound": {
+      "values": [
+        138,
+        null
+      ],
+      "sum": 138,
+      "min": 138,
+      "max": 138,
+      "median": 138,
+      "average": 138
+    },
+    "globalVariables": {
+      "values": [
+        222,
+        null
+      ],
+      "sum": 222,
+      "min": 222,
+      "max": 222,
+      "median": 222,
+      "average": 222
+    },
+    "globalVariablesFalsy": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "headersCount": {
+      "values": [
+        2648,
+        null
+      ],
+      "sum": 2648,
+      "min": 2648,
+      "max": 2648,
+      "median": 2648,
+      "average": 2648
+    },
+    "headersSentCount": {
+      "values": [
+        583,
+        null
+      ],
+      "sum": 583,
+      "min": 583,
+      "max": 583,
+      "median": 583,
+      "average": 583
+    },
+    "headersRecvCount": {
+      "values": [
+        2065,
+        null
+      ],
+      "sum": 2065,
+      "min": 2065,
+      "max": 2065,
+      "median": 2065,
+      "average": 2065
+    },
+    "headersSize": {
+      "values": [
+        86611,
+        null
+      ],
+      "sum": 86611,
+      "min": 86611,
+      "max": 86611,
+      "median": 86611,
+      "average": 86611
+    },
+    "headersSentSize": {
+      "values": [
+        19988,
+        null
+      ],
+      "sum": 19988,
+      "min": 19988,
+      "max": 19988,
+      "median": 19988,
+      "average": 19988
+    },
+    "headersRecvSize": {
+      "values": [
+        66623,
+        null
+      ],
+      "sum": 66623,
+      "min": 66623,
+      "max": 66623,
+      "median": 66623,
+      "average": 66623
+    },
+    "headersBiggerThanContent": {
+      "values": [
+        15,
+        null
+      ],
+      "sum": 15,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "jQueryOnDOMReadyFunctions": {
+      "values": [
+        5,
+        null
+      ],
+      "sum": 5,
+      "min": 5,
+      "max": 5,
+      "median": 5,
+      "average": 5
+    },
+    "jQuerySizzleCalls": {
+      "values": [
+        36,
+        null
+      ],
+      "sum": 36,
+      "min": 36,
+      "max": 36,
+      "median": 36,
+      "average": 36
+    },
+    "documentWriteCalls": {
+      "values": [
+        19,
+        null
+      ],
+      "sum": 19,
+      "min": 19,
+      "max": 19,
+      "median": 19,
+      "average": 19
+    },
+    "evalCalls": {
+      "values": [
+        6,
+        null
+      ],
+      "sum": 6,
+      "min": 6,
+      "max": 6,
+      "median": 6,
+      "average": 6
+    },
+    "jsErrors": {
+      "values": [
+        6,
+        null
+      ],
+      "sum": 6,
+      "min": 6,
+      "max": 6,
+      "median": 6,
+      "average": 6
+    },
+    "localStorageEntries": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "redirects": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirectsTime": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsNotGzipped": {
+      "values": [
+        15,
+        null
+      ],
+      "sum": 15,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "assetsWithQueryString": {
+      "values": [
+        26,
+        null
+      ],
+      "sum": 26,
+      "min": 26,
+      "max": 26,
+      "median": 26,
+      "average": 26
+    },
+    "assetsWithCookies": {
+      "values": [
+        9,
+        null
+      ],
+      "sum": 9,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "smallImages": {
+      "values": [
+        14,
+        null
+      ],
+      "sum": 14,
+      "min": 14,
+      "max": 14,
+      "median": 14,
+      "average": 14
+    },
+    "multipleRequests": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "timeToFirstCss": {
+      "values": [
+        79,
+        null
+      ],
+      "sum": 79,
+      "min": 79,
+      "max": 79,
+      "median": 79,
+      "average": 79
+    },
+    "timeToFirstJs": {
+      "values": [
+        83,
+        null
+      ],
+      "sum": 83,
+      "min": 83,
+      "max": 83,
+      "median": 83,
+      "average": 83
+    },
+    "timeToFirstImage": {
+      "values": [
+        383,
+        null
+      ],
+      "sum": 383,
+      "min": 383,
+      "max": 383,
+      "median": 383,
+      "average": 383
+    },
+    "domInteractive": {
+      "values": [
+        6839,
+        null
+      ],
+      "sum": 6839,
+      "min": 6839,
+      "max": 6839,
+      "median": 6839,
+      "average": 6839
+    },
+    "domContentLoaded": {
+      "values": [
+        6840,
+        null
+      ],
+      "sum": 6840,
+      "min": 6840,
+      "max": 6840,
+      "median": 6840,
+      "average": 6840
+    },
+    "domContentLoadedEnd": {
+      "values": [
+        10415,
+        null
+      ],
+      "sum": 10415,
+      "min": 10415,
+      "max": 10415,
+      "median": 10415,
+      "average": 10415
+    },
+    "domComplete": {
+      "values": [
+        10434,
+        null
+      ],
+      "sum": 10434,
+      "min": 10434,
+      "max": 10434,
+      "median": 10434,
+      "average": 10434
+    },
+    "timeBackend": {
+      "values": [
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "timeFrontend": {
+      "values": [
+        99,
+        null
+      ],
+      "sum": 99,
+      "min": 99,
+      "max": 99,
+      "median": 99,
+      "average": 99
+    },
+    "windowAlerts": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowConfirms": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowPrompts": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodyHTMLSize": {
+      "values": [
+        280589,
+        null
+      ],
+      "sum": 280589,
+      "min": 280589,
+      "max": 280589,
+      "median": 280589,
+      "average": 280589
+    },
+    "iframesCount": {
+      "values": [
+        4,
+        null
+      ],
+      "sum": 4,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "smallestResponse": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "biggestResponse": {
+      "values": [
+        367332,
+        null
+      ],
+      "sum": 367332,
+      "min": 367332,
+      "max": 367332,
+      "median": 367332,
+      "average": 367332
+    },
+    "fastestResponse": {
+      "values": [
+        19,
+        null
+      ],
+      "sum": 19,
+      "min": 19,
+      "max": 19,
+      "median": 19,
+      "average": 19
+    },
+    "slowestResponse": {
+      "values": [
+        3477,
+        null
+      ],
+      "sum": 3477,
+      "min": 3477,
+      "max": 3477,
+      "median": 3477,
+      "average": 3477
+    },
+    "smallestLatency": {
+      "values": [
+        19,
+        null
+      ],
+      "sum": 19,
+      "min": 19,
+      "max": 19,
+      "median": 19,
+      "average": 19
+    },
+    "biggestLatency": {
+      "values": [
+        3477,
+        null
+      ],
+      "sum": 3477,
+      "min": 3477,
+      "max": 3477,
+      "median": 3477,
+      "average": 3477
+    },
+    "medianResponse": {
+      "values": [
+        51,
+        null
+      ],
+      "sum": 51,
+      "min": 51,
+      "max": 51,
+      "median": 51,
+      "average": 51
+    },
+    "medianLatency": {
+      "values": [
+        51,
+        null
+      ],
+      "sum": 51,
+      "min": 51,
+      "max": 51,
+      "median": 51,
+      "average": 51
+    }
+  },
+  "offenders": {
+    "gzipRequests": [
+      "http://localhost/ (gzip: 276.37 kB / uncompressed: 276.37 kB)",
+      "http://localhost/css/wired_fonts.css (gzip: 0.89 kB / uncompressed: 0.89 kB)",
+      "http://localhost/css/livefyre.css (gzip: 4.59 kB / uncompressed: 4.59 kB)",
+      "http://localhost/css/override.css (gzip: 2.42 kB / uncompressed: 2.42 kB)",
+      "http://localhost/css/wired_site-style.css (gzip: 0.17 kB / uncompressed: 0.17 kB)",
+      "http://localhost/css/assets-style.css (gzip: 6.00 kB / uncompressed: 6.00 kB)",
+      "http://localhost/js/jquery-migrate-1.2.1.min.js (gzip: 7.03 kB / uncompressed: 7.03 kB)",
+      "http://localhost/css/jquery-ui-1.10.3.custom.css (gzip: 21.23 kB / uncompressed: 21.23 kB)",
+      "http://localhost/css/wordpress-social-login.css (gzip: 0.22 kB / uncompressed: 0.22 kB)",
+      "http://localhost/js/connect.js (gzip: 1.25 kB / uncompressed: 1.25 kB)",
+      "http://localhost/css/inhstyle.css (gzip: 0.26 kB / uncompressed: 0.26 kB)",
+      "http://localhost/css/stylesf.css (gzip: 52.93 kB / uncompressed: 52.93 kB)",
+      "http://localhost/js/cn_banner.js?T=61 (gzip: 4.57 kB / uncompressed: 4.57 kB)",
+      "http://localhost/css/cn_banner.css?T=61 (gzip: 0.72 kB / uncompressed: 0.72 kB)",
+      "http://localhost/js/jquery-1.10.2.min.js (gzip: 90.92 kB / uncompressed: 90.92 kB)",
+      "http://localhost/css/wired-video-style.css?T=5 (gzip: 17.24 kB / uncompressed: 17.24 kB)",
+      "http://localhost/js/wired-video-cnlive.js (gzip: 23.23 kB / uncompressed: 23.23 kB)",
+      "http://localhost/js/modernizr.min.js (gzip: 7.59 kB / uncompressed: 7.59 kB)",
+      "http://localhost/css/style.css (gzip: 292.82 kB / uncompressed: 292.82 kB)",
+      "http://localhost/js/bootstrap.min.js (gzip: 17.66 kB / uncompressed: 17.66 kB)",
+      "http://localhost/js/jquery.merge.min.js (gzip: 13.18 kB / uncompressed: 13.18 kB)",
+      "http://localhost/js/jquery.cookie.js (gzip: 2.99 kB / uncompressed: 2.99 kB)",
+      "http://localhost/js/wired.js?T=61 (gzip: 6.55 kB / uncompressed: 6.55 kB)",
+      "http://localhost/js/wired.ready.js?T=61 (gzip: 2.76 kB / uncompressed: 2.76 kB)",
+      "http://localhost/js/jquery.validate.min.js (gzip: 20.57 kB / uncompressed: 20.57 kB)",
+      "http://localhost/js/registration.js (gzip: 11.05 kB / uncompressed: 11.05 kB)",
+      "http://localhost/js/script.js (gzip: 1.07 kB / uncompressed: 1.07 kB)",
+      "http://localhost/js/jquery-ui-1.10.3.custom.min.js (gzip: 53.99 kB / uncompressed: 53.99 kB)",
+      "http://localhost/js/webtrekk_media_flash.js (gzip: 7.22 kB / uncompressed: 7.22 kB)",
+      "http://localhost/js/webtrekker.js (gzip: 3.68 kB / uncompressed: 3.68 kB)",
+      "http://localhost/js/helper-jquery.merge.min.js (gzip: 91.75 kB / uncompressed: 91.75 kB)",
+      "http://localhost/js/jquery.tools.min.js (gzip: 5.85 kB / uncompressed: 5.85 kB)",
+      "http://localhost/js/webtrekk_v3_JS.js (gzip: 44.01 kB / uncompressed: 44.01 kB)",
+      "http://zor.livefyre.com/wjs/v1.0/javascripts/CommentCount.js (gzip: 8.98 kB / uncompressed: 8.98 kB)",
+      "http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js (gzip: 48.84 kB / uncompressed: 48.84 kB)",
+      "http://admin.brightcove.com/js/APIModules_all.js (gzip: 74.59 kB / uncompressed: 74.59 kB)",
+      "http://admin.brightcove.com/js/BrightcoveExperiences.js (gzip: 32.37 kB / uncompressed: 32.37 kB)",
+      "http://secure-uk.imrworldwide.com/v53.js (gzip: 12.47 kB / uncompressed: 12.47 kB)",
+      "http://platform.twitter.com/widgets.js (gzip: 66.13 kB / uncompressed: 66.13 kB)",
+      "http://connect.facebook.net/it_IT/all.js (gzip: 47.44 kB / uncompressed: 47.44 kB)",
+      "http://a.visualrevenue.com/vrs.js (gzip: 11.40 kB / uncompressed: 11.40 kB)",
+      "http://localhost/fonts/icomoon.ttf (gzip: 15.69 kB / uncompressed: 15.69 kB)",
+      "http://localhost/admin-ajax.php?action=get_profile_image (gzip: NaN kB / uncompressed: NaN kB)",
+      "http://static.ak.facebook.com/connect/xd_arbiter/7r8gQb8MIqE.js?version=41#channel=f2fba9ebc8&origin=http%3A%2F%2Flocalhost (gzip: 26.81 kB / uncompressed: 26.81 kB)",
+      "https://www.facebook.com/connect/ping?client_id=156550261045391&domain=localhost&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df457a5334%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff2fba9ebc8%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey (gzip: 0.58 kB / uncompressed: 0.58 kB)",
+      "https://s-static.ak.facebook.com/connect/xd_arbiter/7r8gQb8MIqE.js?version=41#channel=f2fba9ebc8&origin=http%3A%2F%2Flocalhost (gzip: 26.84 kB / uncompressed: 26.84 kB)",
+      "http://localhost/admin-ajax.php (gzip: NaN kB / uncompressed: NaN kB)",
+      "http://static.chartbeat.com/js/chartbeat.js (gzip: 20.03 kB / uncompressed: 20.03 kB)"
+    ],
+    "postRequests": [
+      "http://localhost/admin-ajax.php"
+    ],
+    "httpsRequests": [
+      "https://www.google.com/jsapi",
+      "https://www.facebook.com/connect/ping?client_id=156550261045391&domain=localhost&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df457a5334%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff2fba9ebc8%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey",
+      "https://s-static.ak.facebook.com/connect/xd_arbiter/7r8gQb8MIqE.js?version=41#channel=f2fba9ebc8&origin=http%3A%2F%2Flocalhost"
+    ],
+    "ajaxRequests": [
+      "http://localhost/admin-ajax.php?action=get_profile_image",
+      "http://localhost/admin-ajax.php"
+    ],
+    "htmlCount": [
+      "http://localhost/ (276.37 kB)",
+      "http://tpc.googlesyndication.com/safeframe/1-0-1/html/container.html (3.76 kB)",
+      "http://localhost/admin-ajax.php?action=get_profile_image (NaN kB)",
+      "http://static.ak.facebook.com/connect/xd_arbiter/7r8gQb8MIqE.js?version=41#channel=f2fba9ebc8&origin=http%3A%2F%2Flocalhost (26.81 kB)",
+      "https://www.facebook.com/connect/ping?client_id=156550261045391&domain=localhost&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df457a5334%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff2fba9ebc8%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey (0.58 kB)",
+      "https://s-static.ak.facebook.com/connect/xd_arbiter/7r8gQb8MIqE.js?version=41#channel=f2fba9ebc8&origin=http%3A%2F%2Flocalhost (26.84 kB)",
+      "http://localhost/admin-ajax.php (NaN kB)"
+    ],
+    "cssCount": [
+      "http://localhost/css/wired_fonts.css (0.89 kB)",
+      "http://localhost/css/livefyre.css (4.59 kB)",
+      "http://localhost/css/override.css (2.42 kB)",
+      "http://localhost/css/wired_site-style.css (0.17 kB)",
+      "http://localhost/css/assets-style.css (6.00 kB)",
+      "http://localhost/css/jquery-ui-1.10.3.custom.css (21.23 kB)",
+      "http://localhost/css/wordpress-social-login.css (0.22 kB)",
+      "http://localhost/css/inhstyle.css (0.26 kB)",
+      "http://localhost/css/stylesf.css (52.93 kB)",
+      "http://localhost/css/cn_banner.css?T=61 (0.72 kB)",
+      "http://localhost/css/wired-video-style.css?T=5 (17.24 kB)",
+      "http://localhost/css/style.css (292.82 kB)",
+      "http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700 (0.77 kB)"
+    ],
+    "jsCount": [
+      "http://localhost/js/jquery-migrate-1.2.1.min.js (7.03 kB)",
+      "http://localhost/js/connect.js (1.25 kB)",
+      "http://localhost/js/cn_banner.js?T=61 (4.57 kB)",
+      "http://localhost/js/jquery-1.10.2.min.js (90.92 kB)",
+      "http://localhost/js/wired-video-cnlive.js (23.23 kB)",
+      "http://localhost/js/modernizr.min.js (7.59 kB)",
+      "http://localhost/js/bootstrap.min.js (17.66 kB)",
+      "http://localhost/js/jquery.merge.min.js (13.18 kB)",
+      "http://localhost/js/jquery.cookie.js (2.99 kB)",
+      "http://localhost/js/wired.js?T=61 (6.55 kB)",
+      "http://localhost/js/wired.ready.js?T=61 (2.76 kB)",
+      "http://localhost/js/jquery.validate.min.js (20.57 kB)",
+      "http://localhost/js/registration.js (11.05 kB)",
+      "http://localhost/js/script.js (1.07 kB)",
+      "http://localhost/js/jquery-ui-1.10.3.custom.min.js (53.99 kB)",
+      "http://localhost/js/webtrekk_media_flash.js (7.22 kB)",
+      "http://localhost/js/webtrekker.js (3.68 kB)",
+      "http://localhost/js/helper-jquery.merge.min.js (91.75 kB)",
+      "http://localhost/js/jquery.tools.min.js (5.85 kB)",
+      "http://localhost/js/webtrekk_v3_JS.js (44.01 kB)",
+      "http://zor.livefyre.com/wjs/v1.0/javascripts/CommentCount.js (8.98 kB)",
+      "http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js (48.84 kB)",
+      "http://admin.brightcove.com/js/APIModules_all.js (74.59 kB)",
+      "http://admin.brightcove.com/js/BrightcoveExperiences.js (32.37 kB)",
+      "http://secure-uk.imrworldwide.com/v53.js (12.47 kB)",
+      "http://platform.twitter.com/widgets.js (66.13 kB)",
+      "https://www.google.com/jsapi (6.39 kB)",
+      "http://connect.facebook.net/it_IT/all.js (47.44 kB)",
+      "http://www.googletagservices.com/tag/js/gpt.js (13.31 kB)",
+      "http://www.google-analytics.com/ga.js (39.98 kB)",
+      "http://a.visualrevenue.com/vrs.js (11.40 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=8466281678993255 (0.04 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2? (0.02 kB)",
+      "http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn (0.01 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2? (0.02 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2? (0.02 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2? (0.02 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2? (0.02 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=6;sz=1x1;ord=2? (0.73 kB)",
+      "http://pagead2.googlesyndication.com/pagead/js/lidar.js (53.70 kB)",
+      "http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?394798 (0.00 kB)",
+      "http://static.chartbeat.com/js/chartbeat.js (20.03 kB)"
+    ],
+    "imageCount": [
+      "http://localhost/img/default-avatar.jpg (2.97 kB)",
+      "http://localhost/img/1386847245_twitter-153x63.jpg (2.98 kB)",
+      "http://localhost/img/bufale_1-153x63.jpg (21.60 kB)",
+      "http://localhost/img/almanacco_wired-153x63.jpg (24.25 kB)",
+      "http://localhost/img/stampa-3D-153x63.jpg (5.49 kB)",
+      "http://localhost/img/Topic_gattino-153x63.jpg (5.58 kB)",
+      "http://localhost/img/staminali-153x63.jpg (17.91 kB)",
+      "http://localhost/img/apple-153x63.jpg (13.61 kB)",
+      "http://localhost/img/1419183430_astrologi-2014-960x394.jpg (131.95 kB)",
+      "http://localhost/img/antibufala.png?T=61 (6.84 kB)",
+      "http://localhost/img/1418057937_24-960x394.jpg (358.72 kB)",
+      "http://localhost/img/1417789651_dji-phantom-2-vision-960x394.jpg (70.83 kB)",
+      "http://localhost/img/1419346932_medium_110202-174358_mi260111cro_0030-960x394.jpg (95.03 kB)",
+      "http://localhost/img/fail.png?T=61 (10.69 kB)",
+      "http://localhost/img/1419348591_medium_110331-103148_to280508var_0002-960x394.jpg (44.01 kB)",
+      "http://localhost/img/1419348591_medium_110331-103148_to280508var_0002-98x98.jpg (2.74 kB)",
+      "http://localhost/img/1419349517_medium_140926-232234_To26914Ap_715-98x98.jpg (9.70 kB)",
+      "http://localhost/img/1419356723_Ghostbusters2NewYears-98x98.jpg (27.01 kB)",
+      "http://localhost/img/1419183430_astrologi-2014-98x98.jpg (7.34 kB)",
+      "http://localhost/img/1417885923_the-jackal-98x98.jpg (6.79 kB)",
+      "http://localhost/img/1419346741_The-Americans-98x98.jpg (11.73 kB)",
+      "http://localhost/img/1418057937_24-98x98.jpg (13.87 kB)",
+      "http://localhost/img/1418742062_5-app-piu-strane-98x98.jpg (11.71 kB)",
+      "http://localhost/img/1413543145_ebay-ovo-98x98.jpg (5.29 kB)",
+      "http://localhost/img/1411491095_aaa-98x98.jpg (4.17 kB)",
+      "http://localhost/img/1411122078_file8181246908259-98x98.jpg (5.91 kB)",
+      "http://localhost/img/1417789651_dji-phantom-2-vision-98x98.jpg (5.54 kB)",
+      "http://localhost/img/1419551148_Grecia-98x98.jpg (6.06 kB)",
+      "http://localhost/img/1419347851_medium_110708-113531_to070909est_0054-98x98.jpg (2.67 kB)",
+      "http://localhost/img/1409497590_Come-proteggere-i-coralli-in-crescita-dai-predatori-98x98.png (22.77 kB)",
+      "http://localhost/img/1409496152_Un-video-sulla-geometria-delle-amebe-98x98.jpg (6.89 kB)",
+      "http://localhost/img/1419347250_medium_140815-184306_to150814ap_00241-98x98.jpg (8.96 kB)",
+      "http://localhost/img/1419346932_medium_110202-174358_mi260111cro_0030-98x98.jpg (3.47 kB)",
+      "http://localhost/img/1419346457_medium_141210-092116_T101214PA_21-98x98.jpg (12.17 kB)",
+      "http://localhost/img/1391788646_smetto-98x98.jpg (6.50 kB)",
+      "http://localhost/img/1419497458_natale-98x98.jpg (4.54 kB)",
+      "http://localhost/img/1419344828_460534718-98x98.jpg (12.90 kB)",
+      "http://localhost/img/1399499435_spazio-98x98.jpg (3.10 kB)",
+      "http://localhost/img/1418769976_EveryRide-app-98x98.jpg (11.94 kB)",
+      "http://localhost/img/1409497953_V1MERC-raggi-X-98x98.jpg (5.49 kB)",
+      "http://localhost/img/1409495636_aaa-98x98.jpg (2.26 kB)",
+      "http://localhost/img/1419079958_IMG_2617-98x98.jpg (1.91 kB)",
+      "http://localhost/img/1418928639_jvc-everio-98x98.jpg (8.57 kB)",
+      "http://localhost/img/1419422389_IMG_8274-98x98.jpg (1.56 kB)",
+      "http://localhost/img/1419416477_Schermata-2014-12-24-alle-11.20.05-98x98.png (8.00 kB)",
+      "http://localhost/img/1416400927_regali-di-natale-topic-98x98.jpg (14.24 kB)",
+      "http://localhost/img/1388391840_5450185127_75a2b76a16_b-98x98.jpg (18.38 kB)",
+      "http://localhost/img/1419417232_KyloRen-98x98.jpg (18.15 kB)",
+      "http://localhost/img/1419416130_foodini-1-98x98.jpg (5.47 kB)",
+      "http://localhost/img/1419416041_blood-98x98.jpg (29.87 kB)",
+      "http://localhost/img/1419414993_o-JAMES-FRANCO-facebook-98x98.jpg (37.55 kB)",
+      "http://localhost/img/1412690669_amazon-98x98.jpg (4.50 kB)",
+      "http://localhost/img/1419414354_456589634-98x98.jpg (13.42 kB)",
+      "http://localhost/img/1419413969_4g-piste-da-sci-98x98.jpg (9.62 kB)",
+      "http://localhost/img/1418891372_startup2-98x98.jpg (19.27 kB)",
+      "http://localhost/img/1396861673_Apple-MacBook-Air-Retina-98x98.jpg (3.35 kB)",
+      "http://localhost/img/1419410439_452224126-98x98.jpg (16.51 kB)",
+      "http://localhost/img/1419353810_honor-3c-cover-98x98.jpg (3.14 kB)",
+      "http://localhost/img/1419350921_ebola2-98x98.jpg (3.72 kB)",
+      "http://localhost/img/1418920828_dreopen-98x98.jpg (31.17 kB)",
+      "http://localhost/img/1417868748_-_0000_Copenhagen_wheel_2013-2-98x98.jpg (24.96 kB)",
+      "http://localhost/img/1418037261_-_0001_s-la-nave-di-teseo-98x98.jpg (32.20 kB)",
+      "http://localhost/img/1419356723_Ghostbusters2NewYears-600x246.jpg (97.61 kB)",
+      "http://localhost/img/1417885923_the-jackal-600x246.jpg (50.24 kB)",
+      "http://localhost/img/bomba.png?T=61 (5.35 kB)",
+      "http://localhost/img/1419349517_medium_140926-232234_To26914Ap_715-600x246.jpg (30.35 kB)",
+      "http://localhost/img/epicwin.png?T=61 (9.08 kB)",
+      "http://localhost/img/1418742062_5-app-piu-strane-450x246.jpg (84.63 kB)",
+      "http://localhost/img/1419346741_The-Americans-600x246.jpg (41.84 kB)",
+      "http://localhost/img/1419347250_medium_140815-184306_to150814ap_00241-600x246.jpg (14.71 kB)",
+      "http://localhost/img/1418928639_jvc-everio-600x246.jpg (70.34 kB)",
+      "http://localhost/img/test.png?T=61 (6.76 kB)",
+      "http://localhost/img/1419416041_blood-600x246.jpg (168.75 kB)",
+      "http://localhost/img/1388391840_5450185127_75a2b76a16_b-600x246.jpg (45.55 kB)",
+      "http://localhost/img/1419417232_KyloRen-600x246.jpg (37.79 kB)",
+      "http://localhost/img/bomba.png (5.35 kB)",
+      "http://localhost/img/1399499435_spazio-600x246.jpg (33.04 kB)",
+      "http://localhost/img/1418920828_dreopen-278x114.jpg (50.45 kB)",
+      "http://localhost/img/1418920828_dreopen-600x246.jpg (123.36 kB)",
+      "http://localhost/img/1391788646_smetto-278x114.jpg (15.84 kB)",
+      "http://localhost/img/1419247957_animalisti-278x114.jpg (41.89 kB)",
+      "http://localhost/img/1419266978_image3-extralarge_1391726862762-278x114.jpg (22.08 kB)",
+      "http://localhost/img/1419347851_medium_110708-113531_to070909est_0054-600x246.jpg (17.96 kB)",
+      "http://localhost/img/1406279676_lemuri-600x246.jpg (47.55 kB)",
+      "http://localhost/img/1419344828_460534718-600x246.jpg (121.13 kB)",
+      "http://localhost/img/1405517466_aaa-600x246.jpg (26.82 kB)",
+      "http://localhost/img/1418747004_30-600x246.png (176.78 kB)",
+      "http://localhost/img/1418123482_alberto_ferrari-600x246.jpg (23.83 kB)",
+      "http://localhost/img/feed.jpg (9.26 kB)",
+      "http://localhost/img/1411122078_file8181246908259-278x114.jpg (12.09 kB)",
+      "http://localhost/img/mdellamico.jpg (2.23 kB)",
+      "http://localhost/img/1413203198_twitter2-278x114.jpg (12.90 kB)",
+      "http://localhost/img/redazione.jpg?T=1 (1.04 kB)",
+      "http://localhost/img/1394472323_141652644-278x114.jpg (16.28 kB)",
+      "http://localhost/img/glippi.jpg (1.36 kB)",
+      "http://localhost/img/default.jpg (1.82 kB)",
+      "http://localhost/img/1416414110_Samantha_Cristoforetti-98x98.jpg (13.76 kB)",
+      "http://localhost/img/1419349883_dali-278x114.png (63.39 kB)",
+      "http://localhost/img/fabiopar.jpg (1.52 kB)",
+      "http://localhost/img/1419422389_IMG_8274-278x114.jpg (3.58 kB)",
+      "http://localhost/img/1402309497_tripadvisor-cover-278x114.jpg (12.11 kB)",
+      "http://localhost/img/scosimi.jpg?T=2 (2.20 kB)",
+      "http://localhost/img/1419250182_in-diretta-claudio-cecchetto-700x325-278x114.png (22.47 kB)",
+      "http://localhost/img/mboroni.jpg (1.87 kB)",
+      "http://localhost/img/1417513069_Bernardo_Hernandez-98x98.jpg (6.73 kB)",
+      "http://localhost/img/1419238793_soldip2-278x114.jpg (23.84 kB)",
+      "http://localhost/img/mrusso.jpg (1.83 kB)",
+      "http://localhost/img/vniri.jpg (2.04 kB)",
+      "http://localhost/img/conde-nast.png (1.09 kB)",
+      "http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg (14.05 kB)",
+      "http://localhost/img/ipad.png (6.44 kB)",
+      "http://localhost/img/amazon-kindle.png (8.30 kB)",
+      "http://localhost/img/app-store.png (6.40 kB)",
+      "http://localhost/img/google-play.png (5.19 kB)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3550140415001_NASA---The-Best-Observed-X-class-Flare-vs-300x166.jpg (7.61 kB)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562636402001_Bone-Remodeling-in-Microgravity-vs-300x166.jpg (12.90 kB)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3957893019001_video-still-for-video-3957979417001-300x166.jpg (14.22 kB)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562142272001_video-still-for-video-3562023628001-300x166.jpg (20.70 kB)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3520133744001_vs-535fbe04e4b0f2aceaff7579-1592194021001-300x166.jpg (15.75 kB)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3950202866001_COME-SCEGLIERE-CHE-BICI-COMPRARE-vs-300x166.jpg (15.46 kB)",
+      "http://t1.visualrevenue.com/?idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&seen_url=http%3A%2F%2Flocalhost%2F&t=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&c=14212762829570BYqyAONagIxGVgtXMzvJ2uSGcrHKdFe&r=1421276282960&ypos=-1&debug=loadTime.3&zone=&content_type=utf-8&v=18 (0.05 kB)",
+      "http://localhost/img/wired-logo-live.png (2.46 kB)",
+      "http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKCNj46klQEQARgBMggIhnfFJuoHUA (3.60 kB)",
+      "http://admin.brightcove.com/viewer/upgrade_flash_player2.gif (13.87 kB)",
+      "http://secure-uk.imrworldwide.com/cgi-bin/m?rnd=1421276288377&ci=condenast&cg=italy&cc=0&ts=v53.js&sr=1280x800&cd=32&je=n&tz=1&si=http%3A//localhost/&rp= (0.04 kB)",
+      "http://condenastitalia01.wt-eu02.net/641856089134434/wt?p=323,http%3A%2F%2Flocalhost%2F,1,1280x800,32,1,1421276289169,0,1280x800,0&tz=1&la=en&cg1=Aggregato%20Cond%C3%A9%20Nast%20-%20WEB&cg2=Wired.it&cp1=no-refresh&np=&eor=1 (0.04 kB)",
+      "http://localhost/img/wired-arrow-slider.png (1.73 kB)",
+      "http://ping.chartbeat.net/ping?h=wired.it&p=%2F&u=BKhUJDBcX3Gj2HvGp&d=localhost&g=56600&n=1&f=00001&c=0&x=0&m=0&y=8056&o=2560&w=2048&j=45&R=1&W=0&I=0&E=0&e=0&r=&b=10158&t=BvIzMNB7b5zjD5I5OzCE91iTCqPIM2&V=43&i=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&tz=-60&sn=1&_ (0.04 kB)"
+    ],
+    "webfontCount": [
+      "http://localhost/fonts/icomoon.ttf (15.69 kB)",
+      "http://localhost/fonts/223F71_2_0.woff (23.45 kB)",
+      "http://localhost/fonts/223F71_0_0.woff (22.24 kB)"
+    ],
+    "cacheHits": [
+      "http://platform.twitter.com/widgets.js",
+      "http://www.googletagservices.com/tag/js/gpt.js",
+      "http://tpc.googlesyndication.com/safeframe/1-0-1/html/container.html",
+      "http://www.google-analytics.com/ga.js",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3550140415001_NASA---The-Best-Observed-X-class-Flare-vs-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562636402001_Bone-Remodeling-in-Microgravity-vs-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3957893019001_video-still-for-video-3957979417001-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562142272001_video-still-for-video-3562023628001-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3520133744001_vs-535fbe04e4b0f2aceaff7579-1592194021001-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3950202866001_COME-SCEGLIERE-CHE-BICI-COMPRARE-vs-300x166.jpg",
+      "http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn",
+      "http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKCNj46klQEQARgBMggIhnfFJuoHUA",
+      "http://pagead2.googlesyndication.com/pagead/js/lidar.js",
+      "http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?394798",
+      "http://static.chartbeat.com/js/chartbeat.js"
+    ],
+    "cachingNotSpecified": [
+      "http://localhost/css/wired_fonts.css",
+      "http://localhost/css/livefyre.css",
+      "http://localhost/css/override.css",
+      "http://localhost/css/wired_site-style.css",
+      "http://localhost/css/assets-style.css",
+      "http://localhost/js/jquery-migrate-1.2.1.min.js",
+      "http://localhost/css/jquery-ui-1.10.3.custom.css",
+      "http://localhost/css/wordpress-social-login.css",
+      "http://localhost/js/connect.js",
+      "http://localhost/css/inhstyle.css",
+      "http://localhost/css/stylesf.css",
+      "http://localhost/js/cn_banner.js?T=61",
+      "http://localhost/css/cn_banner.css?T=61",
+      "http://localhost/js/jquery-1.10.2.min.js",
+      "http://localhost/css/wired-video-style.css?T=5",
+      "http://localhost/js/wired-video-cnlive.js",
+      "http://localhost/js/modernizr.min.js",
+      "http://localhost/css/style.css",
+      "http://localhost/js/bootstrap.min.js",
+      "http://localhost/js/jquery.merge.min.js",
+      "http://localhost/js/jquery.cookie.js",
+      "http://localhost/js/wired.js?T=61",
+      "http://localhost/js/wired.ready.js?T=61",
+      "http://localhost/js/jquery.validate.min.js",
+      "http://localhost/js/registration.js",
+      "http://localhost/js/script.js",
+      "http://localhost/js/jquery-ui-1.10.3.custom.min.js",
+      "http://localhost/js/webtrekk_media_flash.js",
+      "http://localhost/js/webtrekker.js",
+      "http://localhost/js/helper-jquery.merge.min.js",
+      "http://localhost/js/jquery.tools.min.js",
+      "http://localhost/js/webtrekk_v3_JS.js",
+      "http://secure-uk.imrworldwide.com/v53.js",
+      "http://localhost/img/default-avatar.jpg",
+      "http://localhost/img/1386847245_twitter-153x63.jpg",
+      "http://localhost/img/bufale_1-153x63.jpg",
+      "http://localhost/img/almanacco_wired-153x63.jpg",
+      "http://localhost/img/stampa-3D-153x63.jpg",
+      "http://localhost/img/Topic_gattino-153x63.jpg",
+      "http://localhost/img/staminali-153x63.jpg",
+      "http://localhost/img/apple-153x63.jpg",
+      "http://localhost/img/1419183430_astrologi-2014-960x394.jpg",
+      "http://localhost/img/antibufala.png?T=61",
+      "http://localhost/img/1418057937_24-960x394.jpg",
+      "http://localhost/img/1417789651_dji-phantom-2-vision-960x394.jpg",
+      "http://localhost/img/1419346932_medium_110202-174358_mi260111cro_0030-960x394.jpg",
+      "http://localhost/img/fail.png?T=61",
+      "http://localhost/img/1419348591_medium_110331-103148_to280508var_0002-960x394.jpg",
+      "http://localhost/img/1419348591_medium_110331-103148_to280508var_0002-98x98.jpg",
+      "http://localhost/img/1419349517_medium_140926-232234_To26914Ap_715-98x98.jpg",
+      "http://localhost/img/1419356723_Ghostbusters2NewYears-98x98.jpg",
+      "http://localhost/img/1419183430_astrologi-2014-98x98.jpg",
+      "http://localhost/img/1417885923_the-jackal-98x98.jpg",
+      "http://localhost/img/1419346741_The-Americans-98x98.jpg",
+      "http://localhost/img/1418057937_24-98x98.jpg",
+      "http://localhost/img/1418742062_5-app-piu-strane-98x98.jpg",
+      "http://localhost/img/1413543145_ebay-ovo-98x98.jpg",
+      "http://localhost/img/1411491095_aaa-98x98.jpg",
+      "http://localhost/img/1411122078_file8181246908259-98x98.jpg",
+      "http://localhost/img/1417789651_dji-phantom-2-vision-98x98.jpg",
+      "http://localhost/img/1419551148_Grecia-98x98.jpg",
+      "http://localhost/img/1419347851_medium_110708-113531_to070909est_0054-98x98.jpg",
+      "http://localhost/img/1409497590_Come-proteggere-i-coralli-in-crescita-dai-predatori-98x98.png",
+      "http://localhost/img/1409496152_Un-video-sulla-geometria-delle-amebe-98x98.jpg",
+      "http://localhost/img/1419347250_medium_140815-184306_to150814ap_00241-98x98.jpg",
+      "http://localhost/img/1419346932_medium_110202-174358_mi260111cro_0030-98x98.jpg",
+      "http://localhost/img/1419346457_medium_141210-092116_T101214PA_21-98x98.jpg",
+      "http://localhost/img/1391788646_smetto-98x98.jpg",
+      "http://localhost/img/1419497458_natale-98x98.jpg",
+      "http://localhost/img/1419344828_460534718-98x98.jpg",
+      "http://localhost/img/1399499435_spazio-98x98.jpg",
+      "http://localhost/img/1418769976_EveryRide-app-98x98.jpg",
+      "http://localhost/img/1409497953_V1MERC-raggi-X-98x98.jpg",
+      "http://localhost/img/1409495636_aaa-98x98.jpg",
+      "http://localhost/img/1419079958_IMG_2617-98x98.jpg",
+      "http://localhost/img/1418928639_jvc-everio-98x98.jpg",
+      "http://localhost/img/1419422389_IMG_8274-98x98.jpg",
+      "http://localhost/img/1419416477_Schermata-2014-12-24-alle-11.20.05-98x98.png",
+      "http://localhost/img/1416400927_regali-di-natale-topic-98x98.jpg",
+      "http://localhost/img/1388391840_5450185127_75a2b76a16_b-98x98.jpg",
+      "http://localhost/img/1419417232_KyloRen-98x98.jpg",
+      "http://localhost/img/1419416130_foodini-1-98x98.jpg",
+      "http://localhost/img/1419416041_blood-98x98.jpg",
+      "http://localhost/img/1419414993_o-JAMES-FRANCO-facebook-98x98.jpg",
+      "http://localhost/img/1412690669_amazon-98x98.jpg",
+      "http://localhost/img/1419414354_456589634-98x98.jpg",
+      "http://localhost/img/1419413969_4g-piste-da-sci-98x98.jpg",
+      "http://localhost/img/1418891372_startup2-98x98.jpg",
+      "http://localhost/img/1396861673_Apple-MacBook-Air-Retina-98x98.jpg",
+      "http://localhost/img/1419410439_452224126-98x98.jpg",
+      "http://localhost/img/1419353810_honor-3c-cover-98x98.jpg",
+      "http://localhost/img/1419350921_ebola2-98x98.jpg",
+      "http://localhost/img/1418920828_dreopen-98x98.jpg",
+      "http://localhost/img/1417868748_-_0000_Copenhagen_wheel_2013-2-98x98.jpg",
+      "http://localhost/img/1418037261_-_0001_s-la-nave-di-teseo-98x98.jpg",
+      "http://localhost/img/1419356723_Ghostbusters2NewYears-600x246.jpg",
+      "http://localhost/img/1417885923_the-jackal-600x246.jpg",
+      "http://localhost/img/bomba.png?T=61",
+      "http://localhost/img/1419349517_medium_140926-232234_To26914Ap_715-600x246.jpg",
+      "http://localhost/img/epicwin.png?T=61",
+      "http://localhost/img/1418742062_5-app-piu-strane-450x246.jpg",
+      "http://localhost/img/1419346741_The-Americans-600x246.jpg",
+      "http://localhost/img/1419347250_medium_140815-184306_to150814ap_00241-600x246.jpg",
+      "http://localhost/img/1418928639_jvc-everio-600x246.jpg",
+      "http://localhost/img/test.png?T=61",
+      "http://localhost/img/1419416041_blood-600x246.jpg",
+      "http://localhost/img/1388391840_5450185127_75a2b76a16_b-600x246.jpg",
+      "http://localhost/img/1419417232_KyloRen-600x246.jpg",
+      "http://localhost/img/bomba.png",
+      "http://localhost/img/1399499435_spazio-600x246.jpg",
+      "http://localhost/img/1418920828_dreopen-278x114.jpg",
+      "http://localhost/img/1418920828_dreopen-600x246.jpg",
+      "http://localhost/img/1391788646_smetto-278x114.jpg",
+      "http://localhost/img/1419247957_animalisti-278x114.jpg",
+      "http://localhost/img/1419266978_image3-extralarge_1391726862762-278x114.jpg",
+      "http://localhost/img/1419347851_medium_110708-113531_to070909est_0054-600x246.jpg",
+      "http://localhost/img/1406279676_lemuri-600x246.jpg",
+      "http://localhost/img/1419344828_460534718-600x246.jpg",
+      "http://localhost/img/1405517466_aaa-600x246.jpg",
+      "http://localhost/img/1418747004_30-600x246.png",
+      "http://localhost/img/1418123482_alberto_ferrari-600x246.jpg",
+      "http://localhost/img/feed.jpg",
+      "http://localhost/img/1411122078_file8181246908259-278x114.jpg",
+      "http://localhost/img/mdellamico.jpg",
+      "http://localhost/img/1413203198_twitter2-278x114.jpg",
+      "http://localhost/img/redazione.jpg?T=1",
+      "http://localhost/img/1394472323_141652644-278x114.jpg",
+      "http://localhost/img/glippi.jpg",
+      "http://localhost/img/default.jpg",
+      "http://localhost/img/1416414110_Samantha_Cristoforetti-98x98.jpg",
+      "http://localhost/img/1419349883_dali-278x114.png",
+      "http://localhost/img/fabiopar.jpg",
+      "http://localhost/img/1419422389_IMG_8274-278x114.jpg",
+      "http://localhost/img/1402309497_tripadvisor-cover-278x114.jpg",
+      "http://localhost/img/scosimi.jpg?T=2",
+      "http://localhost/img/1419250182_in-diretta-claudio-cecchetto-700x325-278x114.png",
+      "http://localhost/img/mboroni.jpg",
+      "http://localhost/img/1417513069_Bernardo_Hernandez-98x98.jpg",
+      "http://localhost/img/1419238793_soldip2-278x114.jpg",
+      "http://localhost/img/mrusso.jpg",
+      "http://localhost/img/vniri.jpg",
+      "http://localhost/img/conde-nast.png",
+      "http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg",
+      "http://localhost/img/ipad.png",
+      "http://localhost/img/amazon-kindle.png",
+      "http://localhost/img/app-store.png",
+      "http://localhost/img/google-play.png",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3550140415001_NASA---The-Best-Observed-X-class-Flare-vs-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562636402001_Bone-Remodeling-in-Microgravity-vs-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3957893019001_video-still-for-video-3957979417001-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562142272001_video-still-for-video-3562023628001-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3520133744001_vs-535fbe04e4b0f2aceaff7579-1592194021001-300x166.jpg",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3950202866001_COME-SCEGLIERE-CHE-BICI-COMPRARE-vs-300x166.jpg",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=8466281678993255",
+      "http://t1.visualrevenue.com/?idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&seen_url=http%3A%2F%2Flocalhost%2F&t=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&c=14212762829570BYqyAONagIxGVgtXMzvJ2uSGcrHKdFe&r=1421276282960&ypos=-1&debug=loadTime.3&zone=&content_type=utf-8&v=18",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2?",
+      "http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2?",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2?",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2?",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2?",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=6;sz=1x1;ord=2?",
+      "http://localhost/img/wired-logo-live.png",
+      "http://secure-uk.imrworldwide.com/cgi-bin/m?rnd=1421276288377&ci=condenast&cg=italy&cc=0&ts=v53.js&sr=1280x800&cd=32&je=n&tz=1&si=http%3A//localhost/&rp=",
+      "http://condenastitalia01.wt-eu02.net/641856089134434/wt?p=323,http%3A%2F%2Flocalhost%2F,1,1280x800,32,1,1421276289169,0,1280x800,0&tz=1&la=en&cg1=Aggregato%20Cond%C3%A9%20Nast%20-%20WEB&cg2=Wired.it&cp1=no-refresh&np=&eor=1",
+      "http://localhost/img/wired-arrow-slider.png",
+      "http://ping.chartbeat.net/ping?h=wired.it&p=%2F&u=BKhUJDBcX3Gj2HvGp&d=localhost&g=56600&n=1&f=00001&c=0&x=0&m=0&y=8056&o=2560&w=2048&j=45&R=1&W=0&I=0&E=0&e=0&r=&b=10158&t=BvIzMNB7b5zjD5I5OzCE91iTCqPIM2&V=43&i=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&tz=-60&sn=1&_"
+    ],
+    "cachingTooShort": [
+      "http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700 cached for 86400 s",
+      "http://zor.livefyre.com/wjs/v1.0/javascripts/CommentCount.js cached for 348 s",
+      "http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js cached for 585 s",
+      "http://admin.brightcove.com/js/APIModules_all.js cached for 1200 s",
+      "http://admin.brightcove.com/js/BrightcoveExperiences.js cached for 3600 s",
+      "http://platform.twitter.com/widgets.js cached for 1800 s",
+      "https://www.google.com/jsapi cached for 3600 s",
+      "http://connect.facebook.net/it_IT/all.js cached for 1200 s",
+      "http://www.googletagservices.com/tag/js/gpt.js cached for 3600 s",
+      "http://www.google-analytics.com/ga.js cached for 7200 s",
+      "http://a.visualrevenue.com/vrs.js cached for 3600 s",
+      "http://admin.brightcove.com/viewer/upgrade_flash_player2.gif cached for 1200 s",
+      "http://pagead2.googlesyndication.com/pagead/js/lidar.js cached for 3600 s",
+      "http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?394798 cached for 3600 s",
+      "http://static.chartbeat.com/js/chartbeat.js cached for 7200 s"
+    ],
+    "oldCachingHeaders": [
+      "http://localhost/ - Expires: Wed, 14 Jan 2015 22:58:02 GMT",
+      "http://localhost/css/wired_fonts.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/livefyre.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/override.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/wired_site-style.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/assets-style.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/jquery-migrate-1.2.1.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/jquery-ui-1.10.3.custom.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/wordpress-social-login.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/connect.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/inhstyle.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/stylesf.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/cn_banner.js?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/cn_banner.css?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/jquery-1.10.2.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/wired-video-style.css?T=5 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/wired-video-cnlive.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/modernizr.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/css/style.css - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/bootstrap.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/jquery.merge.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/jquery.cookie.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/wired.js?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/wired.ready.js?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/jquery.validate.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/registration.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/script.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/jquery-ui-1.10.3.custom.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/webtrekk_media_flash.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/webtrekker.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/helper-jquery.merge.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/jquery.tools.min.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/js/webtrekk_v3_JS.js - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700 - Expires: Wed, 14 Jan 2015 22:58:02 GMT",
+      "https://www.google.com/jsapi - Expires: Wed, 14 Jan 2015 22:58:02 GMT",
+      "http://connect.facebook.net/it_IT/all.js - Expires: Wed, 14 Jan 2015 23:18:02 GMT",
+      "http://www.googletagservices.com/tag/js/gpt.js - Expires: Wed, 14 Jan 2015 23:38:23 GMT",
+      "http://localhost/img/default-avatar.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1386847245_twitter-153x63.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/bufale_1-153x63.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/almanacco_wired-153x63.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/stampa-3D-153x63.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/Topic_gattino-153x63.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/staminali-153x63.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/apple-153x63.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419183430_astrologi-2014-960x394.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/antibufala.png?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418057937_24-960x394.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1417789651_dji-phantom-2-vision-960x394.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419346932_medium_110202-174358_mi260111cro_0030-960x394.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/fail.png?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419348591_medium_110331-103148_to280508var_0002-960x394.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419348591_medium_110331-103148_to280508var_0002-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419349517_medium_140926-232234_To26914Ap_715-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419356723_Ghostbusters2NewYears-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419183430_astrologi-2014-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1417885923_the-jackal-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419346741_The-Americans-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418057937_24-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418742062_5-app-piu-strane-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1413543145_ebay-ovo-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1411491095_aaa-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1411122078_file8181246908259-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1417789651_dji-phantom-2-vision-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419551148_Grecia-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419347851_medium_110708-113531_to070909est_0054-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1409497590_Come-proteggere-i-coralli-in-crescita-dai-predatori-98x98.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1409496152_Un-video-sulla-geometria-delle-amebe-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419347250_medium_140815-184306_to150814ap_00241-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419346932_medium_110202-174358_mi260111cro_0030-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419346457_medium_141210-092116_T101214PA_21-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1391788646_smetto-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419497458_natale-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419344828_460534718-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1399499435_spazio-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418769976_EveryRide-app-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1409497953_V1MERC-raggi-X-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1409495636_aaa-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419079958_IMG_2617-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418928639_jvc-everio-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419422389_IMG_8274-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419416477_Schermata-2014-12-24-alle-11.20.05-98x98.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1416400927_regali-di-natale-topic-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1388391840_5450185127_75a2b76a16_b-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419417232_KyloRen-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419416130_foodini-1-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419416041_blood-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419414993_o-JAMES-FRANCO-facebook-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1412690669_amazon-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419414354_456589634-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419413969_4g-piste-da-sci-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418891372_startup2-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1396861673_Apple-MacBook-Air-Retina-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419410439_452224126-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419353810_honor-3c-cover-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419350921_ebola2-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418920828_dreopen-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1417868748_-_0000_Copenhagen_wheel_2013-2-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418037261_-_0001_s-la-nave-di-teseo-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419356723_Ghostbusters2NewYears-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1417885923_the-jackal-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/bomba.png?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419349517_medium_140926-232234_To26914Ap_715-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/epicwin.png?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418742062_5-app-piu-strane-450x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419346741_The-Americans-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419347250_medium_140815-184306_to150814ap_00241-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418928639_jvc-everio-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/test.png?T=61 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419416041_blood-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1388391840_5450185127_75a2b76a16_b-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419417232_KyloRen-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/bomba.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1399499435_spazio-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418920828_dreopen-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418920828_dreopen-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1391788646_smetto-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419247957_animalisti-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419266978_image3-extralarge_1391726862762-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419347851_medium_110708-113531_to070909est_0054-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1406279676_lemuri-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419344828_460534718-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1405517466_aaa-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418747004_30-600x246.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1418123482_alberto_ferrari-600x246.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/feed.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://tpc.googlesyndication.com/safeframe/1-0-1/html/container.html - Expires: Thu, 14 Jan 2016 15:15:24 GMT",
+      "http://localhost/img/1411122078_file8181246908259-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://www.google-analytics.com/ga.js - Expires: Thu, 15 Jan 2015 00:15:06 GMT",
+      "http://localhost/img/mdellamico.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1413203198_twitter2-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/redazione.jpg?T=1 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1394472323_141652644-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/glippi.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/default.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1416414110_Samantha_Cristoforetti-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419349883_dali-278x114.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/fabiopar.jpg - Expires: Thu, 14Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419422389_IMG_8274-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1402309497_tripadvisor-cover-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/scosimi.jpg?T=2 - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419250182_in-diretta-claudio-cecchetto-700x325-278x114.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/mboroni.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1417513069_Bernardo_Hernandez-98x98.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/1419238793_soldip2-278x114.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/mrusso.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/vniri.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/conde-nast.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://a.visualrevenue.com/vrs.js - Expires: Wed, 14 Jan 2015 23:58:02 GMT",
+      "http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/ipad.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/amazon-kindle.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/app-store.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://localhost/img/google-play.png - Expires: Thu, 14 Jan 2016 22:58:02 GMT",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=8466281678993255 - Pragma: no-cache",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=8466281678993255 - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://localhost/fonts/icomoon.ttf - Expires: Thu, 14 Jan 2016 22:58:03 GMT",
+      "http://t1.visualrevenue.com/?idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&seen_url=http%3A%2F%2Flocalhost%2F&t=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&c=14212762829570BYqyAONagIxGVgtXMzvJ2uSGcrHKdFe&r=1421276282960&ypos=-1&debug=loadTime.3&zone=&content_type=utf-8&v=18 - Expires: Wed, 19 Apr 2000 11:43:00 GMT",
+      "http://t1.visualrevenue.com/?idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&seen_url=http%3A%2F%2Flocalhost%2F&t=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&c=14212762829570BYqyAONagIxGVgtXMzvJ2uSGcrHKdFe&r=1421276282960&ypos=-1&debug=loadTime.3&zone=&content_type=utf-8&v=18 - Pragma: no-cache",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2? - Pragma: no-cache",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2? - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://localhost/fonts/223F71_2_0.woff - Expires: Thu, 14 Jan 2016 22:58:03 GMT",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2? - Pragma: no-cache",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2? - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2? - Pragma: no-cache",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2? - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2? - Pragma: no-cache",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2? - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2? - Pragma: no-cache",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2? - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=6;sz=1x1;ord=2? - Pragma: no-cache",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=6;sz=1x1;ord=2? - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://localhost/img/wired-logo-live.png - Expires: Thu, 14 Jan 2016 22:58:07 GMT",
+      "http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKCNj46klQEQARgBMggIhnfFJuoHUA - Expires: Tue, 20 Jan 2015 05:00:59 GMT",
+      "http://pagead2.googlesyndication.com/pagead/js/lidar.js - Expires: Wed, 14 Jan 2015 23:38:23 GMT",
+      "http://localhost/fonts/223F71_0_0.woff - Expires: Thu, 14 Jan 2016 22:58:08 GMT",
+      "http://secure-uk.imrworldwide.com/cgi-bin/m?rnd=1421276288377&ci=condenast&cg=italy&cc=0&ts=v53.js&sr=1280x800&cd=32&je=n&tz=1&si=http%3A//localhost/&rp= - Expires: Thu, 01 Dec 1994 16:00:00 GMT",
+      "http://secure-uk.imrworldwide.com/cgi-bin/m?rnd=1421276288377&ci=condenast&cg=italy&cc=0&ts=v53.js&sr=1280x800&cd=32&je=n&tz=1&si=http%3A//localhost/&rp= - Pragma: no-cache",
+      "http://condenastitalia01.wt-eu02.net/641856089134434/wt?p=323,http%3A%2F%2Flocalhost%2F,1,1280x800,32,1,1421276289169,0,1280x800,0&tz=1&la=en&cg1=Aggregato%20Cond%C3%A9%20Nast%20-%20WEB&cg2=Wired.it&cp1=no-refresh&np=&eor=1 - Expires: Mon, 26 Jul 1997 05:00:00 GMT",
+      "http://condenastitalia01.wt-eu02.net/641856089134434/wt?p=323,http%3A%2F%2Flocalhost%2F,1,1280x800,32,1,1421276289169,0,1280x800,0&tz=1&la=en&cg1=Aggregato%20Cond%C3%A9%20Nast%20-%20WEB&cg2=Wired.it&cp1=no-refresh&np=&eor=1 - Pragma: no-cache",
+      "http://localhost/admin-ajax.php?action=get_profile_image - Expires: Wed, 14 Jan 2015 22:58:10 GMT",
+      "http://localhost/img/wired-arrow-slider.png - Expires: Thu, 14 Jan 2016 22:58:10 GMT",
+      "http://static.ak.facebook.com/connect/xd_arbiter/7r8gQb8MIqE.js?version=41#channel=f2fba9ebc8&origin=http%3A%2F%2Flocalhost - Expires: Wed, 18 Nov 2015 15:28:43 GMT",
+      "https://www.facebook.com/connect/ping?client_id=156550261045391&domain=localhost&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df457a5334%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff2fba9ebc8%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey - Pragma: no-cache",
+      "https://www.facebook.com/connect/ping?client_id=156550261045391&domain=localhost&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F7r8gQb8MIqE.js%3Fversion%3D41%23cb%3Df457a5334%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff2fba9ebc8%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey - Expires: Sat, 01 Jan 2000 00:00:00 GMT",
+      "https://s-static.ak.facebook.com/connect/xd_arbiter/7r8gQb8MIqE.js?version=41#channel=f2fba9ebc8&origin=http%3A%2F%2Flocalhost - Expires: Wed, 18 Nov 2015 15:28:44 GMT",
+      "http://localhost/admin-ajax.php - Expires: Wed, 14 Jan 2015 22:58:11 GMT",
+      "http://ping.chartbeat.net/ping?h=wired.it&p=%2F&u=BKhUJDBcX3Gj2HvGp&d=localhost&g=56600&n=1&f=00001&c=0&x=0&m=0&y=8056&o=2560&w=2048&j=45&R=1&W=0&I=0&E=0&e=0&r=&b=10158&t=BvIzMNB7b5zjD5I5OzCE91iTCqPIM2&V=43&i=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&tz=-60&sn=1&_ - Expires: 0",
+      "http://ping.chartbeat.net/ping?h=wired.it&p=%2F&u=BKhUJDBcX3Gj2HvGp&d=localhost&g=56600&n=1&f=00001&c=0&x=0&m=0&y=8056&o=2560&w=2048&j=45&R=1&W=0&I=0&E=0&e=0&r=&b=10158&t=BvIzMNB7b5zjD5I5OzCE91iTCqPIM2&V=43&i=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&tz=-60&sn=1&_ - Pragma: no-cache"
+    ],
+    "domainsWithCookies": [
+      "ad.doubleclick.net: 3 cookie(s)",
+      "secure-uk.imrworldwide.com: 1 cookie(s)",
+      "condenastitalia01.wt-eu02.net: 2 cookie(s)"
+    ],
+    "commentsSize": [
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > div#next-index > #comment[3] (107 characters)",
+      "body > #comment[45] (126 characters)",
+      "body > #comment[51] (240 characters)",
+      "body > #comment[99] (236 characters)"
+    ],
+    "nodesWithInlineCSS": [
+      "body > div[9] (display:none;)",
+      "body > div[11] (position:absolute;width:100%; height:100%; left:0; top:0;)",
+      "body > div#wrapper > header#header > div.main.container > ul.nav.navbar-nav.navbar-right > li#profilo-login (display: list-item; )",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item (left: 0%; )",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item > a.start (color:#FF0000;position:absolute;top:0;left:35px;z-index:-1)",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item > a.start > img.-wired-video-preview (top:0;left:0;)",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item > span#_containervideo_post_154625 (display: inline-block; )",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item (left: 100%; )",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item (left: 200%; )",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item (left: 300%; )",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item (left: 400%; )",
+      "body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item (left: 500%; )",
+      "body > div#fb-root > div[0] (position: absolute; top: -10000px; height: 0px; width: 0px; )",
+      "body > div#fb-root > div[0] > div[0] > iframe#fb_xdm_frame_http (border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; )",
+      "body > div#fb-root > div[0] > div[0] > iframe#fb_xdm_frame_https (border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; )",
+      "body > div#fb-root > div[1] (position: absolute; top: -10000px; height: 0px; width: 0px; )",
+      "body > div#fb-root > div[1] > div[0] > iframe[0] (display: none; )"
+    ],
+    "imagesScaledDown": [
+      "http://localhost/img/default-avatar.jpg (256x256 -> 28x256)",
+      "http://localhost/img/antibufala.png?T=61 (159x128 -> 114x92)",
+      "http://localhost/img/fail.png?T=61 (224x128 -> 114x64)",
+      "http://localhost/img/1419356723_Ghostbusters2NewYears-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1417885923_the-jackal-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/bomba.png?T=61 (108x128 -> 14x18)",
+      "http://localhost/img/1419349517_medium_140926-232234_To26914Ap_715-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/epicwin.png?T=61 (126x128 -> 16x18)",
+      "http://localhost/img/1418742062_5-app-piu-strane-450x246.jpg (450x246 -> 278x150)",
+      "http://localhost/img/1419346741_The-Americans-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1419347250_medium_140815-184306_to150814ap_00241-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1418928639_jvc-everio-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/test.png?T=61 (109x128 -> 14x18)",
+      "http://localhost/img/1419416041_blood-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1388391840_5450185127_75a2b76a16_b-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1419417232_KyloRen-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1399499435_spazio-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/bomba.png (108x128 -> 14x18)",
+      "http://localhost/img/1418920828_dreopen-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1419347851_medium_110708-113531_to070909est_0054-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1406279676_lemuri-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1419344828_460534718-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1405517466_aaa-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/1418747004_30-600x246.png (600x246 -> 278x112)",
+      "http://localhost/img/1418123482_alberto_ferrari-600x246.jpg (600x246 -> 278x112)",
+      "http://localhost/img/mdellamico.jpg (56x56 -> 54x56)",
+      "http://localhost/img/redazione.jpg?T=1 (56x56 -> 54x56)",
+      "http://localhost/img/glippi.jpg (56x56 -> 54x56)",
+      "http://localhost/img/default.jpg (56x56 -> 54x56)",
+      "http://localhost/img/1416414110_Samantha_Cristoforetti-98x98.jpg (98x98 -> 54x56)",
+      "http://localhost/img/fabiopar.jpg (56x56 -> 54x56)",
+      "http://localhost/img/scosimi.jpg?T=2 (56x56 -> 54x56)",
+      "http://localhost/img/mboroni.jpg (56x56 -> 54x56)",
+      "http://localhost/img/1417513069_Bernardo_Hernandez-98x98.jpg (98x98 -> 54x56)",
+      "http://localhost/img/mrusso.jpg (56x56 -> 54x56)",
+      "http://localhost/img/vniri.jpg (56x56 -> 54x56)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3957893019001_video-still-for-video-3957979417001-300x166.jpg (300x166 -> 188x104)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562636402001_Bone-Remodeling-in-Microgravity-vs-300x166.jpg (300x166 -> 188x104)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3550140415001_NASA---The-Best-Observed-X-class-Flare-vs-300x166.jpg (300x166 -> 188x104)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562142272001_video-still-for-video-3562023628001-300x166.jpg (300x166 -> 188x104)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3520133744001_vs-535fbe04e4b0f2aceaff7579-1592194021001-300x166.jpg (300x166 -> 188x105)",
+      "http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3950202866001_COME-SCEGLIERE-CHE-BICI-COMPRARE-vs-300x166.jpg (300x166 -> 188x105)",
+      "http://localhost/img/conde-nast.png (107x20 -> 106x20)",
+      "http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg (162x212 -> 80x104)",
+      "http://localhost/img/ipad.png (135x170 -> 64x80)",
+      "http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg (162x212 -> 48x62)"
+    ],
+    "imagesWithoutDimensions": [
+      "body > div#wrapper > header#header > div.main.container > ul.nav.navbar-nav.navbar-right > li#profilo-logged-in > div.more.dropdown-toggle > span.container-user-thumb > span.logged-user > img[1] <http://localhost/img/default-avatar.jpg>",
+      "body > div#wrapper > section.wide-carousel.break.topFix > ul[1] > li[1] > article[0] > header[1] > a[3] > span.the-sticker > img[0] <http://localhost/img/antibufala.png?T=61>",
+      "body > div#wrapper > section.wide-carousel.break.topFix > ul[1] > li[4] > article[0] > header[1] > a[3] > span.the-sticker > img[0] <http://localhost/img/fail.png?T=61>",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-57273 > div.content > div.abstract > h2[0] > span.sticker > img[0] <http://localhost/img/bomba.png?T=61>",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58995 > div.content > div.abstract > h2[0] > span.sticker > img[0] <http://localhost/img/epicwin.png?T=61>",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58789 > div.content > div.abstract > h2[0] > span.sticker > img[0] <http://localhost/img/epicwin.png?T=61>",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-54112 > div.content > div.abstract > h2[0] > span.sticker > img[0] <http://localhost/img/test.png?T=61>",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58287 > div.content > div.abstract > h2[0] > span.sticker > img[0] <http://localhost/img/bomba.png>",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > h2[2] > span.sticker > img[0] <http://localhost/img/epicwin.png?T=61>",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > div#DfpVisibilityIdentifier_2157847585622221 > article.promotion.post-prev.with-photo > a[1] > img[0] <http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKCNj46klQEQARgBMggIhnfFJuoHUA>",
+      "body > div#wrapper > div#content > footer#footer > div.container > div#condenast > img.logo <http://localhost/img/conde-nast.png>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > a.footer-dropdown-toggle > div#edicola > img.cover <http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > a.footer-dropdown-toggle > div#edicola > div.ipad > img.over <http://localhost/img/ipad.png>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > a.footer-dropdown-toggle > div#edicola > div.ipad > img[2] <http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > div.dropdown.pull-right > div.dropdown-menu > div.container.paged-carousel > div.row > div.col-xs-3.col-lg-3.sidebar > div#wired-cover > img.cover <http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > div.dropdown.pull-right > div.dropdown-menu > div.container.paged-carousel > div.row > div.col-xs-3.col-lg-3.sidebar > div#wired-cover > div.ipad > img.over <http://localhost/img/ipad.png>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > div.dropdown.pull-right > div.dropdown-menu > div.container.paged-carousel > div.row > div.col-xs-3.col-lg-3.sidebar > div#wired-cover > div.ipad > img[2] <http://localhost/img/1417605652_cover-dicembre-14-162x212.jpg>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > div.dropdown.pull-right > div.dropdown-menu > div.container.paged-carousel > div.row > div.col-xs-6.col-lg-6 > ul.carousel > li[3] > p[7] > a[1] > img[0] <http://localhost/img/amazon-kindle.png>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > div.dropdown.pull-right > div.dropdown-menu > div.container.paged-carousel > div.row > div.col-xs-6.col-lg-6 > ul.carousel > li[3] > p[7] > a[3] > img[0] <http://localhost/img/app-store.png>",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > div.dropdown.pull-right > div.dropdown-menu > div.container.paged-carousel > div.row > div.col-xs-6.col-lg-6 > ul.carousel > li[3] > p[7] > a[5] > img[0] <http://localhost/img/google-play.png>"
+    ],
+    "DOMidDuplicated": [
+      "topics: 2 occurrences"
+    ],
+    "hiddenContentSize": [
+      "body > style[3] (3119 characters)",
+      "body > div#wrapper > header#header > div.secondary.container > div.dropdown.pull-right > div.dropdown-menu (11721 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1179 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1385 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1106 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1060 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1140 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1090 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1085 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1096 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1086 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1043 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1209 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1304 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1119 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1257 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1250 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1120 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1033 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1206 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1078 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1073 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1316 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1128 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1083 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1184 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1144 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1239 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1100 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1101 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1162 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1134 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1048 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1151 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1115 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1160 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1299 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1071 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1234 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1026 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1266 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1075 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip (1103 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59882 > div.content > div.abstract > p[1] > span.tooltip (1106 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-57273 > div.content > div.abstract > p[1] > span.tooltip (1140 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58995 > div.content > div.abstract > p[1] > span.tooltip (1385 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58728 > div.content > div.abstract > p[1] > span.tooltip (1096 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59749 > div.content > div.abstract > p[1] > span.tooltip (1090 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58789 > div.content > div.abstract > p[1] > span.tooltip (1120 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-54112 > div.content > div.abstract > p[1] > span.tooltip (1144 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59908 > div.content > div.abstract > p[1] > span.tooltip (1151 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59936 > div.content > div.abstract > p[1] > span.tooltip (1254 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59932 > div.content > div.abstract > p[1] > span.tooltip (1134 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58287 > div.content > div.abstract > p[1] > span.tooltip (1073 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > div.prev-gallery > ul.thumbs (7779 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > div.abstract > p[1] > span.tooltip (1075 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58756 > div.content > div.abstract > p[1] > span.tooltip (1304 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-38312 > div.content > div.abstract > p[1] > span.tooltip (1149 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59754 > div.content > div.abstract > p[1] > span.tooltip (1078 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-37180 > div.content > div.abstract > p[1] > span.tooltip (1294 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > p[3] > span.tooltip (1290 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59674 > p[3] > span.tooltip (1043 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59822 > p[3] > span.tooltip (1148 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59456 > p[2] > span.tooltip (1184 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59945 > p[3] > span.tooltip (1239 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59720 > p[2] > span.tooltip (1229 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59734 > p[4] > span.tooltip (1071 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59624 > p[3] > span.tooltip (1045 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59645 > p[2] > span.tooltip (1123 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59344 > p[2] > span.tooltip (1055 characters)",
+      "body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59245 > p[2] > span.tooltip (1170 characters)",
+      "body > div#wrapper > div#abbonati > div.secondary > div.container > div.dropdown.pull-right > div.dropdown-menu (6980 characters)",
+      "body > script[47] (4834 characters)"
+    ],
+    "DOMqueriesById": [
+      "#country-nav (in #document)",
+      "#vr-script-002 (in #document)",
+      "#DfpVisibilityIdentifier_2157847585622221 (in #document)",
+      "#video_post_154625 (in #document)",
+      "#_containervideo_post_154625 (in #document)",
+      "#fb-root (in #document)",
+      "#search (in #document)",
+      "#btnSearch (in #document)",
+      "#profilo-login (in #document)",
+      "#mobile-logged (in #document)",
+      "#mobile-login (in #document)",
+      "#wirlogin (in #document)",
+      "#feed (in #document)",
+      "#emailfeed (in #document)"
+    ],
+    "DOMqueriesByClassName": [
+      ".i (in div)",
+      ".more-country (in body > div#country-nav)",
+      ".-wired-slider-item-window (in #document)",
+      ".-wired-slider-video-item (in #document)",
+      ".start (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item)",
+      ".-wired-arrow-preview-left (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container)",
+      ".-wired-arrow-preview-right (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container)",
+      ".socialMaster (in #document)",
+      ".wdgCounter (in #document)",
+      ".selectimg (in #document)",
+      ".icon-login (in #document)",
+      ".icon-check (in #document)",
+      ".livefyre-commentcount (in #document)"
+    ],
+    "DOMqueriesByTagName": [
+      "* (in div)",
+      "a (in div)",
+      "input (in div)",
+      "tbody (in div)",
+      "link (in div)",
+      "script (in #document)",
+      "* (in body > div#country-nav)",
+      "body (in #document)",
+      "head (in #document)",
+      "meta (in head)",
+      "link (in head)",
+      "a (in #document)",
+      "img (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item > a.start)",
+      "param (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item > div#video_post_154625)",
+      "h4 (in #document)",
+      "img (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item)",
+      "* (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > hgroup[3] > h4[3])",
+      "h6 (in #document)",
+      "* (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > hgroup[3] > h6[1])",
+      "li (in #document)",
+      "script (in DocumentFragment > style[0])",
+      "script (in DocumentFragment > div#modernizr)",
+      "html (in #document)",
+      "* (in html > div#modernizr)",
+      "* (in head > style[121])",
+      "script (in DocumentFragment > div#ui-datepicker-div)",
+      "td (in body > div[100] > div[0])",
+      "script (in DocumentFragment > div[0])",
+      "* (in body > div[100])",
+      "* (in #document)",
+      "a (in body > div#wrapper > header#header > div.main.container > ul.nav.navbar-nav.navbar-right > li#profilo-login)",
+      "object (in #document)",
+      "* (in body)",
+      "script (in DocumentFragment > li[0])",
+      "* (in body > li[100])",
+      "link (in #document)"
+    ],
+    "DOMqueriesByQuerySelectorAll": [
+      ".GoogleActiveViewClass (in #document)",
+      ".DfaVisibilityIdentifier (in #document)"
+    ],
+    "DOMinserts": [
+      "\"div\" appended to \"html\"",
+      "\"iframe\" appended to \"head\"",
+      "\"script\" appended to \"head\"",
+      "\"script#vr-script-002\" appended to \"head\"",
+      "\"object#video_post_154625\" appended to \"body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item > div#video_post_154625\"",
+      "\"DocumentFragment > style[0]\" appended to \"head\"",
+      "\"DocumentFragment > div#modernizr\" appended to \"html\"",
+      "\"div\" appended to \"body > div#fb-root\"",
+      "\"div\" appended to \"body > div#fb-root > div[0]\"",
+      "\"iframe#fb_xdm_frame_http\" appended to \"body > div#fb-root > div[0] > div[0]\"",
+      "\"iframe#fb_xdm_frame_https\" appended to \"body > div#fb-root > div[0] > div[0]\"",
+      "\"div\" appended to \"body\"",
+      "\"div\" appended to \"body > div[100]\"",
+      "\"div\" appended to \"body > div[100] > div[0]\"",
+      "\"DocumentFragment > div[0]\" appended to \"body\"",
+      "\"div\" appended to \"body > div#fb-root > div[1]\"",
+      "\"style\" appended to \"head\"",
+      "\"DocumentFragment > li[0]\" appended to \"body\"",
+      "\"script\" appended to \"body\""
+    ],
+    "DOMqueriesDuplicated": [
+      "tag name \"script\" (in #document): 11 queries",
+      "tag name \"head\" (in #document): 7 queries",
+      "tag name \"body\" (in #document): 6 queries",
+      "tag name \"script\" (in DocumentFragment > style[0]): 6 queries",
+      "tag name \"script\" (in DocumentFragment > div[0]): 6 queries",
+      "id \"#country-nav\" (in #document): 3 queries",
+      "tag name \"meta\" (in head): 3 queries",
+      "tag name \"a\" (in #document): 3 queries",
+      "class \".-wired-slider-video-item\" (in #document): 3 queries",
+      "tag name \"script\" (in DocumentFragment > div#modernizr): 3 queries",
+      "tag name \"html\" (in #document): 3 queries",
+      "id \"#search\" (in #document): 3 queries",
+      "tag name \"*\" (in div): 2 queries",
+      "tag name \"*\" (in body > div#country-nav): 2 queries",
+      "id \"#video_post_154625\" (in #document): 2 queries",
+      "tag name \"img\" (in body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item): 2 queries",
+      "tag name \"*\" (in body > div[100]): 2 queries",
+      "tag name \"*\" (in #document): 2 queries",
+      "id \"#profilo-login\" (in #document): 2 queries",
+      "id \"#mobile-login\" (in #document): 2 queries",
+      "id \"#feed\" (in #document): 2 queries",
+      "tag name \"script\" (in DocumentFragment > li[0]): 2 queries",
+      "selector \".GoogleActiveViewClass\" (in #document): 2 queries"
+    ],
+    "domains": [
+      "localhost: 154 request(s)",
+      "ad.doubleclick.net: 7 request(s)",
+      "media.cnlive.it: 6 request(s)",
+      "admin.brightcove.com: 3 request(s)",
+      "zor.livefyre.com: 2 request(s)",
+      "secure-uk.imrworldwide.com: 2 request(s)",
+      "pagead2.googlesyndication.com: 2 request(s)",
+      "fonts.googleapis.com: 1 request(s)",
+      "platform.twitter.com: 1 request(s)",
+      "www.google.com: 1 request(s)",
+      "connect.facebook.net: 1 request(s)",
+      "www.googletagservices.com: 1 request(s)",
+      "tpc.googlesyndication.com: 1 request(s)",
+      "www.google-analytics.com: 1 request(s)",
+      "a.visualrevenue.com: 1 request(s)",
+      "t1.visualrevenue.com: 1 request(s)",
+      "p.visualrevenue.com: 1 request(s)",
+      "condenastitalia01.wt-eu02.net: 1 request(s)",
+      "static.ak.facebook.com: 1 request(s)",
+      "www.facebook.com: 1 request(s)",
+      "s-static.ak.facebook.com: 1 request(s)",
+      "dnn506yrbagrg.cloudfront.net: 1 request(s)",
+      "static.chartbeat.com: 1 request(s)",
+      "ping.chartbeat.net: 1 request(s)"
+    ],
+    "eventsBound": [
+      "\"DOMContentLoaded\" bound to \"#document\"",
+      "\"load\" bound to \"window\"",
+      "\"click\" bound to \"body > div#country-nav > div#close\"",
+      "\"click\" bound to \"body > div#country-nav > div#message > p[1] > a#show\"",
+      "\"mousedown\" bound to \"#document\"",
+      "\"mouseup\" bound to \"#document\"",
+      "\"load\" bound to \"#document\"",
+      "\"message\" bound to \"window\"",
+      "\"webkitTransitionEnd\" bound to \"body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-slider-item-window > div.-wired-slider-video-item\"",
+      "\"mouseover\" bound to \"body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container\"",
+      "\"mouseout\" bound to \"body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-video-arrow-preview.-wired-arrow-preview-left\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div.-wired-video-wrapper > div#-wired-video-container > div.-wired-slider-container > div.-wired-slider-video-item-container > div.-wired-video-arrow-preview.-wired-arrow-preview-right\"",
+      "\"click\" bound to \"#document\"",
+      "\"keydown\" bound to \"#document\"",
+      "\"mouseout\" bound to \"DocumentFragment > div#ui-datepicker-div\"",
+      "\"mouseover\" bound to \"DocumentFragment > div#ui-datepicker-div\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-left.col-xs-4.col-lg-3 > article.post-prev.with-photo > p[5] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59882 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-57273 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58995 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58728 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59749 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58789 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-54112 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59908 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59936 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59932 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58287 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > div.prev-gallery > ul.thumbs > li[0] > div.caption > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > div.prev-gallery > ul.thumbs > li[1] > div.caption > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > div.prev-gallery > ul.thumbs > li[2] > div.caption > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > div.prev-gallery > ul.thumbs > li[3] > div.caption > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58756 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-38312 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-59754 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-37180 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article#box-post-58506 > div.content > div.abstract > p[1] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > div#main-home > article.post-prev > div.content > p[3] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > div#next-index > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59674 > p[3] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59761 > p[3] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59822 > p[3] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59831 > p[2] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59524 > p[4] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59456 > p[2] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59945 > p[3] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59720 > p[2] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59734 > p[4] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59624 > p[3] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59555 > p[3] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59645 > p[2] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59344 > p[2] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59006 > p[2] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > article#box-idee-59245 > p[2] > span.tooltip > span.li.socialFB > a[0]\"",
+      "\"keyup\" bound to \"body > div#wrapper > header#header > div#search-bar > form#wired_search > input#search\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > div#DfpVisibilityIdentifier_2157847585622221 > article.promotion.post-prev.with-photo > a[1]\"",
+      "\"click\" bound to \"body > div#wrapper > div#content > div.container > div#home-container > section.sidebar.sidebar-right.col-xs-4.col-lg-3 > div#DfpVisibilityIdentifier_2157847585622221 > article.promotion.post-prev.with-photo > h4[3] > a[0]\"",
+      "\"submit\" bound to \"#document\"",
+      "\"blur\" bound to \"#document\"",
+      "\"unload\" bound to \"window\"",
+      "\"DOMContentLoaded\" bound to \"window\"",
+      "\"scroll\" bound to \"window\"",
+      "\"resize\" bound to \"window\"",
+      "\"keydown\" bound to \"body\"",
+      "\"mousemove\" bound to \"body\"",
+      "\"mousedown\" bound to \"body\"",
+      "\"click\" bound to \"body\"",
+      "\"focus\" bound to \"window\"",
+      "\"blur\" bound to \"window\""
+    ],
+    "globalVariables": [
+      "SocialAPI",
+      "dclkTile",
+      "listRefresBanner",
+      "_rsRecordFactory",
+      "ComponentAPI",
+      "SearchAPI",
+      "wt_init_media",
+      "_rsUT",
+      "refresh",
+      "wt_getBrowserHeight",
+      "_rsRD",
+      "checkBanner",
+      "onMediaEventFired",
+      "TabBarAPI",
+      "VideoSearch",
+      "_rsDT",
+      "_rsPLjj",
+      "pttp",
+      "AudioPlayerAPI",
+      "wi_arr",
+      "webtrekkConfig",
+      "refreshFlipBanner",
+      "ModuleAPI",
+      "_rsEvent",
+      "modExp",
+      "decodeEntity",
+      "zone",
+      "wt_stQuicksend",
+      "LabelAPI",
+      "dclkDim",
+      "ord",
+      "dclkKW",
+      "addthis_config",
+      "_rsSS",
+      "_rsSI",
+      "setHTMLforBannerNew",
+      "_rsClick",
+      "ConvivaAPI",
+      "wt_typeof",
+      "_rsLP",
+      "APIModules",
+      "_rsCL",
+      "BCLoaderEvent",
+      "webtrekkPixel",
+      "_rsCLSendALink",
+      "ExpandingBannerAPI",
+      "_rsND",
+      "wt_getEid",
+      "dclkdCopt",
+      "currentVideoCallback",
+      "_rsCLSendForm",
+      "closeFancybox",
+      "_rsPluginDetect",
+      "rsCi",
+      "pageConfig",
+      "_sf_async_config",
+      "checkOpenGallery",
+      "cnliveVideoHeight",
+      "bcPlayer",
+      "_rsEH",
+      "ContentAPI",
+      "liveFyreUserLogin",
+      "getExistsParameterByName",
+      "wt_getBrowserWidth",
+      "bcCallRenditionSelectionCallback",
+      "_rsTC",
+      "showGallery",
+      "EffectsAPIAnimation",
+      "wt_sendinfo_media",
+      "SITE",
+      "LinkAPI",
+      "TextRegionAPI",
+      "APIModule",
+      "_rsCC",
+      "_galFulWidth",
+      "authDelegate",
+      "_vrq",
+      "_rsPause",
+      "encodeNielsenUrl",
+      "fb_app_id",
+      "refreshPageView",
+      "_rsMP",
+      "brightcoveJS",
+      "onMediaCompletePiede",
+      "listRefresFlipBanner",
+      "ButtonAPI",
+      "_rsLinkTrack",
+      "_rsVerInfo",
+      "isEmpty",
+      "ViewStackAPI",
+      "BCMediaEvent",
+      "_sf_startpt",
+      "modVP",
+      "TitleLabelAPI",
+      "BCXML",
+      "_rsCU",
+      "_rsCLSendIt",
+      "_rsTS",
+      "SWFLoaderAPI",
+      "AuthAPI",
+      "cnliveVideoPublisherId",
+      "ToggleButtonAPI",
+      "VideoPlayerAPI",
+      "dclkZone",
+      "wt_baseparams",
+      "LayoutBoxAPI",
+      "BCVideoEvent",
+      "AdvertisingAPI",
+      "webtrekkV3",
+      "_rsCLCatchIt",
+      "bcCallAdditionalMediaCallback",
+      "webtrekkLinktrackObjects",
+      "adsJSCode",
+      "wt",
+      "_rsPLqt",
+      "_galFulHeight",
+      "refreshBanner",
+      "_rsPLfl",
+      "checkWiredInvaders",
+      "BrightcoveExperience",
+      "_rsIP",
+      "BannerAPI",
+      "mgstring",
+      "wt_sendinfo",
+      "_rsPLre",
+      "ComboBoxAPI",
+      "onMediaProgressFired",
+      "_rsPLac",
+      "_rsPLwm",
+      "CaptionsAPI",
+      "wt_getPixelInstance",
+      "MediaControlsAPI",
+      "MaskAPI",
+      "spot_tags",
+      "openGallery",
+      "webtrekkHeatmapObjects",
+      "PlayheadAPI",
+      "_rsCI",
+      "_rsDN",
+      "bannerList",
+      "m",
+      "_rsCG",
+      "_rsCLRegisterIt",
+      "wired_social_login_template",
+      "ListAPI",
+      "MenuAPI",
+      "_zone",
+      "ChromelessVideoPlayerAPI",
+      "videoplayername",
+      "webtrekkUnloadObjects",
+      "brightcove",
+      "cnliveVideoWidth",
+      "onTemplateReady",
+      "pauseVideo",
+      "_rsSM",
+      "BCLoaderState",
+      "VolumeControlAPI",
+      "ContainerAPI",
+      "setAPICallback",
+      "wt_getSampling",
+      "webtrekkMediaTracking",
+      "wt_stEscape",
+      "_rsSE",
+      "showVideo",
+      "random",
+      "ExperienceAPI",
+      "EffectsAPI",
+      "CuePointsAPI",
+      "myTemplateLoaded",
+      "ImageAPI",
+      "onTemplateLoadedPiede",
+      "_rsSV",
+      "_gaq",
+      "getContentIdByURL",
+      "UIObjectAPI",
+      "resetHTMLNew",
+      "refreshCode",
+      "cnliveVideoPlayerId",
+      "fyre",
+      "TileListAPI",
+      "stopVideo",
+      "GraphicBlockAPI",
+      "jQuery",
+      "$",
+      "wsl_wordpress_social_login",
+      "googletag",
+      "GPT_jstiming",
+      "_gat",
+      "_vrtrack",
+      "query",
+      "BCAdvertisingEvent",
+      "BCAuthEvent",
+      "BCAuthService",
+      "BCCaptionsEvent",
+      "BCContentEvent",
+      "BCCuePointEvent",
+      "BCEffectsEvent",
+      "BCExperienceEvent",
+      "BCComponentModules",
+      "BCMenuEvent",
+      "BCMenuPage",
+      "BCMenuAdditionalMedia",
+      "BCSearchEvent",
+      "SortOrderType",
+      "SortByType",
+      "BCSocialEvent",
+      "FB",
+      "googleLT_",
+      "google",
+      "google_exportSymbol",
+      "google_exportProperty",
+      "html5",
+      "Modernizr",
+      "yepnope",
+      "livefyre_onload_handler",
+      "LF",
+      "i",
+      "gteh",
+      "__google_lidar_",
+      "_sf_endpt",
+      "_cbq",
+      "pSUPERFLY"
+    ],
+    "globalVariablesFalsy": [
+      "modExp = false",
+      "webtrekkPixel = false",
+      "modVP = false"
+    ],
+    "headersBiggerThanContent": [
+      "http://localhost/css/wired_site-style.css (body: 0.17 kB / headers: 0.37 kB)",
+      "http://localhost/css/wordpress-social-login.css (body: 0.22 kB / headers: 0.37 kB)",
+      "http://localhost/css/inhstyle.css (body: 0.26 kB / headers: 0.37 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=8466281678993255 (body: 0.04 kB / headers: 0.74 kB)",
+      "http://t1.visualrevenue.com/?idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&seen_url=http%3A%2F%2Flocalhost%2F&t=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&c=14212762829570BYqyAONagIxGVgtXMzvJ2uSGcrHKdFe&r=1421276282960&ypos=-1&debug=loadTime.3&zone=&content_type=utf-8&v=18 (body: 0.05 kB / headers: 0.27 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2? (body: 0.02 kB / headers: 0.86 kB)",
+      "http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn (body: 0.01 kB / headers: 0.19 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2? (body: 0.02 kB / headers: 0.62 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2? (body: 0.02 kB / headers: 0.62 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2? (body: 0.02 kB / headers: 0.62 kB)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2? (body: 0.02 kB / headers: 0.62 kB)",
+      "http://secure-uk.imrworldwide.com/cgi-bin/m?rnd=1421276288377&ci=condenast&cg=italy&cc=0&ts=v53.js&sr=1280x800&cd=32&je=n&tz=1&si=http%3A//localhost/&rp= (body: 0.04 kB / headers: 0.44 kB)",
+      "http://condenastitalia01.wt-eu02.net/641856089134434/wt?p=323,http%3A%2F%2Flocalhost%2F,1,1280x800,32,1,1421276289169,0,1280x800,0&tz=1&la=en&cg1=Aggregato%20Cond%C3%A9%20Nast%20-%20WEB&cg2=Wired.it&cp1=no-refresh&np=&eor=1 (body: 0.04 kB / headers: 0.51 kB)",
+      "http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?394798 (body: 0.00 kB / headers: 0.45 kB)",
+      "http://ping.chartbeat.net/ping?h=wired.it&p=%2F&u=BKhUJDBcX3Gj2HvGp&d=localhost&g=56600&n=1&f=00001&c=0&x=0&m=0&y=8056&o=2560&w=2048&j=45&R=1&W=0&I=0&E=0&e=0&r=&b=10158&t=BvIzMNB7b5zjD5I5OzCE91iTCqPIM2&V=43&i=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&tz=-60&sn=1&_ (body: 0.04 kB / headers: 0.15 kB)"
+    ],
+    "jsErrors": [
+      "ReferenceError: Can't find variable: items - unknown fn:  @ 1"
+    ],
+    "localStorageEntries": [
+      "__at.conf.ra-529f458559f75c17",
+      "_chartbeat2",
+      "_chartbeat2_expires"
+    ],
+    "assetsNotGzipped": [
+      "http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700 (CSS)",
+      "https://www.google.com/jsapi (JS)",
+      "http://www.googletagservices.com/tag/js/gpt.js (JS)",
+      "http://tpc.googlesyndication.com/safeframe/1-0-1/html/container.html (HTML)",
+      "http://www.google-analytics.com/ga.js (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=8466281678993255 (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2? (JS)",
+      "http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=6;sz=1x1;ord=2? (JS)",
+      "http://pagead2.googlesyndication.com/pagead/js/lidar.js (JS)",
+      "http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?394798 (JS)"
+    ],
+    "assetsWithQueryString": [
+      "http://localhost/js/cn_banner.js?T=61 (JS)",
+      "http://localhost/css/cn_banner.css?T=61 (CSS)",
+      "http://localhost/css/wired-video-style.css?T=5 (CSS)",
+      "http://localhost/js/wired.js?T=61 (JS)",
+      "http://localhost/js/wired.ready.js?T=61 (JS)",
+      "http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700 (CSS)",
+      "http://localhost/img/antibufala.png?T=61 (IMAGE)",
+      "http://localhost/img/fail.png?T=61 (IMAGE)",
+      "http://localhost/img/bomba.png?T=61 (IMAGE)",
+      "http://localhost/img/epicwin.png?T=61 (IMAGE)",
+      "http://localhost/img/test.png?T=61 (IMAGE)",
+      "http://localhost/img/redazione.jpg?T=1 (IMAGE)",
+      "http://localhost/img/scosimi.jpg?T=2 (IMAGE)",
+      "http://t1.visualrevenue.com/?idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&seen_url=http%3A%2F%2Flocalhost%2F&t=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&c=14212762829570BYqyAONagIxGVgtXMzvJ2uSGcrHKdFe&r=1421276282960&ypos=-1&debug=loadTime.3&zone=&content_type=utf-8&v=18 (IMAGE)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2? (JS)",
+      "http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=6;sz=1x1;ord=2? (JS)",
+      "http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKCNj46klQEQARgBMggIhnfFJuoHUA (IMAGE)",
+      "http://secure-uk.imrworldwide.com/cgi-bin/m?rnd=1421276288377&ci=condenast&cg=italy&cc=0&ts=v53.js&sr=1280x800&cd=32&je=n&tz=1&si=http%3A//localhost/&rp= (IMAGE)",
+      "http://condenastitalia01.wt-eu02.net/641856089134434/wt?p=323,http%3A%2F%2Flocalhost%2F,1,1280x800,32,1,1421276289169,0,1280x800,0&tz=1&la=en&cg1=Aggregato%20Cond%C3%A9%20Nast%20-%20WEB&cg2=Wired.it&cp1=no-refresh&np=&eor=1 (IMAGE)",
+      "http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?394798 (JS)",
+      "http://ping.chartbeat.net/ping?h=wired.it&p=%2F&u=BKhUJDBcX3Gj2HvGp&d=localhost&g=56600&n=1&f=00001&c=0&x=0&m=0&y=8056&o=2560&w=2048&j=45&R=1&W=0&I=0&E=0&e=0&r=&b=10158&t=BvIzMNB7b5zjD5I5OzCE91iTCqPIM2&V=43&i=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&tz=-60&sn=1&_ (IMAGE)"
+    ],
+    "assetsWithCookies": [
+      "http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=8466281678993255 (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2? (JS)",
+      "http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=6;sz=1x1;ord=2? (JS)",
+      "http://secure-uk.imrworldwide.com/cgi-bin/m?rnd=1421276288377&ci=condenast&cg=italy&cc=0&ts=v53.js&sr=1280x800&cd=32&je=n&tz=1&si=http%3A//localhost/&rp= (IMAGE)",
+      "http://condenastitalia01.wt-eu02.net/641856089134434/wt?p=323,http%3A%2F%2Flocalhost%2F,1,1280x800,32,1,1421276289169,0,1280x800,0&tz=1&la=en&cg1=Aggregato%20Cond%C3%A9%20Nast%20-%20WEB&cg2=Wired.it&cp1=no-refresh&np=&eor=1 (IMAGE)"
+    ],
+    "smallImages": [
+      "http://localhost/img/1419079958_IMG_2617-98x98.jpg (1.91 kB)",
+      "http://localhost/img/1419422389_IMG_8274-98x98.jpg (1.56 kB)",
+      "http://localhost/img/redazione.jpg?T=1 (1.04 kB)",
+      "http://localhost/img/glippi.jpg (1.36 kB)",
+      "http://localhost/img/default.jpg (1.82 kB)",
+      "http://localhost/img/fabiopar.jpg (1.52 kB)",
+      "http://localhost/img/mboroni.jpg (1.87 kB)",
+      "http://localhost/img/mrusso.jpg (1.83 kB)",
+      "http://localhost/img/conde-nast.png (1.09 kB)",
+      "http://t1.visualrevenue.com/?idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&seen_url=http%3A%2F%2Flocalhost%2F&t=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&c=14212762829570BYqyAONagIxGVgtXMzvJ2uSGcrHKdFe&r=1421276282960&ypos=-1&debug=loadTime.3&zone=&content_type=utf-8&v=18 (0.05 kB)",
+      "http://secure-uk.imrworldwide.com/cgi-bin/m?rnd=1421276288377&ci=condenast&cg=italy&cc=0&ts=v53.js&sr=1280x800&cd=32&je=n&tz=1&si=http%3A//localhost/&rp= (0.04 kB)",
+      "http://condenastitalia01.wt-eu02.net/641856089134434/wt?p=323,http%3A%2F%2Flocalhost%2F,1,1280x800,32,1,1421276289169,0,1280x800,0&tz=1&la=en&cg1=Aggregato%20Cond%C3%A9%20Nast%20-%20WEB&cg2=Wired.it&cp1=no-refresh&np=&eor=1 (0.04 kB)",
+      "http://localhost/img/wired-arrow-slider.png (1.73 kB)",
+      "http://ping.chartbeat.net/ping?h=wired.it&p=%2F&u=BKhUJDBcX3Gj2HvGp&d=localhost&g=56600&n=1&f=00001&c=0&x=0&m=0&y=8056&o=2560&w=2048&j=45&R=1&W=0&I=0&E=0&e=0&r=&b=10158&t=BvIzMNB7b5zjD5I5OzCE91iTCqPIM2&V=43&i=Wired%20-%20Make%20in%20Italy.%20Inventa%2C%20sbaglia%2C%20innova&tz=-60&sn=1&_ (0.04 kB)"
+    ],
+    "timeToFirstCss": [
+      "http://localhost/css/wired_fonts.css received in 79 ms"
+    ],
+    "timeToFirstJs": [
+      "http://localhost/js/jquery-migrate-1.2.1.min.js received in 83 ms"
+    ],
+    "timeToFirstImage": [
+      "http://localhost/img/default-avatar.jpg received in 383 ms"
+    ],
+    "smallestResponse": [
+      "http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?394798 (0.00 kB)"
+    ],
+    "biggestResponse": [
+      "http://localhost/img/1418057937_24-960x394.jpg (358.72 kB)"
+    ],
+    "fastestResponse": [
+      "http://localhost/img/1386847245_twitter-153x63.jpg (19 ms)"
+    ],
+    "slowestResponse": [
+      "http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKCNj46klQEQARgBMggIhnfFJuoHUA (3477 ms)"
+    ],
+    "smallestLatency": [
+      "http://localhost/img/1386847245_twitter-153x63.jpg (19 ms)"
+    ],
+    "biggestLatency": [
+      "http://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKCNj46klQEQARgBMggIhnfFJuoHUA (3477 ms)"
+    ]
+  }
+}

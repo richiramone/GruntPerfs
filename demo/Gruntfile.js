@@ -1,6 +1,12 @@
-var mozjpeg = require('imagemin-mozjpeg');
+'use strict'
+
+var mozjpeg = require('imagemin-mozjpeg'),
+    ngrok = require('ngrok');
 
 module.exports = function(grunt) {
+
+  require('load-grunt-tasks')(grunt);
+
   grunt.initConfig({
     imagemin: {
       dynamic: {
@@ -160,7 +166,7 @@ module.exports = function(grunt) {
       dev : {
         options : {
           indexPath : './phantomas/',
-          url       : 'http://gruntperfs.demo',
+          url       : 'http://localhost:80',
           buildUi   : true,
           numberOfRuns: 1,
           'no-externals': true,
@@ -289,7 +295,7 @@ module.exports = function(grunt) {
       options: {
         info: "grade",
         format: "junit",
-        urls: ['http://gruntperfs.lucasramos.me/'],
+        urls: ['http://localhost:80'],
         reports: ['./yslow-reports/yslow.xml']
       },
       your_target: {
@@ -300,7 +306,6 @@ module.exports = function(grunt) {
       dev: {
         options: {
           nokey: true,
-          url: "http://gruntperfs.lucasramos.me/",
           locale: "it_IT",
           strategy: "desktop",
           threshold: 30
@@ -309,26 +314,27 @@ module.exports = function(grunt) {
     }
   });
 
-  /**** PERFORMANCE TASKS ****/
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-colorguard');
-  grunt.loadNpmTasks('grunt-uncss');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-critical');
+  // Register customer task for ngrok
+  grunt.registerTask('psi-ngrok', 'Run pagespeed with ngrok', function() {
+    var done = this.async();
+    var port = 80;
 
-  /**** PERFS BUDGET CONTROLS ****/
-  grunt.loadNpmTasks('grunt-perfbudget');
-  grunt.loadNpmTasks('grunt-yslow');
+    ngrok.connect(port, function(err, url) {
+      if (err !== null) {
+        grunt.fail.fatal(err);
+        return done();
+      }
+      grunt.config.set('pagespeed.options.url', url);
+      grunt.task.run('pagespeed');
+      grunt.task.run('yslow_test');
+      grunt.task.run('phantomas');
+      done();
+    });
+  });
 
-  /**** REPORT TASKS ****/
-  grunt.loadNpmTasks('grunt-yslow-test');
-  grunt.loadNpmTasks('grunt-pagespeed');
-  grunt.loadNpmTasks('grunt-phantomas');
-
-  grunt.registerTask('default', [
-    /*'imagemin',
+  // Register default tasks
+  grunt.registerTask('default', [  
+  /*'imagemin',
     'colorguard',
     'uncss',
     'uglify',
@@ -338,9 +344,8 @@ module.exports = function(grunt) {
 
     'perfbudget',
     'yslow',*/
-    
-    //'yslow_test',
-    //'pagespeed'
-    'phantomas'
+
+    'psi-ngrok'
   ]);
-}
+};
+
