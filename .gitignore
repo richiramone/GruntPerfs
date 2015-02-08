@@ -1,3 +1,7 @@
 demo/node_modules/
+demo/phantomas/
+demo/yslow-reports/
 diffux/
 grunted_demo_back_up/
+demoWAIT/
+.brackets.json

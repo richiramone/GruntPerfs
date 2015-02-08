@@ -1,67 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite name="YSlow" tests="24" failures="9" skipped="1">
-    <testcase name="overall score" status="C (70)">
-      <failure/>
-    </testcase>
-    <testcase name="ynumreq: Make fewer HTTP requests" status="F (0)">
-      <failure message="This page has 40 external Javascript scripts.  Try combining them into one.
-This page has 13 external stylesheets.  Try combining them into one.">
-      </failure>
-    </testcase>
-    <testcase name="ycdn: Use a Content Delivery Network (CDN)" status="F (0)">
-      <failure message="There are 170 static components that are not on CDN. &lt;p&gt;You can specify CDN hostnames in your preferences. See &lt;a href=&quot;https://github.com/marcelduran/yslow/wiki/FAQ#wiki-faq_cdn&quot;&gt;YSlow FAQ&lt;/a&gt; for details.&lt;/p&gt;">
-        fonts.googleapis.com: 1 component, 0.7K (0.7K GZip)
-        localhost: 148 components, 3870.9K (833.1K GZip)
-        pagead2.googlesyndication.com: 2 components, 58.6K (54.9K GZip)
-        p.visualrevenue.com: 1 component, 0.01K
-        a.visualrevenue.com: 1 component, 11.6K (11.6K GZip)
-        zor.livefyre.com: 2 components, 90.3K (59.2K GZip)
-        www.googletagservices.com: 1 component, 46.2K (46.2K GZip)
-        ad.doubleclick.net: 7 components, 2.5K (2.5K GZip)
-        admin.brightcove.com: 3 components, 123.7K (109.5K GZip)
-        connect.facebook.net: 1 component, 161.0K (62.7K GZip)
-        www.google.com: 1 component, 24.5K (24.5K GZip)
-        secure-uk.imrworldwide.com: 1 component, 12.7K (12.7K GZip)
-        www.wired.it: 1 component, 0.0K
-      </failure>
-    </testcase>
+  <testsuite name="YSlow" tests="24" failures="1" skipped="1">
+    <testcase name="overall score" status="A (98)"/>
+    <testcase name="ynumreq: Make fewer HTTP requests" status="A (100)"/>
+    <testcase name="ycdn: Use a Content Delivery Network (CDN)" status="A (100)"/>
     <testcase name="yemptysrc: Avoid empty src or href" status="A (100)"/>
-    <testcase name="yexpires: Add Expires headers" status="F (0)">
-      <failure message="There are 31 static components without a far-future expiration date.">
-        http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700
-        http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?394799
-        http://pagead2.googlesyndication.com/pagead/js/lidar.js
-        <![CDATA[http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn]]>
-        http://a.visualrevenue.com/vrs.js
-        http://www.google-analytics.com/ga.js
-        http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js
-        http://www.googletagservices.com/tag/js/gpt.js
-        <![CDATA[http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=9322836976498366]]>
-        http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2?
-        http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2?
-        http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2?
-        http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=4;sz=1x1;ord=2?
-        http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=5;sz=1x1;ord=2?
-        http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=6;sz=1x1;ord=2?
-        http://admin.brightcove.com/js/BrightcoveExperiences.js
-        http://admin.brightcove.com/js/APIModules_all.js
-        http://connect.facebook.net/it_IT/all.js
-        http://platform.twitter.com/widgets.js
-        https://www.google.com/jsapi
-        http://zor.livefyre.com/wjs/v1.0/javascripts/CommentCount.js
-        http://secure-uk.imrworldwide.com/v53.js
-        http://localhost/images/mask.png
-        http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3957893019001_video-still-for-video-3957979417001-300x166.jpg
-        http://admin.brightcove.com/viewer/upgrade_flash_player2.gif
-        http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562636402001_Bone-Remodeling-in-Microgravity-vs-300x166.jpg
-        http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3550140415001_NASA---The-Best-Observed-X-class-Flare-vs-300x166.jpg
-        http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3562142272001_video-still-for-video-3562023628001-300x166.jpg
-        http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3520133744001_vs-535fbe04e4b0f2aceaff7579-1592194021001-300x166.jpg
-        http://media.cnlive.it/wp-content/uploads/2014/12/2985902006001_3950202866001_COME-SCEGLIERE-CHE-BICI-COMPRARE-vs-300x166.jpg
-        http://www.wired.it/favicon.ico
-      </failure>
-    </testcase>
+    <testcase name="yexpires: Add Expires headers" status="B (89)"/>
     <testcase name="ycompress: Compress components with gzip" status="A (100)"/>
     <testcase name="ycsstop: Put CSS at top" status="A (100)"/>
     <testcase name="yjsbottom: Put JavaScript at bottom" status="A (100)"/>
@@ -69,76 +13,19 @@ This page has 13 external stylesheets.  Try combining them into one.">
     <testcase name="yexternal: Make JavaScript and CSS external" status="N/A (-1)">
       <skipped>score N/A</skipped>
       <failure message="Only consider this if your property is a common user home page.">
-        There is a total of 4 inline css
-        There is a total of 31 inline scripts
       </failure>
     </testcase>
-    <testcase name="ydns: Reduce DNS lookups" status="F (10)">
-      <failure message="The components are split over more than 4 domains">
-        localhost: 152 components, 4153.7K (1116.1K GZip)
-        fonts.googleapis.com: 1 component, 0.7K (0.7K GZip)
-        fonts.gstatic.com: 3 components, 0.0K
-        dnn506yrbagrg.cloudfront.net: 1 component, 0.0K
-        pagead2.googlesyndication.com: 2 components, 58.6K (54.9K GZip)
-        p.visualrevenue.com: 1 component, 0.01K
-        a.visualrevenue.com: 1 component, 11.6K (11.6K GZip)
-        www.google-analytics.com: 1 component, 40.9K (40.9K GZip)
-        zor.livefyre.com: 2 components, 90.3K (59.2K GZip)
-        www.googletagservices.com: 1 component, 46.2K (46.2K GZip)
-        ad.doubleclick.net: 7 components, 2.5K (2.5K GZip)
-        admin.brightcove.com: 3 components, 123.7K (109.5K GZip)
-        connect.facebook.net: 1 component, 161.0K (62.7K GZip)
-        platform.twitter.com: 1 component, 109.5K (51.9K GZip)
-        www.google.com: 1 component, 24.5K (24.5K GZip)
-        secure-uk.imrworldwide.com: 1 component, 12.7K (12.7K GZip)
-        media.cnlive.it: 6 components, 88.7K
-        www.wired.it: 1 component, 0.0K
-        tpc.googlesyndication.com: 1 component, 3.8K (3.8K GZip)
-        static.ak.facebook.com: 1 component, 27.4K (27.4K GZip)
-        s-static.ak.facebook.com: 1 component, 27.4K (27.4K GZip)
-        www.facebook.com: 1 component, 0.5K (0.5K GZip)
-      </failure>
-    </testcase>
-    <testcase name="yminify: Minify JavaScript and CSS" status="F (0)">
-      <failure message="There are 17 components that can be minified">
-        http://localhost/js/cn_banner.js?T=61
-        http://localhost/js/wired-video-cnlive.js
-        http://localhost/js/wired.js?T=61
-        http://localhost/js/registration.js
-        <![CDATA[inline &lt;style&gt; tag #1]]>
-        <![CDATA[inline &lt;style&gt; tag #4]]>
-        <![CDATA[inline &lt;script&gt; tag #1]]>
-        <![CDATA[inline &lt;script&gt; tag #3]]>
-        <![CDATA[inline &lt;script&gt; tag #4]]>
-        <![CDATA[inline &lt;script&gt; tag #5]]>
-        <![CDATA[inline &lt;script&gt; tag #6]]>
-        <![CDATA[inline &lt;script&gt; tag #11]]>
-        <![CDATA[inline &lt;script&gt; tag #12]]>
-        <![CDATA[inline &lt;script&gt; tag #14]]>
-        <![CDATA[inline &lt;script&gt; tag #24]]>
-        <![CDATA[inline &lt;script&gt; tag #26]]>
-        <![CDATA[inline &lt;script&gt; tag #31]]>
-      </failure>
-    </testcase>
+    <testcase name="ydns: Reduce DNS lookups" status="A (100)"/>
+    <testcase name="yminify: Minify JavaScript and CSS" status="A (100)"/>
     <testcase name="yredirects: Avoid URL redirects" status="A (100)"/>
     <testcase name="ydupes: Remove duplicate JavaScript and CSS" status="A (100)"/>
-    <testcase name="yetags: Configure entity tags (ETags)" status="E (56)">
-      <failure message="There are 4 components with misconfigured ETags">
-        http://a.visualrevenue.com/vrs.js
-        http://admin.brightcove.com/js/BrightcoveExperiences.js
-        http://admin.brightcove.com/js/APIModules_all.js
-        http://admin.brightcove.com/viewer/upgrade_flash_player2.gif
-      </failure>
-    </testcase>
+    <testcase name="yetags: Configure entity tags (ETags)" status="A (100)"/>
     <testcase name="yxhr: Make AJAX cacheable" status="A (100)"/>
     <testcase name="yxhrmethod: Use GET for AJAX requests" status="A (100)"/>
-    <testcase name="ymindom: Reduce the number of DOM elements" status="F (0)">
-      <failure message="There are 3338 DOM elements on the page">
-      </failure>
-    </testcase>
+    <testcase name="ymindom: Reduce the number of DOM elements" status="A (100)"/>
     <testcase name="yno404: Avoid HTTP 404 (Not Found) error" status="A (100)"/>
     <testcase name="ymincookie: Reduce cookie size" status="A (100)"/>
-    <testcase name="ycookiefree: Use cookie-free domains" status="A (90)"/>
+    <testcase name="ycookiefree: Use cookie-free domains" status="A (100)"/>
     <testcase name="ynofilter: Avoid AlphaImageLoader filter" status="A (100)"/>
     <testcase name="yimgnoscale: Do not scale images in HTML" status="A (100)"/>
     <testcase name="yfavicon: Make favicon small and cacheable" status="A (95)"/>

@@ -165,17 +165,17 @@ module.exports = function(grunt) {
     phantomas: {
       dev : {
         options : {
-          indexPath : './phantomas/',
-          url       : 'http://localhost:80',
-          buildUi   : true,
+          indexPath: './phantomas/',
+          url: 'http://localhost:80',
+          buildUi: true,
           numberOfRuns: 1,
           'no-externals': true,
           'allow-domain': 'connect.facebook.net,platform.twitter.com',
           'timeout': 60,
           verbose: true,
           assertions : {
-            bodyHTMLSize          : 10500,
-            jsErrors              : 15
+            bodyHTMLSize: 10500,
+            jsErrors: 15
           },
           group: {
             'REQUESTS' : [
