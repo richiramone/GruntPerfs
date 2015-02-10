@@ -3,9 +3,11 @@
   "version": "2.0.0",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-yslow-test": "^0.1.0",
-    "grunt-phantomas": "^0.11.0",
     "grunt-pagespeed": "^0.4.1",
+    "grunt-perfbudget": "^0.1.6",
+    "grunt-phantomas": "^0.11.0",
+    "grunt-yslow": "0.0.4",
+    "grunt-yslow-test": "^0.1.0",
     "load-grunt-tasks": "^2.0.0",
     "ngrok": "^0.1.98"
   }

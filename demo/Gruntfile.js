@@ -128,40 +128,27 @@ module.exports = function(grunt) {
         dest: 'index.html'
       }
     },
-
-    perfbudget: {
-      default: {
+    pagespeed: {
+      dev: {
         options: {
-          url: 'http://lucasramos.me/gruntperfs/builds/7/',
-          key: 'A.d01077156635968a5bd2637fda103bd2',
-          runs: 2
+          nokey: true,
+          locale: "it_IT",
+          strategy: "desktop",
+          threshold: 30
         }
       }
     },
-    yslow: {
+    yslow_test: {
       options: {
-        thresholds: {
-          weight: 180,
-          speed: 1000,
-          score: 80,
-          requests: 15
-        }
+        info: "grade",
+        format: "junit",
+        urls: ['http://localhost:80'],
+        reports: ['./yslow-reports/yslow.xml']
       },
-      pages: {
-        files: [
-          {
-            src: 'http://andyshora.com'
-          },
-          {
-            src: 'http://www.google.co.uk',
-            thresholds: {
-              weight: 100
-            }
-          }
-        ]
+      your_target: {
+        files: []
       }
     },
-
     phantomas: {
       dev : {
         options : {
@@ -169,13 +156,13 @@ module.exports = function(grunt) {
           url: 'http://localhost:80',
           buildUi: true,
           numberOfRuns: 1,
-          'no-externals': true,
+          'no-externals': false,
           'allow-domain': 'connect.facebook.net,platform.twitter.com',
           'timeout': 60,
           verbose: true,
           assertions : {
-            bodyHTMLSize: 10500,
-            jsErrors: 15
+            bodyHTMLSize: 100500,
+            jsErrors: 150
           },
           group: {
             'REQUESTS' : [
@@ -291,31 +278,40 @@ module.exports = function(grunt) {
         }
       }
     },
-    yslow_test: {
-      options: {
-        info: "grade",
-        format: "junit",
-        urls: ['http://localhost:80'],
-        reports: ['./yslow-reports/yslow.xml']
-      },
-      your_target: {
-        files: []
+    perfbudget: {
+      default: {
+        options: {
+          url: 'http://gruntperfs.lucasramos.me/',
+          key: 'A.d01077156635968a5bd2637fda103bd2',
+          location: 'Dulles:Chrome',
+          runs: 2,
+          budget: {
+            render: '30000',
+            SpeedIndex: '100000',
+          }
+        }
       }
     },
-    pagespeed: {
-      dev: {
-        options: {
-          nokey: true,
-          locale: "it_IT",
-          strategy: "desktop",
-          threshold: 30
+    yslow: {
+      options: {
+        thresholds: {
+          weight: 10000,
+          speed: 50000,
+          score: 1,
+          requests: 500
         }
+      },
+      pages: {
+        files: [
+          {
+            src: 'http://gruntperfs.demo'
+          }
+        ]
       }
     }
   });
 
-  // Register customer task for ngrok
-  grunt.registerTask('psi-ngrok', 'Run pagespeed with ngrok', function() {
+  grunt.registerTask('psi-ngrok', 'Run proxied site with ngrok', function() {
     var done = this.async();
     var port = 80;
 
@@ -324,10 +320,14 @@ module.exports = function(grunt) {
         grunt.fail.fatal(err);
         return done();
       }
+      
       grunt.config.set('pagespeed.options.url', url);
-      grunt.task.run('pagespeed');
-      grunt.task.run('yslow_test');
+      
+      //grunt.task.run('pagespeed');
+      //grunt.task.run('yslow_test');
       grunt.task.run('phantomas');
+      //grunt.task.run('perfbudget');
+      
       done();
     });
   });
@@ -340,12 +340,9 @@ module.exports = function(grunt) {
     'uglify',
     'cssmin',
     'htmlmin',
-    'critical',
-
-    'perfbudget',
-    'yslow',*/
-
+    'critical',*/
     'psi-ngrok'
+    //'yslow'
   ]);
 };
 
