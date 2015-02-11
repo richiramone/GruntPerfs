@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
   <testsuite name="YSlow" tests="24" failures="9" skipped="1">
-    <testcase name="overall score" status="D (69)">
+    <testcase name="overall score" status="C (70)">
       <failure/>
     </testcase>
     <testcase name="ynumreq: Make fewer HTTP requests" status="F (0)">
@@ -14,15 +14,15 @@ This page has 14 external stylesheets.  Try combining them into one.">
         fonts.googleapis.com: 1 component, 0.7K (0.7K GZip)
         localhost: 149 components, 3913.5K (875.7K GZip)
         www.google.com: 4 components, 721.4K (78.1K GZip)
-        p.visualrevenue.com: 1 component, 0.01K
         pagead2.googlesyndication.com: 2 components, 57.5K (53.9K GZip)
+        p.visualrevenue.com: 1 component, 0.0K
         a.visualrevenue.com: 1 component, 11.6K (11.6K GZip)
-        zor.livefyre.com: 2 components, 90.3K (55.7K GZip)
-        www.googletagservices.com: 1 component, 46.4K
-        partner.googleadservices.com: 1 component, 97.4K (55.2K GZip)
-        ad.doubleclick.net: 7 components, 2.4K (2.4K GZip)
+        zor.livefyre.com: 2 components, 90.3K (59.2K GZip)
+        www.googletagservices.com: 1 component, 46.4K (46.4K GZip)
+        partner.googleadservices.com: 1 component, 97.4K (47.2K GZip)
+        ad.doubleclick.net: 7 components, 2.3K (2.3K GZip)
         admin.brightcove.com: 3 components, 123.7K (109.5K GZip)
-        connect.facebook.net: 1 component, 161.9K (62.7K GZip)
+        connect.facebook.net: 1 component, 161.9K (48.5K GZip)
         secure-uk.imrworldwide.com: 1 component, 12.7K (12.7K GZip)
         static.chartbeat.com: 1 component, 21.2K (21.2K GZip)
         www.wired.it: 1 component, 0.0K
@@ -32,14 +32,14 @@ This page has 14 external stylesheets.  Try combining them into one.">
     <testcase name="yexpires: Add Expires headers" status="F (0)">
       <failure message="There are 34 static components without a far-future expiration date.">
         http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700
-        <![CDATA[http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn]]>
-        http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?395443
+        http://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/0548.js?395469
         http://pagead2.googlesyndication.com/pagead/js/lidar.js
+        <![CDATA[http://p.visualrevenue.com/?transport=jsonp&idsite=508&url=http%3A%2F%2Fwww.wired.it%2F&content_type=utf-8&callback=_vrq.jsonp.callbackFn]]>
         http://a.visualrevenue.com/vrs.js
         http://www.google-analytics.com/ga.js
         http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js
         http://www.googletagservices.com/tag/js/gpt.js
-        <![CDATA[http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=5855316792149097]]>
+        <![CDATA[http://ad.doubleclick.net/N5574/adj/wired.it/home;tile=9;dcopt=ist;&abr=!webtv;sz=3x3;ord=7096779118292034]]>
         http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=1;sz=1x1;ord=2?
         http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=2;sz=1x1;ord=2?
         http://ad.doubleclick.net/N5574/adj/wired.it/textlink;promopos=3;sz=1x1;ord=2?
@@ -67,7 +67,7 @@ This page has 14 external stylesheets.  Try combining them into one.">
         http://www.wired.it/favicon.ico
       </failure>
     </testcase>
-    <testcase name="ycompress: Compress components with gzip" status="B (89)"/>
+    <testcase name="ycompress: Compress components with gzip" status="A (100)"/>
     <testcase name="ycsstop: Put CSS at top" status="A (100)"/>
     <testcase name="yjsbottom: Put JavaScript at bottom" status="A (100)"/>
     <testcase name="yexpressions: Avoid CSS expressions" status="A (100)"/>
@@ -84,18 +84,18 @@ This page has 14 external stylesheets.  Try combining them into one.">
         fonts.googleapis.com: 1 component, 0.7K (0.7K GZip)
         fonts.gstatic.com: 3 components, 0.0K
         www.google.com: 4 components, 721.4K (78.1K GZip)
-        p.visualrevenue.com: 1 component, 0.01K
         dnn506yrbagrg.cloudfront.net: 1 component, 0.0K
         pagead2.googlesyndication.com: 2 components, 57.5K (53.9K GZip)
+        p.visualrevenue.com: 1 component, 0.0K
         a.visualrevenue.com: 1 component, 11.6K (11.6K GZip)
         www.google-analytics.com: 1 component, 41.1K (41.1K GZip)
-        zor.livefyre.com: 2 components, 90.3K (55.7K GZip)
-        www.googletagservices.com: 1 component, 46.4K
-        partner.googleadservices.com: 1 component, 97.4K (55.2K GZip)
-        ad.doubleclick.net: 7 components, 2.4K (2.4K GZip)
+        zor.livefyre.com: 2 components, 90.3K (59.2K GZip)
+        www.googletagservices.com: 1 component, 46.4K (46.4K GZip)
+        partner.googleadservices.com: 1 component, 97.4K (47.2K GZip)
+        ad.doubleclick.net: 7 components, 2.3K (2.3K GZip)
         admin.brightcove.com: 3 components, 123.7K (109.5K GZip)
-        connect.facebook.net: 1 component, 161.9K (62.7K GZip)
-        platform.twitter.com: 1 component, 114.3K (61.1K GZip)
+        connect.facebook.net: 1 component, 161.9K (48.5K GZip)
+        platform.twitter.com: 1 component, 114.3K (50.8K GZip)
         secure-uk.imrworldwide.com: 1 component, 12.7K (12.7K GZip)
         static.chartbeat.com: 1 component, 21.2K (21.2K GZip)
         media.cnlive.it: 6 components, 88.7K

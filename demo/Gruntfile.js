@@ -1,7 +1,8 @@
 'use strict'
 
 var mozjpeg = require('imagemin-mozjpeg'),
-    ngrok = require('ngrok');
+    ngrok = require('ngrok'),
+    casper = require('casper').create();
 
 module.exports = function(grunt) {
 
@@ -127,6 +128,16 @@ module.exports = function(grunt) {
         src: 'index.html',
         dest: 'index.html'
       }
+    },
+    phantomcss: {
+      options: {
+        screenshots: 'diffs/screenshots/',
+        results: 'diffs/results/',
+        viewportSize: [1280, 800]
+      },
+      src: [
+        'diffs/test/casper.js'
+      ]
     },
     pagespeed: {
       dev: {
@@ -323,10 +334,10 @@ module.exports = function(grunt) {
       
       grunt.config.set('pagespeed.options.url', url);
       
-      //grunt.task.run('pagespeed');
-      //grunt.task.run('yslow_test');
+      grunt.task.run('pagespeed');
+      grunt.task.run('yslow_test');
       grunt.task.run('phantomas');
-      //grunt.task.run('perfbudget');
+      grunt.task.run('perfbudget');
       
       done();
     });
@@ -341,8 +352,9 @@ module.exports = function(grunt) {
     'cssmin',
     'htmlmin',
     'critical',*/
-    'psi-ngrok'
-    //'yslow'
+    'psi-ngrok',
+    'yslow',
+    'phantomcss'
   ]);
 };
 
