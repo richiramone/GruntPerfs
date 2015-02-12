@@ -1,3 +1,4 @@
+var zone = "home", openGallery = "";
 var _zone = "/5574/wired.it/";
 var bannerList = new Array();
 var listRefresBanner = new Array();

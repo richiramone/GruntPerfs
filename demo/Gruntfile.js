@@ -24,6 +24,46 @@ module.exports = function(grunt) {
         }]
       }
     },
+    uglify: {
+      options: {
+        mangle: {
+          except: ['jQuery', '$', 'Modernizr','_slot']
+        }
+      },
+      my_target: {
+        files: {
+          'js/scripts.min.js': ['js/scripts.js'],
+          'js/cn_banner.min.js': ['js/cn_banner.js']
+        }
+      }
+    },
+    cssmin: {
+      target: {
+        options: {
+          keepSpecialComments: 0
+        },
+        files: {
+          'css/style.min.css': ['css/style.css']
+        }
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true,
+          removeCommentsFromCDATA: true,
+          removeAttributeQuotes: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          removeOptionalTags: true
+        },
+        files: {
+          'index.html': 'index.html'
+        }
+      }
+    },
     colorguard: {
       options: {
         threshold : 3
@@ -76,46 +116,6 @@ module.exports = function(grunt) {
         },
         files: {
           'css/clean-style.css': ['original-index.html']
-        }
-      }
-    },
-    uglify: {
-      options: {
-        mangle: {
-          except: ['jQuery', '$', 'Modernizr','_slot']
-        }
-      },
-      my_target: {
-        files: {
-          'js/scripts.min.js': ['js/scripts.js'],
-          'js/cn_banner.min.js': ['js/cn_banner.js']
-        }
-      }
-    },
-    cssmin: {
-      target: {
-        options: {
-          keepSpecialComments: 0
-        },
-        files: {
-          'css/style.min.css': ['css/style.css']
-        }
-      }
-    },
-    htmlmin: {
-      dist: {
-        options: {
-          removeComments: true,
-          collapseWhitespace: true,
-          removeCommentsFromCDATA: true,
-          removeAttributeQuotes: true,
-          removeRedundantAttributes: true,
-          removeScriptTypeAttributes: true,
-          removeStyleLinkTypeAttributes: true,
-          removeOptionalTags: true
-        },
-        files: {
-          'index.html': 'index.html'
         }
       }
     },
@@ -345,16 +345,16 @@ module.exports = function(grunt) {
 
   // Register default tasks
   grunt.registerTask('default', [  
-  /*'imagemin',
-    'colorguard',
-    'uncss',
+    //'imagemin',
     'uglify',
     'cssmin',
     'htmlmin',
-    'critical',*/
-    'psi-ngrok',
-    'yslow',
-    'phantomcss'
+    //'colorguard',
+    //'uncss',
+    //'critical',
+    //'psi-ngrok',
+    //'yslow',
+    //'phantomcss'
   ]);
 };
 
