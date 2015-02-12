@@ -136,7 +136,7 @@ module.exports = function(grunt) {
         viewportSize: [1280, 800]
       },
       src: [
-        'diffs/tests/casper.js'
+        'diffs/test/casper.js'
       ]
     },
     pagespeed: {
@@ -160,32 +160,17 @@ module.exports = function(grunt) {
         files: []
       }
     },
-    perfbudget: {
-      default: {
-        options: {
-          url: 'http://gruntperfs.lucasramos.me/',
-          key: 'A.d01077156635968a5bd2637fda103bd2',
-          location: 'Dulles:Chrome',
-          runs: 2,
-          timeout: 120,
-          budget: {
-            render: '30000',
-            SpeedIndex: '100000',
-          }
-        }
-      }
-    },
     phantomas: {
       dev : {
         options : {
           indexPath: './phantomas/',
-          url: 'http://3477b8c3.ngrok.com',
+          url: 'http://localhost:80',
           buildUi: true,
           numberOfRuns: 1,
           'no-externals': false,
           'allow-domain': 'connect.facebook.net,platform.twitter.com',
-          'timeout': 260,
-          'verbose': true,
+          'timeout': 60,
+          verbose: true,
           assertions : {
             bodyHTMLSize: 100500,
             jsErrors: 150
@@ -304,6 +289,20 @@ module.exports = function(grunt) {
         }
       }
     },
+    perfbudget: {
+      default: {
+        options: {
+          url: 'http://gruntperfs.lucasramos.me/',
+          key: 'A.d01077156635968a5bd2637fda103bd2',
+          location: 'Dulles:Chrome',
+          runs: 2,
+          budget: {
+            render: '30000',
+            SpeedIndex: '100000',
+          }
+        }
+      }
+    },
     yslow: {
       options: {
         thresholds: {
@@ -335,10 +334,10 @@ module.exports = function(grunt) {
       
       grunt.config.set('pagespeed.options.url', url);
       
-      //grunt.task.run('pagespeed');
-      //grunt.task.run('yslow_test');
+      grunt.task.run('pagespeed');
+      grunt.task.run('yslow_test');
+      grunt.task.run('phantomas');
       grunt.task.run('perfbudget');
-      //grunt.task.run('phantomas');
       
       done();
     });
@@ -346,16 +345,16 @@ module.exports = function(grunt) {
 
   // Register default tasks
   grunt.registerTask('default', [  
-    //'imagemin',
+  /*'imagemin',
     'colorguard',
-    /*'uncss',
+    'uncss',
     'uglify',
     'cssmin',
     'htmlmin',
     'critical',*/
-    //'phantomcss',
-    'psi-ngrok'
-    //'yslow'
+    'psi-ngrok',
+    'yslow',
+    'phantomcss'
   ]);
 };
 
