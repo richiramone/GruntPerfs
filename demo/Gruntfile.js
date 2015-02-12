@@ -60,7 +60,7 @@ module.exports = function(grunt) {
           removeOptionalTags: true
         },
         files: {
-          'index.html': 'index.html'
+          'index.min.html': 'index.html'
         }
       }
     },
@@ -346,11 +346,11 @@ module.exports = function(grunt) {
   // Register default tasks
   grunt.registerTask('default', [  
     //'imagemin',
-    'uglify',
-    'cssmin',
-    'htmlmin',
-    //'colorguard',
-    //'uncss',
+    //'uglify',
+    //'cssmin',
+    //'htmlmin',
+    'colorguard',
+    'uncss'
     //'critical',
     //'psi-ngrok',
     //'yslow',
