@@ -334,9 +334,9 @@ module.exports = function(grunt) {
       
       grunt.config.set('pagespeed.options.url', url);
       
-      grunt.task.run('pagespeed');
-      grunt.task.run('yslow_test');
-      grunt.task.run('phantomas');
+      //grunt.task.run('pagespeed');
+      //grunt.task.run('yslow_test');
+      //grunt.task.run('phantomas');
       grunt.task.run('perfbudget');
       
       done();
@@ -349,10 +349,10 @@ module.exports = function(grunt) {
     //'uglify',
     //'cssmin',
     //'htmlmin',
-    'colorguard',
-    'uncss'
+    //'colorguard',
+    //'uncss'
     //'critical',
-    //'psi-ngrok',
+    'psi-ngrok'
     //'yslow',
     //'phantomcss'
   ]);
