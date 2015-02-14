@@ -13,15 +13,16 @@ module.exports = function(grunt) {
     imagemin: {
       dynamic: {
         options: {
-          optimizationLevel: 3,
+          optimizationLevel: 7,
+          interlaced: true,
           progressive: true,
           use: [mozjpeg()]
         },
         files: [{
           expand: true,
-          cwd: 'old_images/',
-          src: ['**/*.{png,jpg}'],
-          dest: 'img/'
+          cwd: 'media/images_no_compression',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'media/images'
         }]
       }
     },
@@ -151,132 +152,23 @@ module.exports = function(grunt) {
         files: []
       }
     },
-    phantomas: {
-      dev : {
-        options : {
-          url: remoteUrl,
-          indexPath: './phantomas/',
-          buildUi: true,
-          numberOfRuns: 1,
-          'no-externals': false,
-          'allow-domain': 'googleapis.com,fbcdn.net,vmmpxl.com,amctv.com,quantserve.com,adnxs.com,tubemogul.com,adsrvr.org,pointroll.com,doubleclick.net,google-analytics.com,facebook.com',
-          'timeout': 60,
-          verbose: true,
-          assertions : {
-            bodyHTMLSize: 100500,
-            jsErrors: 150
-          },
-          group: {
-            'REQUESTS' : [
-              'requests',
-              'gzipRequests',
-              'postRequests',
-              'httpsRequests',
-              'notFound',
-              'multipleRequests',
-              'maxRequestsPerDomain',
-              'domains',
-              'medianRequestsPerDomain',
-              'redirects',
-              'redirectsTime',
-              'smallestResponse',
-              'biggestResponse',
-              'smallestLatency',
-              'biggestLatency',
-              'medianResponse',
-              'medianLatency',
-              'assetsNotGzipped'
-            ],
-            'TIMINGS' : [
-              'timeToFirstByte',
-              'timeToFirstImage',
-              'slowestResponse',
-              'onDOMReadyTime',
-              'onDOMReadyTimeEnd',
-              'windowOnLoadTime',
-              'windowOnLoadTimeEnd',
-              'httpTrafficCompleted',
-              'timeBackend',
-              'timeFrontend'
-            ],
-            'HTML' : [
-              'bodyHTMLSize',
-              'iframesCount',
-              'imagesScaledDown',
-              'imagesWithoutDimensions',
-              'commentsSize',
-              'hiddenContentSize',
-              'DOMelementsCount',
-              'nodesWithInlineCSS'
-            ],
-            'JAVASCRIPT' : [
-              'documentWriteCalls',
-              'evalCalls',
-              'jsErrors',
-              'consoleMessages',
-              'globalVariables',
-              'ajaxRequests'
-            ],
-            'DOM' : [
-              'DOMqueries',
-              'DOMqueriesById',
-              'DOMqueriesByClassName',
-              'DOMqueriesByTagName',
-              'DOMqueriesByQuerySelectorAll',
-              'DOMinserts',
-              'DOMqueriesDuplicated',
-              'domContentLoaded',
-              'domContentLoadedEnd',
-              'domComple',
-              'DOMidDuplicated'
-            ],
-            'HEADERS' : [
-              'headersCount',
-              'headersSentCount',
-              'headersRecvCount',
-              'headersSize',
-              'headersSentSize',
-              'headersRecvSize'
-            ],
-            'CACHING' : [
-              'cacheHits',
-              'cacheMisses',
-              'cachePasses',
-              'cachingNotSpecified',
-              'cachingTooShort',
-              'cachingDisabled'
-            ],
-            'COOKIES' : [
-              'cookiesSent',
-              'cookiesRecv',
-              'domainsWithCookies',
-              'documentCookiesLength',
-              'documentCookiesCount'
-            ],
-            'COUNTS & SIZES' : [
-              'contentLength',
-              'bodySize',
-              'htmlSize',
-              'htmlCount',
-              'cssSize',
-              'cssCount',
-              'jsSize',
-              'jsCount',
-              'jsonSize',
-              'jsonCount',
-              'imageSize',
-              'imageCount',
-              'webfontSize',
-              'webfontCount',
-              'base64Size',
-              'base64Count',
-              'otherCount',
-              'otherSize'
-            ],
-            'JQUERY' : [
-              'jQueryOnDOMReadyFunctions'
-            ]
-          }
+    devperf: {
+      options: {
+        urls: ['http://gruntperfs.lucasramos.me/'],
+        numberOfRuns: 1,
+        timeout: 120,
+        openResults: true,
+        resultsFolder: './devperf'
+      },
+      phantomasOptions: {
+        numberOfRuns: 1,
+        'no-externals': false,
+        'allow-domain': 'googleapis.com,fbcdn.net,vmmpxl.com,amctv.com,quantserve.com,adnxs.com,tubemogul.com,adsrvr.org,pointroll.com,doubleclick.net,google-analytics.com,facebook.com,amazonaws.com,tubemogul.com,exelator.com',
+        'timeout': 60,
+        verbose: true,
+        assertions : {
+          bodyHTMLSize: 100500,
+          jsErrors: 150
         }
       }
     },
@@ -326,19 +218,19 @@ module.exports = function(grunt) {
 
   // Register default tasks
   grunt.registerTask('default', [  
-    //'imagemin',
+    'imagemin'
     //'uglify',
     //'cssmin',
     //'htmlmin',
     //'colorguard',
     //'uncss'
     //'critical',
-    'phantomcss',
-    'perfbudget',
-    'yslow_test',
-    'pagespeed',
-    'phantomas',
-    'yslow'
+    //'phantomcss',
+    //'perfbudget',
+    //'yslow_test',
+    //'pagespeed',
+    //'devperf',
+    //'yslow'
   ]);
 };
 
