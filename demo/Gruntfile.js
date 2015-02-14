@@ -69,7 +69,7 @@ module.exports = function(grunt) {
         threshold : 3
       },
       files: {
-        src: ['css/style.css'],
+        src: ['media/css/style.css'],
       }
     },
     uncss: {
@@ -129,31 +129,11 @@ module.exports = function(grunt) {
         dest: 'index.html'
       }
     },
-    phantomcss: {
-      options: {
-        screenshots: 'diffs/screenshots/',
-        results: 'diffs/results/',
-        viewportSize: [1280, 800]
-      },
-      src: [
-        'diffs/test/casper.js'
-      ]
-    },
-    pagespeed: {
-      dev: {
-        options: {
-          nokey: true,
-          locale: "it_IT",
-          strategy: "desktop",
-          threshold: 30
-        }
-      }
-    },
     yslow_test: {
       options: {
         info: "grade",
         format: "junit",
-        urls: ['http://localhost:80'],
+        urls: ['http://gruntperfs.demo/'],
         reports: ['./yslow-reports/yslow.xml']
       },
       your_target: {
@@ -164,11 +144,11 @@ module.exports = function(grunt) {
       dev : {
         options : {
           indexPath: './phantomas/',
-          url: 'http://localhost:80',
+          url: 'http://gruntperfs.demo/',
           buildUi: true,
           numberOfRuns: 1,
           'no-externals': false,
-          'allow-domain': 'connect.facebook.net,platform.twitter.com',
+          'allow-domain': '',
           'timeout': 60,
           verbose: true,
           assertions : {
@@ -292,7 +272,7 @@ module.exports = function(grunt) {
     perfbudget: {
       default: {
         options: {
-          url: 'http://gruntperfs.lucasramos.me/',
+          url: 'http://gruntperfs.demo/',
           key: 'A.d01077156635968a5bd2637fda103bd2',
           location: 'Dulles:Chrome',
           runs: 2,
@@ -319,6 +299,26 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+    phantomcss: {
+      options: {
+        screenshots: 'diffs/screenshots/',
+        results: 'diffs/results/',
+        viewportSize: [1280, 800]
+      },
+      src: [
+        'diffs/test/casper.js'
+      ]
+    },
+    pagespeed: {
+      dev: {
+        options: {
+          nokey: true,
+          locale: "it_IT",
+          strategy: "desktop",
+          threshold: 30
+        }
+      }
     }
   });
 
@@ -334,9 +334,9 @@ module.exports = function(grunt) {
       
       grunt.config.set('pagespeed.options.url', url);
       
-      //grunt.task.run('pagespeed');
-      //grunt.task.run('yslow_test');
-      //grunt.task.run('phantomas');
+      grunt.task.run('pagespeed');
+      grunt.task.run('yslow_test');
+      grunt.task.run('phantomas');
       grunt.task.run('perfbudget');
       
       done();
@@ -349,12 +349,12 @@ module.exports = function(grunt) {
     //'uglify',
     //'cssmin',
     //'htmlmin',
-    //'colorguard',
+    'colorguard',
     //'uncss'
     //'critical',
     'psi-ngrok'
-    //'yslow',
-    //'phantomcss'
+    'yslow',
+    'phantomcss'
   ]);
 };
 
