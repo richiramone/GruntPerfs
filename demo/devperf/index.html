@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>&gt; devperf</title>
+
+        <link rel="stylesheet" href="assets/main.css"/>
+
+        <script src="assets/jquery-2.1.0.min.js"></script>
+        <script src="assets/handlebars-v1.3.0.js"></script>
+        <script src="assets/highcharts.js"></script>
+        <script src="assets/main.js"></script>
+    </head>
+    <body>
+        <div id="interlace"></div>
+        <h1>&gt; devperf --author=gaelmetais</h1>
+        <div id="content">
+            <div id="pageContainer"></div>
+        </div>
+        &gt; <span class="blink">&nbsp;</span>
+
+        <script id="page-template" type="text/x-handlebars-template">
+            {{#each pages}}
+                <br>
+                <br>
+                <br>
+                <div class="page page{{@index}}">
+                    <div class="separator"></div>
+                    <h2>* Page : <a href="{{url}}" class="green">{{url}}</a></h2>
+                    *<br>
+                    <div class="timeCompare">
+                        <div>* <br>* </div>
+                        <div class="left"><h3>Total time</h3><div>{{round domComplete}}ms</div></div>
+                        <div class="meter">
+                            {{meter timeFrontendInMs domComplete 2000 6000}}
+                        </div>
+                        <div class="right"><h3>Frontend time</h3><div>{{round timeFrontendInMs}}ms</div></div>
+                    </div>
+                    * <br>
+                    <h2>* Timings evolution:</h2>
+                    <div class="loadTimeGraph">
+                        <div class="graph">
+                            *<br>*<br>*<br>*<br>*<br>*<br>*<br>*<br>*
+                            <div id="graph{{@index}}"></div>
+                        </div>
+                        <div class="legend">
+                            * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="cyan">timeToFirstByte</span>&nbsp;&nbsp;
+                            <span class="white">domInteractive</span>&nbsp;&nbsp;
+                            <span class="yellow">domComplete</span>&nbsp;&nbsp;
+                            <span class="magenta">httpTrafficCompleted</span>
+                        </div>
+                    </div>
+                    * <br>
+                    <h2>* Files repartition:</h2>
+                    <div class="filesRepartition">
+                        <div class="row">
+                            <div>*&nbsp;</div>
+                            <div></div>
+                            <div class="white">CSS</div>
+                            <div class="white">JS</div>
+                            <div class="white">Images</div>
+                            <div class="white">Fonts</div>
+                            <div class="white">Total</div>
+                        </div>
+                        <div class="row">
+                            <div>*&nbsp;</div>
+                            <div class="white">Size</div>
+                            <div>{{round cssSize}}</div>
+                            <div>{{round jsSize}}</div>
+                            <div>{{round imageSize}}</div>
+                            <div>{{round webfontSize}}</div>
+                            <div>{{round contentLength}}</div>
+                        </div>
+                        <div class="row">
+                            <div>*&nbsp;</div>
+                            <div class="white">Requests number </div>
+                            <div>{{cssCount}}</div>
+                            <div>{{jsCount}}</div>
+                            <div>{{imageCount}}</div>
+                            <div>{{webfontCount}}</div>
+                            <div>{{requests}}</div>
+                        </div>
+                    </div>
+                    * <br>
+                    <div class="warnings">
+                        {{#if warnings}}
+                            <h2>* Warnings:</h2>
+                            <ul>
+                                {{#each warnings}}
+                                    <li>*
+                                        <span class="red">- {{message}} : </span> 
+                                        <span class="">{{value}}</span>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        {{/if}}
+                    </div>
+                    * <br>
+                    * <a href="{{gruntPhantomasReport}}" class="green">Open the full grunt-phantomas report for details</a><br>
+                    * <br>
+                    <div class="separator"></div>
+                </div>
+            {{/each}}
+        </script>
+        <script>
+            var results = {
+    "pages": [
+        {
+            "url": "http://gruntperfs.lucasramos.me/",
+            "timingsHistory": [
+                {
+                    "timestamp": "1423948697261",
+                    "timeToFirstByte": 709,
+                    "domInteractive": 1499,
+                    "domComplete": 15970,
+                    "httpTrafficCompleted": 18406
+                },
+                {
+                    "timestamp": "1423934852292",
+                    "timeToFirstByte": 745,
+                    "domInteractive": 1224,
+                    "domComplete": 9857,
+                    "httpTrafficCompleted": 9606
+                },
+                {
+                    "timestamp": "1423932108138",
+                    "timeToFirstByte": 1966,
+                    "domInteractive": 2791,
+                    "domComplete": 15169,
+                    "httpTrafficCompleted": 14924
+                },
+                {
+                    "timestamp": "1423931860279",
+                    "timeToFirstByte": 732,
+                    "domInteractive": 31449,
+                    "domComplete": 33005,
+                    "httpTrafficCompleted": 32938
+                },
+                {
+                    "timestamp": "1423931007228",
+                    "timeToFirstByte": 2307,
+                    "domInteractive": 4873,
+                    "domComplete": 10978,
+                    "httpTrafficCompleted": 13048
+                },
+                {
+                    "timestamp": "1423930064778",
+                    "timeToFirstByte": 759,
+                    "domInteractive": 11614,
+                    "domComplete": 12279,
+                    "httpTrafficCompleted": 12988
+                },
+                {
+                    "timestamp": "1423929032660",
+                    "timeToFirstByte": 2101,
+                    "domInteractive": 1669,
+                    "domComplete": 10793,
+                    "httpTrafficCompleted": 12639
+                },
+                {
+                    "timestamp": "1423926977435",
+                    "timeToFirstByte": 784,
+                    "domInteractive": 2209,
+                    "domComplete": 18933,
+                    "httpTrafficCompleted": 19481
+                },
+                {
+                    "timestamp": "1423919271383",
+                    "timeToFirstByte": 1779,
+                    "domInteractive": 6743,
+                    "domComplete": 7368,
+                    "httpTrafficCompleted": 8900
+                }
+            ],
+            "gruntPhantomasReport": "httpgruntperfslucasramosme/index.html",
+            "requests": 44,
+            "gzipRequests": 8,
+            "postRequests": 0,
+            "httpsRequests": 3,
+            "notFound": 0,
+            "bodySize": 336136,
+            "contentLength": 931581,
+            "httpTrafficCompleted": 18406,
+            "timeToFirstByte": 709,
+            "timeToLastByte": 727,
+            "ajaxRequests": 0,
+            "htmlCount": 3,
+            "htmlSize": 67782,
+            "cssCount": 1,
+            "cssSize": 2750,
+            "jsCount": 7,
+            "jsSize": 132524,
+            "jsonCount": 0,
+            "jsonSize": 0,
+            "imageCount": 29,
+            "imageSize": 727651,
+            "videoCount": 0,
+            "videoSize": 0,
+            "webfontCount": 0,
+            "webfontSize": 0,
+            "base64Count": 0,
+            "base64Size": 0,
+            "otherCount": 4,
+            "otherSize": 874,
+            "cacheHits": 3,
+            "cacheMisses": 0,
+            "cachePasses": 0,
+            "cachingNotSpecified": 31,
+            "cachingTooShort": 2,
+            "cachingDisabled": 1,
+            "oldCachingHeaders": 50,
+            "consoleMessages": 0,
+            "cookiesSent": 0,
+            "cookiesRecv": 1649,
+            "domainsWithCookies": 7,
+            "documentCookiesLength": 63,
+            "documentCookiesCount": 3,
+            "documentHeight": 2048,
+            "domains": 17,
+            "maxRequestsPerDomain": 24,
+            "medianRequestsPerDomain": 1,
+            "commentsSize": 0,
+            "hiddenContentSize": 386,
+            "whiteSpacesSize": 12,
+            "DOMelementsCount": 111,
+            "DOMelementMaxDepth": 7,
+            "nodesWithInlineCSS": 8,
+            "DOMmutationsInserts": 0,
+            "DOMmutationsRemoves": 0,
+            "DOMmutationsAttributes": 0,
+            "DOMqueries": 31,
+            "DOMqueriesById": 9,
+            "DOMqueriesByClassName": 2,
+            "DOMqueriesByTagName": 16,
+            "DOMqueriesByQuerySelectorAll": 4,
+            "DOMinserts": 16,
+            "DOMqueriesDuplicated": 7,
+            "eventsBound": 19,
+            "globalVariables": 47,
+            "globalVariablesFalsy": 2,
+            "headersCount": 586,
+            "headersSentCount": 131,
+            "headersRecvCount": 455,
+            "headersSize": 23046,
+            "headersSentSize": 5212,
+            "headersRecvSize": 17834,
+            "headersBiggerThanContent": 13,
+            "documentWriteCalls": 11,
+            "evalCalls": 0,
+            "jQueryOnDOMReadyFunctions": 0,
+            "jQuerySizzleCalls": 3,
+            "jsErrors": 0,
+            "localStorageEntries": 2,
+            "redirects": 3,
+            "redirectsTime": 1064,
+            "assetsNotGzipped": 4,
+            "assetsWithQueryString": 7,
+            "assetsWithCookies": 6,
+            "smallImages": 11,
+            "multipleRequests": 0,
+            "timeToFirstCss": 6136,
+            "timeToFirstJs": 759,
+            "timeToFirstImage": 1673,
+            "domInteractive": 1499,
+            "domContentLoaded": 1499,
+            "domContentLoadedEnd": 1510,
+            "domComplete": 15970,
+            "timeBackend": 4,
+            "timeFrontend": 96,
+            "windowAlerts": 0,
+            "windowConfirms": 0,
+            "windowPrompts": 0,
+            "bodyHTMLSize": 10134,
+            "iframesCount": 2,
+            "imagesWithoutDimensions": 18,
+            "smallestResponse": 0,
+            "biggestResponse": 150583,
+            "fastestResponse": 87,
+            "slowestResponse": 17575,
+            "smallestLatency": 86,
+            "biggestLatency": 17569,
+            "medianResponse": 2513,
+            "medianLatency": 2118
+        }
+    ]
+}
+
+            var settings = {
+    "urls": [
+        "http://gruntperfs.lucasramos.me/"
+    ],
+    "warnings": [
+        {
+            "variable": "requests",
+            "limit": 200,
+            "message": "Too many requests, i guess your site is slow, isn't it?"
+        },
+        {
+            "variable": "cssCount",
+            "limit": 6,
+            "message": "Too many CSS files, use concatenation"
+        },
+        {
+            "variable": "jsCount",
+            "limit": 12,
+            "message": "Too many JS files, use concatenation"
+        },
+        {
+            "variable": "imageCount",
+            "limit": 30,
+            "message": "Too many images, use lazyloading"
+        },
+        {
+            "variable": "smallImages",
+            "limit": 20,
+            "message": "Too many small images, build sprites"
+        },
+        {
+            "variable": "imageSize",
+            "limit": 512000,
+            "message": "Total image size (bytes) is too high, try image optimisation"
+        },
+        {
+            "variable": "webfontCount",
+            "limit": 4,
+            "message": "Too many custom fonts, tell the designer you don't want that"
+        },
+        {
+            "variable": "notFound",
+            "limit": 0,
+            "message": "Number of 404 errors"
+        },
+        {
+            "variable": "multipleRequests",
+            "limit": 1,
+            "message": "Some static assets are requested multiple times"
+        },
+        {
+            "variable": "imagesWithoutDimensions",
+            "limit": 5,
+            "message": "Number of images without dimensions"
+        },
+        {
+            "variable": "commentsSize",
+            "limit": 1000,
+            "message": "Reduce size of comments in HTML"
+        },
+        {
+            "variable": "whiteSpacesSize",
+            "limit": 8000,
+            "message": "Reduce the number of whitespaces in HTML"
+        },
+        {
+            "variable": "DOMelementsCount",
+            "limit": 2000,
+            "message": "Reduce the number of DOM elements"
+        },
+        {
+            "variable": "documentWriteCalls",
+            "limit": 0,
+            "message": "Remove all document.write() calls"
+        },
+        {
+            "variable": "jsErrors",
+            "limit": 0,
+            "message": "Number of Javascript errors"
+        },
+        {
+            "variable": "consoleMessages",
+            "limit": 0,
+            "message": "Remove console.log or console.*whatever*"
+        },
+        {
+            "variable": "DOMqueries",
+            "limit": 200,
+            "message": "Reduce number of DOM queries"
+        },
+        {
+            "variable": "DOMqueriesDuplicated",
+            "limit": 30,
+            "message": "Many duplicated DOM queries, try to save results into variables"
+        },
+        {
+            "variable": "DOMinserts",
+            "limit": 100,
+            "message": "Reduce number of DOM insertions"
+        },
+        {
+            "variable": "jQuerySizzleCalls",
+            "limit": 300,
+            "message": "Reduce number of Sizzle calls (= jQuery DOM queries)"
+        },
+        {
+            "variable": "headersSentSize",
+            "limit": 20000,
+            "message": "Reduce size of headers sent (cookies?)"
+        }
+    ],
+    "numberOfRuns": 1,
+    "timeout": 120,
+    "openResults": true,
+    "resultsFolder": "./devperf",
+    "phantomasOptions": {
+        "timeout": 120
+    }
+}
+        </script>
+    </body>
+</html>
