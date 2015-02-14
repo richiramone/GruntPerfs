@@ -34,8 +34,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'js/scripts.min.js': ['js/scripts.js'],
-          'js/cn_banner.min.js': ['js/cn_banner.js']
+          'meida/js/unified.min.js': ['media/js/unified.js']
         }
       }
     },
@@ -45,7 +44,7 @@ module.exports = function(grunt) {
           keepSpecialComments: 0
         },
         files: {
-          'css/style.min.css': ['css/style.css']
+          'media/css/style.min.css': ['media/css/style.css']
         }
       }
     },
@@ -219,18 +218,19 @@ module.exports = function(grunt) {
   // Register default tasks
   grunt.registerTask('default', [  
     //'imagemin'
-    //'uglify',
-    //'cssmin',
-    //'htmlmin',
+    'uglify',
+    'cssmin',
+    'htmlmin'
     //'colorguard',
     //'uncss'
     //'critical',
+    
     //'phantomcss',
-    'perfbudget',
-    'yslow_test',
-    'pagespeed',
-    'devperf',
-    'yslow'
+    //'perfbudget',
+    //'yslow_test',
+    //'pagespeed',
+    //'devperf',
+    //'yslow'
   ]);
 };
 
