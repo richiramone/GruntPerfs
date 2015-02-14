@@ -53,7 +53,7 @@ font-family: arial, helvetica, sans-serif;
 }
 
 #dresslikesaulbody {
-background-color: #fe0000;
+background-color: #FF0000  ;
 background-image: url(../images/dresslikesaulbg.jpg);
 background-position: top center;
 background-repeat: no-repeat;
@@ -692,7 +692,7 @@ font-size: .9em;
 width: 74px;
 height: 78px;
 margin: 0 0 10px 6px;
-border: 1px solid #eae21c;
+border: 1px solid #EAE41F;
 background-color: #000;
 -moz-box-shadow: 1px 1px 4px #000;
 -webkit-box-shadow: 1px 1px 4px #000;
@@ -724,7 +724,7 @@ margin: 0 0 0 5px;
 #viewer {
 width: 556px;
 height: 373px;
-border: 3px solid #e9e31f;
+border: 3px solid #EAE41F;
 float: right;
 -moz-box-shadow: 1px 1px 4px #000;
 -webkit-box-shadow: 1px 1px 4px #000;
@@ -854,8 +854,8 @@ clear: both;
   background: none!important;
 }
 .fyre-editor .fyre-editor-container .fyre-editor-editable {
-  background-color: #f6f6f6;
-  border: 1px solid #a1a1a1;
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
   -webkit-border-radius: 0!important;
   -moz-border-radius: 0!important;
   -ms-border-radius: 0!important;
@@ -884,8 +884,8 @@ clear: both;
 }
 .fyre-editor .fyre-editor-toolbar .goog-toolbar > div.goog-toolbar-separator {
   border: none;
-  border-bottom: 1px solid #a1a1a1;
-  border-right: 1px solid #a1a1a1;
+  border-bottom: 1px solid #a9a9a9;
+  border-right: 1px solid #a9a9a9;
   -webkit-border-radius: 0!important;
   -moz-border-radius: 0!important;
   -ms-border-radius: 0!important;
@@ -908,7 +908,7 @@ clear: both;
   -ms-border-radius: 0!important;
   -o-border-radius: 0!important;
   border-radius: 0!important;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #a9a9a9;
 }
 
 .fyre-editor .fyre-editor-toolbar .fyre-share-button {
@@ -952,7 +952,7 @@ fyre-editor .fyre-editor-toolbar .goog-toolbar > div.fyre-button-right.fyre-post
 }
 
 .goog-toolbar.goog-toolbar-horizontal {
-	border-right: 1px solid #a1a1a1;
+	border-right: 1px solid #a9a9a9;
 }
 
 .fyre a {

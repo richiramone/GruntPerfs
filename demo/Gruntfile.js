@@ -18,26 +18,34 @@ module.exports = function(grunt) {
         src: ['media/css/style.css'],
       }
     },
-    uncss: {
-      dist: {
-        options: {
-          media        : ['all'],
-          ignore       : [],
-          timeout      : 15000,
-          report       : 'max'
-        },
-        files: {
-          'media/css/uncss-style.css': ['index.html']
-        }
-      }
-    },
     cssmin: {
-      target: {
+      first: {
         options: {
           keepSpecialComments: 0
         },
         files: {
-          'media/css/style.min.css': ['media/css/uncss-style.css']
+          'media/css/style.min.css': ['media/css/style.css']
+        }
+      },
+      second: {
+        options: {
+          keepSpecialComments: 0
+        },
+        files: {
+          'media/css/style.min.css': ['media/css/style.uncss.css']
+        }
+      }
+    },
+    uncss: {
+      dist: {
+        options: {
+          media: ['all'],
+          ignore: [],
+          timeout: 15000,
+          report: 'min'
+        },
+        files: {
+          'media/css/style.uncss.css': ['index.original.html']
         }
       }
     },
@@ -50,7 +58,7 @@ module.exports = function(grunt) {
         src: 'index.original.html',
         dest: 'index.critical.html'
       }
-    },
+    },    
     htmlmin: {
       dist: {
         options: {
@@ -182,19 +190,20 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [  
-    'colorguard',
+    //'colorguard',
+    'cssmin:first',
     'uncss',
-    'cssmin',
+    'cssmin:second',
     'critical',
-    'htmlmin',
-    'uglify',
-    'imagemin',
+    'htmlmin'
+    //'uglify',
+    //'imagemin',
     
-    'phantomcss',
-    'perfbudget',
+    //'phantomcss',
+    //'perfbudget',
     //'yslow_test',
     //'pagespeed',
-    'devperf'
+    //'devperf'
     //'yslow'
   ]);
 };
