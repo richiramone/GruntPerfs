@@ -1,7 +1,8 @@
 'use strict'
 
-var mozjpeg = require('imagemin-mozjpeg'),
-    ngrok = require('ngrok'),
+var ngrokUrl = 'http://3da7ad24.ngrok.com',
+    remoteUrl = 'http://gruntperfs.lucasramos.me/',
+    mozjpeg = require('imagemin-mozjpeg'),
     casper = require('casper').create();
 
 module.exports = function(grunt) {
@@ -129,11 +130,21 @@ module.exports = function(grunt) {
         dest: 'index.html'
       }
     },
+    phantomcss: {
+      options: {
+        screenshots: 'diffs/screenshots/',
+        results: 'diffs/results/',
+        viewportSize: [1280, 800]
+      },
+      src: [
+        'diffs/tests/casper.js'
+      ]
+    },
     yslow_test: {
       options: {
         info: "grade",
         format: "junit",
-        urls: ['http://gruntperfs.demo/'],
+        urls: [remoteUrl],
         reports: ['./yslow-reports/yslow.xml']
       },
       your_target: {
@@ -143,12 +154,12 @@ module.exports = function(grunt) {
     phantomas: {
       dev : {
         options : {
+          url: remoteUrl,
           indexPath: './phantomas/',
-          url: 'http://gruntperfs.demo/',
           buildUi: true,
           numberOfRuns: 1,
           'no-externals': false,
-          'allow-domain': '',
+          'allow-domain': 'googleapis.com,fbcdn.net,vmmpxl.com,amctv.com,quantserve.com,adnxs.com,tubemogul.com,adsrvr.org,pointroll.com,doubleclick.net,google-analytics.com,facebook.com',
           'timeout': 60,
           verbose: true,
           assertions : {
@@ -272,7 +283,7 @@ module.exports = function(grunt) {
     perfbudget: {
       default: {
         options: {
-          url: 'http://gruntperfs.demo/',
+          url: remoteUrl,
           key: 'A.d01077156635968a5bd2637fda103bd2',
           location: 'Dulles:Chrome',
           runs: 2,
@@ -295,20 +306,10 @@ module.exports = function(grunt) {
       pages: {
         files: [
           {
-            src: 'http://gruntperfs.demo'
+            src: remoteUrl
           }
         ]
       }
-    },
-    phantomcss: {
-      options: {
-        screenshots: 'diffs/screenshots/',
-        results: 'diffs/results/',
-        viewportSize: [1280, 800]
-      },
-      src: [
-        'diffs/test/casper.js'
-      ]
     },
     pagespeed: {
       dev: {
@@ -316,31 +317,11 @@ module.exports = function(grunt) {
           nokey: true,
           locale: "it_IT",
           strategy: "desktop",
-          threshold: 30
+          threshold: 30,
+          url: remoteUrl
         }
       }
     }
-  });
-
-  grunt.registerTask('psi-ngrok', 'Run proxied site with ngrok', function() {
-    var done = this.async();
-    var port = 80;
-
-    ngrok.connect(port, function(err, url) {
-      if (err !== null) {
-        grunt.fail.fatal(err);
-        return done();
-      }
-      
-      grunt.config.set('pagespeed.options.url', url);
-      
-      grunt.task.run('pagespeed');
-      grunt.task.run('yslow_test');
-      grunt.task.run('phantomas');
-      grunt.task.run('perfbudget');
-      
-      done();
-    });
   });
 
   // Register default tasks
@@ -349,12 +330,15 @@ module.exports = function(grunt) {
     //'uglify',
     //'cssmin',
     //'htmlmin',
-    'colorguard',
+    //'colorguard',
     //'uncss'
     //'critical',
-    'psi-ngrok'
-    'yslow',
-    'phantomcss'
+    //'phantomcss',
+    'perfbudget',
+    'yslow_test',
+    'pagespeed',
+    'phantomas',
+    'yslow'
   ]);
 };
 
