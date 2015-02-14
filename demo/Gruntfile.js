@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'meida/js/unified.min.js': ['media/js/unified.js']
+          'media/js/unified.min.js': ['media/js/unified.js']
         }
       }
     },
@@ -215,22 +215,21 @@ module.exports = function(grunt) {
     }
   });
 
-  // Register default tasks
   grunt.registerTask('default', [  
     //'imagemin'
-    'uglify',
-    'cssmin',
-    'htmlmin'
+    //'uglify',
+    //'cssmin',
+    //'htmlmin'
     //'colorguard',
     //'uncss'
     //'critical',
     
-    //'phantomcss',
-    //'perfbudget',
-    //'yslow_test',
-    //'pagespeed',
-    //'devperf',
-    //'yslow'
+    'phantomcss',
+    'perfbudget',
+    'yslow_test',
+    'pagespeed',
+    'devperf',
+    'yslow'
   ]);
 };
 
