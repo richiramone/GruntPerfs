@@ -10,32 +10,45 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
-    imagemin: {
-      dynamic: {
-        options: {
-          optimizationLevel: 7,
-          interlaced: true,
-          progressive: true,
-          use: [mozjpeg()]
-        },
-        files: [{
-          expand: true,
-          cwd: 'media/images_no_compression',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'media/images'
-        }]
+    colorguard: {
+      options: {
+        threshold : 3
+      },
+      files: {
+        src: ['media/css/style.css'],
       }
     },
-    uglify: {
-      options: {
-        mangle: {
-          except: ['jQuery', '$', 'Modernizr','_slot']
-        }
-      },
-      my_target: {
+    uncss: {
+      dist: {
+        options: {
+          media        : ['all'],
+          ignore       : [],
+          timeout      : 15000,
+          report       : 'max'
+        },
         files: {
-          'media/js/unified.min.js': ['media/js/unified.js']
+          'media/css/uncss-style.css': ['index.html']
         }
+      }
+    },
+    cssmin: {
+      target: {
+        options: {
+          keepSpecialComments: 0
+        },
+        files: {
+          'media/css/style.min.css': ['media/css/uncss-style.css']
+        }
+      }
+    },
+    critical: {
+      dist: {
+        base: './', 
+        width: 960,
+        height: 1000,
+        minify: true,
+        src: 'index.original.html',
+        dest: 'index.critical.html'
       }
     },
     htmlmin: {
@@ -51,49 +64,36 @@ module.exports = function(grunt) {
           removeOptionalTags: true
         },
         files: {
-          'index.min.html': 'index.html'
+          'index.html': 'index.critical.html'
         }
       }
     },
-    uncss: {
-      dist: {
-        options: {
-          media        : ['all'],
-          ignore       : [],
-          timeout      : 15000,
-          report       : 'max'
-        },
-        files: {
-          'media/css/clean-style.css': ['index.html']
-        }
-      }
-    },
-    colorguard: {
+    uglify: {
       options: {
-        threshold : 3
-      },
-      files: {
-        src: ['media/css/clean-style.css'],
-      }
-    },
-    critical: {
-      dist: {
-        base: './', 
-        width: 1280,
-        height: 1200,
-        minify: true,
-        src: 'index.html',
-        dest: 'index.critical.html'
-      }
-    },
-    cssmin: {
-      target: {
-        options: {
-          keepSpecialComments: 0
-        },
-        files: {
-          'media/css/style.min.css': ['media/css/clean-style.css']
+        mangle: {
+          except: ['jQuery', '$', 'Modernizr','_slot']
         }
+      },
+      my_target: {
+        files: {
+          'media/js/unified.min.js': ['media/js/unified.js']
+        }
+      }
+    },
+    imagemin: {
+      dynamic: {
+        options: {
+          optimizationLevel: 7,
+          interlaced: true,
+          progressive: true,
+          use: [mozjpeg()]
+        },
+        files: [{
+          expand: true,
+          cwd: 'media/images_no_compression',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'media/images'
+        }]
       }
     },
     phantomcss: {
@@ -182,19 +182,19 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [  
-    //'uncss',
-    //'colorguard',
-    //'critical',
-    //'cssmin'
-    //'imagemin'
-    //'uglify',
-    'htmlmin'
+    'colorguard',
+    'uncss',
+    'cssmin',
+    'critical',
+    'htmlmin',
+    'uglify',
+    'imagemin',
     
-    //'phantomcss',
-    //'perfbudget',
+    'phantomcss',
+    'perfbudget',
     //'yslow_test',
     //'pagespeed',
-    //'devperf'
+    'devperf'
     //'yslow'
   ]);
 };
