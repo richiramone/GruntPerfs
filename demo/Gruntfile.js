@@ -333,12 +333,12 @@ module.exports = function(grunt) {
     //'colorguard',
     //'uncss'
     //'critical',
-    'phantomcss'
-    //'perfbudget',
-    //'yslow_test',
-    //'pagespeed',
-    //'phantomas',
-    //'yslow'
+    'phantomcss',
+    'perfbudget',
+    'yslow_test',
+    'pagespeed',
+    'phantomas',
+    'yslow'
   ]);
 };
 
