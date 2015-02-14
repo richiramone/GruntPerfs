@@ -38,16 +38,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    cssmin: {
-      target: {
-        options: {
-          keepSpecialComments: 0
-        },
-        files: {
-          'media/css/style.min.css': ['media/css/style.css']
-        }
-      }
-    },
     htmlmin: {
       dist: {
         options: {
@@ -65,59 +55,25 @@ module.exports = function(grunt) {
         }
       }
     },
+    uncss: {
+      dist: {
+        options: {
+          media        : ['all'],
+          ignore       : [],
+          timeout      : 15000,
+          report       : 'max'
+        },
+        files: {
+          'media/css/clean-style.css': ['index.html']
+        }
+      }
+    },
     colorguard: {
       options: {
         threshold : 3
       },
       files: {
-        src: ['media/css/style.css'],
-      }
-    },
-    uncss: {
-      dist: {
-        options: {
-          media        : ['all',
-                          '(min-width:768px)',
-                          '(min-width:992px)',
-                          '(min-width:1281px)',
-                          '(max-width:767px)',
-                          '(max-width:1280px)',
-                          '(max-width:1281px)',
-                          'screen and (min-width:768px)',
-                          'screen and (max-width:1280px)',
-                          '(min-width:768px) and (max-width:991px)',
-                          '(min-width:992px) and (max-width:1280px)'],
-          
-          ignore       : ['#header.affix',
-                          '.affix',
-                          '.wide-carousel li.active article .next',
-                          '.wide-carousel li.active article .prev',
-                          '.wide-carousel li.active article header',
-                          '.wide-carousel.created',
-                          '.open>.dropdown-menu',
-                          '.search-bar-open #header #search-bar',
-                          '.paged-carousel.created',
-                          '.open>a',
-                          'span.label-open',
-                          '.open>.dropdown-menu',
-                          '#abbonati.dropdown-open',
-                          '#abbonati.dropdown-open .secondary',
-                          '#abbonati.dropdown-open .secondary #edicola',
-                          '.paged-carousel .pages a',
-                          '.paged-carousel .pages a:after',
-                          '.paged-carousel .pages a.selected',
-                          '.paged-carousel .pages a span',
-                          '#abbonati .secondary .open .label-close',
-                          '#header .secondary .open .label-close',
-                          '#abbonati .secondary .open .label-open',
-                          '#header .secondary .open .label-open',
-                          'hover'],
-          timeout      : 15000,
-          report       : 'max'
-        },
-        files: {
-          'css/clean-style.css': ['original-index.html']
-        }
+        src: ['media/css/clean-style.css'],
       }
     },
     critical: {
@@ -127,7 +83,17 @@ module.exports = function(grunt) {
         height: 1200,
         minify: true,
         src: 'index.html',
-        dest: 'index.html'
+        dest: 'index.critical.html'
+      }
+    },
+    cssmin: {
+      target: {
+        options: {
+          keepSpecialComments: 0
+        },
+        files: {
+          'media/css/style.min.css': ['media/css/clean-style.css']
+        }
       }
     },
     phantomcss: {
@@ -140,6 +106,20 @@ module.exports = function(grunt) {
         'diffs/tests/casper.js'
       ]
     },
+    perfbudget: {
+      default: {
+        options: {
+          url: remoteUrl,
+          key: 'A.d01077156635968a5bd2637fda103bd2',
+          location: 'Dulles:Chrome',
+          runs: 2,
+          budget: {
+            render: '30000',
+            SpeedIndex: '100000',
+          }
+        }
+      }
+    },
     yslow_test: {
       options: {
         info: "grade",
@@ -149,6 +129,17 @@ module.exports = function(grunt) {
       },
       your_target: {
         files: []
+      }
+    },
+    pagespeed: {
+      dev: {
+        options: {
+          nokey: true,
+          locale: "it_IT",
+          strategy: "desktop",
+          threshold: 30,
+          url: remoteUrl
+        }
       }
     },
     devperf: {
@@ -171,20 +162,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    perfbudget: {
-      default: {
-        options: {
-          url: remoteUrl,
-          key: 'A.d01077156635968a5bd2637fda103bd2',
-          location: 'Dulles:Chrome',
-          runs: 2,
-          budget: {
-            render: '30000',
-            SpeedIndex: '100000',
-          }
-        }
-      }
-    },
     yslow: {
       options: {
         thresholds: {
@@ -201,35 +178,24 @@ module.exports = function(grunt) {
           }
         ]
       }
-    },
-    pagespeed: {
-      dev: {
-        options: {
-          nokey: true,
-          locale: "it_IT",
-          strategy: "desktop",
-          threshold: 30,
-          url: remoteUrl
-        }
-      }
     }
   });
 
   grunt.registerTask('default', [  
+    //'uncss',
+    //'colorguard',
+    //'critical',
+    //'cssmin'
     //'imagemin'
     //'uglify',
-    //'cssmin',
-    //'htmlmin'
-    //'colorguard',
-    //'uncss'
-    //'critical',
+    'htmlmin'
     
-    'phantomcss',
-    'perfbudget',
-    'yslow_test',
-    'pagespeed',
-    'devperf',
-    'yslow'
+    //'phantomcss',
+    //'perfbudget',
+    //'yslow_test',
+    //'pagespeed',
+    //'devperf'
+    //'yslow'
   ]);
 };
 
