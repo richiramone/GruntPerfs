@@ -218,7 +218,7 @@ module.exports = function(grunt) {
 
   // Register default tasks
   grunt.registerTask('default', [  
-    'imagemin'
+    //'imagemin'
     //'uglify',
     //'cssmin',
     //'htmlmin',
@@ -226,11 +226,11 @@ module.exports = function(grunt) {
     //'uncss'
     //'critical',
     //'phantomcss',
-    //'perfbudget',
-    //'yslow_test',
-    //'pagespeed',
-    //'devperf',
-    //'yslow'
+    'perfbudget',
+    'yslow_test',
+    'pagespeed',
+    'devperf',
+    'yslow'
   ]);
 };
 
