@@ -19,21 +19,26 @@ module.exports = function(grunt) {
       }
     },
     cssmin: {
+      options: {
+        keepSpecialComments: 0
+      },
       first: {
-        options: {
-          keepSpecialComments: 0
-        },
         files: {
           'media/css/style.min.css': ['media/css/style.css']
         }
       },
       second: {
-        options: {
-          keepSpecialComments: 0
-        },
         files: {
           'media/css/style.min.css': ['media/css/style.uncss.css']
         }
+      },
+      third: {
+        files: [{
+          expand: true,
+          cwd: 'media/css',
+          src: ['style.min.*.css'],
+          dest: 'media/css/'
+        }]
       }
     },
     uncss: {
@@ -51,14 +56,17 @@ module.exports = function(grunt) {
     },
     critical: {
       dist: {
-        base: './', 
-        width: 960,
-        height: 1000,
-        minify: true,
+        options: {
+          minify: true,
+          extract: true,
+          base: './',
+          width: 980,
+          height: 600
+        },
         src: 'index.original.html',
         dest: 'index.critical.html'
       }
-    },    
+    },
     htmlmin: {
       dist: {
         options: {
@@ -195,9 +203,10 @@ module.exports = function(grunt) {
     'uncss',
     'cssmin:second',
     'critical',
+    'cssmin:third',
     'htmlmin'
     //'uglify',
-    //'imagemin',
+    //'imagemin'
     
     //'phantomcss',
     //'perfbudget',
