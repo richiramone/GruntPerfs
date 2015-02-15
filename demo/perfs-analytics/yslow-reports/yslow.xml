@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="YSlow" tests="24" failures="5" skipped="1">
+    <testcase name="overall score" status="B (82)"/>
+    <testcase name="ynumreq: Make fewer HTTP requests" status="B (80)"/>
+    <testcase name="ycdn: Use a Content Delivery Network (CDN)" status="F (0)">
+      <failure message="There are 35 static components that are not on CDN. &lt;p&gt;You can specify CDN hostnames in your preferences. See &lt;a href=&quot;https://github.com/marcelduran/yslow/wiki/FAQ#wiki-faq_cdn&quot;&gt;YSlow FAQ&lt;/a&gt; for details.&lt;/p&gt;">
+        gruntperfs.lucasramos.me: 23 components, 776.9K (49.7K GZip)
+        ad.us.doubleclick.net: 1 component, 0.01K (0.01K GZip)
+        edge.quantserve.com: 1 component, 7.8K (7.8K GZip)
+        ajax.googleapis.com: 2 components, 81.0K (58.1K GZip)
+        fld.vmmpxl.com: 1 component, 0.8K (0.8K GZip)
+        ev.ads.pointroll.com: 1 component, 0.0K
+        ib.adnxs.com: 2 components, 0.08K
+        loadm.exelator.com: 1 component, 0.04K
+        rtd.tubemogul.com: 2 components, 0.1K
+        insight.adsrvr.org: 1 component, 0.07K
+      </failure>
+    </testcase>
+    <testcase name="yemptysrc: Avoid empty src or href" status="A (100)"/>
+    <testcase name="yexpires: Add Expires headers" status="F (0)">
+      <failure message="There are 12 static components without a far-future expiration date.">
+        http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=2349502365104854?
+        http://static.ak.fbcdn.net/connect.php/js/FB.Share
+        http://www.google-analytics.com/ga.js
+        http://fld.vmmpxl.com/?bkt=28896
+        <![CDATA[http://ev.ads.pointroll.com/event/?ss=F6025A25-3A50-45BF-9C00-AFBF39FA2F44&av=1508&eid=1423238724330.5762&ev=&item=&q=&val=&r=0.5138760451227427]]>
+        <![CDATA[http://ib.adnxs.com/px?id=331467&t=2]]>
+        <![CDATA[http://loadm.exelator.com/load/?p=204&g=380&buid=522545527193811776&j=0]]>
+        http://rtd.tubemogul.com/upi/?sid=OQ0bKn81jot5h0hjb2Uk
+        <![CDATA[http://ib.adnxs.com/seg?add=2060669&t=2]]>
+        <![CDATA[http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS]]>
+        <![CDATA[https://insight.adsrvr.org/track/evnt/?adv=i5bgqwx&ct=0:pwws4z54&fmt=3]]>
+        http://gruntperfs.lucasramos.me/favicon.ico
+      </failure>
+    </testcase>
+    <testcase name="ycompress: Compress components with gzip" status="A (100)"/>
+    <testcase name="ycsstop: Put CSS at top" status="A (100)"/>
+    <testcase name="yjsbottom: Put JavaScript at bottom" status="A (100)"/>
+    <testcase name="yexpressions: Avoid CSS expressions" status="A (100)"/>
+    <testcase name="yexternal: Make JavaScript and CSS external" status="N/A (-1)">
+      <skipped>score N/A</skipped>
+      <failure message="Only consider this if your property is a common user home page.">
+        There is a total of 2 inline css
+        There is a total of 4 inline scripts
+      </failure>
+    </testcase>
+    <testcase name="ydns: Reduce DNS lookups" status="E (50)">
+      <failure message="The components are split over more than 4 domains">
+        gruntperfs.lucasramos.me: 25 components, 785.2K (57.9K GZip)
+        ad.us.doubleclick.net: 1 component, 0.01K (0.01K GZip)
+        static.ak.fbcdn.net: 1 component, 164.1K (53.3K GZip)
+        www.google-analytics.com: 1 component, 40.9K (40.9K GZip)
+        edge.quantserve.com: 1 component, 7.8K (7.8K GZip)
+        ajax.googleapis.com: 2 components, 81.0K (58.1K GZip)
+        fld.vmmpxl.com: 1 component, 0.8K (0.8K GZip)
+        ev.ads.pointroll.com: 1 component, 0.0K
+        ib.adnxs.com: 2 components, 0.08K
+        loadm.exelator.com: 1 component, 0.04K
+        rtd.tubemogul.com: 2 components, 0.1K
+        insight.adsrvr.org: 1 component, 0.07K
+        static.ak.facebook.com: 1 component, 28.0K (28.0K GZip)
+        s-static.ak.facebook.com: 1 component, 28.1K (28.1K GZip)
+      </failure>
+    </testcase>
+    <testcase name="yminify: Minify JavaScript and CSS" status="A (100)"/>
+    <testcase name="yredirects: Avoid URL redirects" status="A (100)"/>
+    <testcase name="ydupes: Remove duplicate JavaScript and CSS" status="A (100)"/>
+    <testcase name="yetags: Configure entity tags (ETags)" status="A (100)"/>
+    <testcase name="yxhr: Make AJAX cacheable" status="A (100)"/>
+    <testcase name="yxhrmethod: Use GET for AJAX requests" status="A (100)"/>
+    <testcase name="ymindom: Reduce the number of DOM elements" status="A (100)"/>
+    <testcase name="yno404: Avoid HTTP 404 (Not Found) error" status="A (100)"/>
+    <testcase name="ymincookie: Reduce cookie size" status="A (100)"/>
+    <testcase name="ycookiefree: Use cookie-free domains" status="D (65)">
+      <failure message="There are 7 components that are not cookie-free">
+        http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=2349502365104854?
+        http://fld.vmmpxl.com/?bkt=28896
+        <![CDATA[http://ib.adnxs.com/px?id=331467&t=2]]>
+        http://rtd.tubemogul.com/upi/?sid=OQ0bKn81jot5h0hjb2Uk
+        <![CDATA[http://ib.adnxs.com/seg?add=2060669&t=2]]>
+        <![CDATA[http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS]]>
+        <![CDATA[https://insight.adsrvr.org/track/evnt/?adv=i5bgqwx&ct=0:pwws4z54&fmt=3]]>
+      </failure>
+    </testcase>
+    <testcase name="ynofilter: Avoid AlphaImageLoader filter" status="A (100)"/>
+    <testcase name="yimgnoscale: Do not scale images in HTML" status="A (100)"/>
+    <testcase name="yfavicon: Make favicon small and cacheable" status="A (95)"/>
+  </testsuite>
+</testsuites>

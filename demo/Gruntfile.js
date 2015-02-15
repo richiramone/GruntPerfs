@@ -198,22 +198,22 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [  
-    'colorguard',
+    //'colorguard',
     'cssmin:first',
     'uncss',
     'cssmin:second',
     'critical',
     'cssmin:third',
-    'htmlmin'
-    'uglify',
-    'imagemin',
+    'htmlmin',
+    //'uglify',
+    //'imagemin',
     
-    'phantomcss',
-    'perfbudget',
-    'yslow_test',
-    'pagespeed',
-    'devperf',
-    'yslow'
+    'phantomcss'
+    //'perfbudget',
+    //'yslow_test',
+    //'pagespeed',
+    //'devperf',
+    //'yslow'
   ]);
 };
 
