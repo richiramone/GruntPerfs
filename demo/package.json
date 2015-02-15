@@ -4,20 +4,21 @@
   "devDependencies": {
     "bower": "^1.3.12",
     "grunt": "^0.4.5",
+    "load-grunt-tasks": "^2.0.0",
     "grunt-colorguard": "^0.2.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-uncss": "^0.3.8",
+    "grunt-critical": "0.0.4",
     "grunt-contrib-cssmin": "^0.11.0",
     "grunt-contrib-htmlmin": "^0.3.0",
     "grunt-contrib-imagemin": "^0.9.2",
     "grunt-contrib-uglify": "^0.7.0",
-    "grunt-critical": "0.0.4",
     "grunt-devperf": "^0.2.13",
     "grunt-pagespeed": "^0.4.1",
     "grunt-perfbudget": "^0.1.6",
     "grunt-phantomcss": "^0.2.3",
-    "grunt-uncss": "^0.3.8",
     "grunt-yslow": "0.0.4",
-    "grunt-yslow-test": "^0.1.0",
-    "load-grunt-tasks": "^2.0.0"
+    "grunt-yslow-test": "^0.1.0"
   },
   "dependencies": {
     "imagemin": "^3.1.0",

@@ -112,7 +112,7 @@
     "numberOfRuns": 1,
     "timeout": 120,
     "openResults": true,
-    "resultsFolder": "./devperf",
+    "resultsFolder": "perfs-analytics/devperf",
     "phantomasOptions": {
         "timeout": 120
     }
