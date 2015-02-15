@@ -1,0 +1,1702 @@
+{
+  "assertions": {
+    "requests": {
+      "value": 200
+    },
+    "cssCount": {
+      "value": 6
+    },
+    "jsCount": {
+      "value": 12
+    },
+    "imageCount": {
+      "value": 30
+    },
+    "smallImages": {
+      "value": 20
+    },
+    "imageSize": {
+      "value": 512000
+    },
+    "webfontCount": {
+      "value": 4
+    },
+    "multipleRequests": {
+      "value": 1
+    },
+    "imagesWithoutDimensions": {
+      "value": 5
+    },
+    "commentsSize": {
+      "value": 1000
+    },
+    "whiteSpacesSize": {
+      "value": 8000
+    },
+    "DOMelementsCount": {
+      "value": 2000
+    },
+    "DOMqueries": {
+      "value": 200
+    },
+    "DOMqueriesDuplicated": {
+      "value": 30
+    },
+    "DOMinserts": {
+      "value": 100
+    },
+    "jQuerySizzleCalls": {
+      "value": 300
+    },
+    "headersSentSize": {
+      "value": 20000
+    }
+  },
+  "metrics": {
+    "requests": {
+      "values": [
+        48,
+        null
+      ],
+      "sum": 48,
+      "min": 48,
+      "max": 48,
+      "median": 48,
+      "average": 48
+    },
+    "gzipRequests": {
+      "values": [
+        8,
+        null
+      ],
+      "sum": 8,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "postRequests": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "httpsRequests": {
+      "values": [
+        7,
+        null
+      ],
+      "sum": 7,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "notFound": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodySize": {
+      "values": [
+        360722,
+        null
+      ],
+      "sum": 360722,
+      "min": 360722,
+      "max": 360722,
+      "median": 360722,
+      "average": 360722
+    },
+    "contentLength": {
+      "values": [
+        1044732,
+        null
+      ],
+      "sum": 1044732,
+      "min": 1044732,
+      "max": 1044732,
+      "median": 1044732,
+      "average": 1044732
+    },
+    "httpTrafficCompleted": {
+      "values": [
+        47769,
+        null
+      ],
+      "sum": 47769,
+      "min": 47769,
+      "max": 47769,
+      "median": 47769,
+      "average": 47769
+    },
+    "timeToFirstByte": {
+      "values": [
+        782,
+        null
+      ],
+      "sum": 782,
+      "min": 782,
+      "max": 782,
+      "median": 782,
+      "average": 782
+    },
+    "timeToLastByte": {
+      "values": [
+        803,
+        null
+      ],
+      "sum": 803,
+      "min": 803,
+      "max": 803,
+      "median": 803,
+      "average": 803
+    },
+    "ajaxRequests": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "htmlCount": {
+      "values": [
+        7,
+        null
+      ],
+      "sum": 7,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "htmlSize": {
+      "values": [
+        68631,
+        null
+      ],
+      "sum": 68631,
+      "min": 68631,
+      "max": 68631,
+      "median": 68631,
+      "average": 68631
+    },
+    "cssCount": {
+      "values": [
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "cssSize": {
+      "values": [
+        3518,
+        null
+      ],
+      "sum": 3518,
+      "min": 3518,
+      "max": 3518,
+      "median": 3518,
+      "average": 3518
+    },
+    "jsCount": {
+      "values": [
+        7,
+        null
+      ],
+      "sum": 7,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "jsSize": {
+      "values": [
+        244058,
+        null
+      ],
+      "sum": 244058,
+      "min": 244058,
+      "max": 244058,
+      "median": 244058,
+      "average": 244058
+    },
+    "jsonCount": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsonSize": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imageCount": {
+      "values": [
+        29,
+        null
+      ],
+      "sum": 29,
+      "min": 29,
+      "max": 29,
+      "median": 29,
+      "average": 29
+    },
+    "imageSize": {
+      "values": [
+        727651,
+        null
+      ],
+      "sum": 727651,
+      "min": 727651,
+      "max": 727651,
+      "median": 727651,
+      "average": 727651
+    },
+    "videoCount": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "videoSize": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontCount": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontSize": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "base64Count": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "base64Size": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "otherCount": {
+      "values": [
+        4,
+        null
+      ],
+      "sum": 4,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "otherSize": {
+      "values": [
+        874,
+        null
+      ],
+      "sum": 874,
+      "min": 874,
+      "max": 874,
+      "median": 874,
+      "average": 874
+    },
+    "cacheHits": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "cacheMisses": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachePasses": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingNotSpecified": {
+      "values": [
+        31,
+        null
+      ],
+      "sum": 31,
+      "min": 31,
+      "max": 31,
+      "median": 31,
+      "average": 31
+    },
+    "cachingTooShort": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "cachingDisabled": {
+      "values": [
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "oldCachingHeaders": {
+      "values": [
+        56,
+        null
+      ],
+      "sum": 56,
+      "min": 56,
+      "max": 56,
+      "median": 56,
+      "average": 56
+    },
+    "consoleMessages": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesSent": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesRecv": {
+      "values": [
+        2446,
+        null
+      ],
+      "sum": 2446,
+      "min": 2446,
+      "max": 2446,
+      "median": 2446,
+      "average": 2446
+    },
+    "domainsWithCookies": {
+      "values": [
+        9,
+        null
+      ],
+      "sum": 9,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "documentCookiesLength": {
+      "values": [
+        64,
+        null
+      ],
+      "sum": 64,
+      "min": 64,
+      "max": 64,
+      "median": 64,
+      "average": 64
+    },
+    "documentCookiesCount": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "documentHeight": {
+      "values": [
+        2048,
+        null
+      ],
+      "sum": 2048,
+      "min": 2048,
+      "max": 2048,
+      "median": 2048,
+      "average": 2048
+    },
+    "domains": {
+      "values": [
+        20,
+        null
+      ],
+      "sum": 20,
+      "min": 20,
+      "max": 20,
+      "median": 20,
+      "average": 20
+    },
+    "maxRequestsPerDomain": {
+      "values": [
+        24,
+        null
+      ],
+      "sum": 24,
+      "min": 24,
+      "max": 24,
+      "median": 24,
+      "average": 24
+    },
+    "medianRequestsPerDomain": {
+      "values": [
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "commentsSize": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "hiddenContentSize": {
+      "values": [
+        386,
+        null
+      ],
+      "sum": 386,
+      "min": 386,
+      "max": 386,
+      "median": 386,
+      "average": 386
+    },
+    "whiteSpacesSize": {
+      "values": [
+        12,
+        null
+      ],
+      "sum": 12,
+      "min": 12,
+      "max": 12,
+      "median": 12,
+      "average": 12
+    },
+    "DOMelementsCount": {
+      "values": [
+        111,
+        null
+      ],
+      "sum": 111,
+      "min": 111,
+      "max": 111,
+      "median": 111,
+      "average": 111
+    },
+    "DOMelementMaxDepth": {
+      "values": [
+        7,
+        null
+      ],
+      "sum": 7,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "nodesWithInlineCSS": {
+      "values": [
+        8,
+        null
+      ],
+      "sum": 8,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "DOMmutationsInserts": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsRemoves": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsAttributes": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueries": {
+      "values": [
+        31,
+        null
+      ],
+      "sum": 31,
+      "min": 31,
+      "max": 31,
+      "median": 31,
+      "average": 31
+    },
+    "DOMqueriesById": {
+      "values": [
+        9,
+        null
+      ],
+      "sum": 9,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "DOMqueriesByClassName": {
+      "values": [
+        2,
+        null
+      ],
+      "sum": 2,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "DOMqueriesByTagName": {
+      "values": [
+        16,
+        null
+      ],
+      "sum": 16,
+      "min": 16,
+      "max": 16,
+      "median": 16,
+      "average": 16
+    },
+    "DOMqueriesByQuerySelectorAll": {
+      "values": [
+        4,
+        null
+      ],
+      "sum": 4,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "DOMinserts": {
+      "values": [
+        16,
+        null
+      ],
+      "sum": 16,
+      "min": 16,
+      "max": 16,
+      "median": 16,
+      "average": 16
+    },
+    "DOMqueriesDuplicated": {
+      "values": [
+        7,
+        null
+      ],
+      "sum": 7,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "eventsBound": {
+      "values": [
+        19,
+        null
+      ],
+      "sum": 19,
+      "min": 19,
+      "max": 19,
+      "median": 19,
+      "average": 19
+    },
+    "globalVariables": {
+      "values": [
+        47,
+        null
+      ],
+      "sum": 47,
+      "min": 47,
+      "max": 47,
+      "median": 47,
+      "average": 47
+    },
+    "globalVariablesFalsy": {
+      "values": [
+        2,
+        null
+      ],
+      "sum": 2,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "headersCount": {
+      "values": [
+        644,
+        null
+      ],
+      "sum": 644,
+      "min": 644,
+      "max": 644,
+      "median": 644,
+      "average": 644
+    },
+    "headersSentCount": {
+      "values": [
+        143,
+        null
+      ],
+      "sum": 143,
+      "min": 143,
+      "max": 143,
+      "median": 143,
+      "average": 143
+    },
+    "headersRecvCount": {
+      "values": [
+        501,
+        null
+      ],
+      "sum": 501,
+      "min": 501,
+      "max": 501,
+      "median": 501,
+      "average": 501
+    },
+    "headersSize": {
+      "values": [
+        26292,
+        null
+      ],
+      "sum": 26292,
+      "min": 26292,
+      "max": 26292,
+      "median": 26292,
+      "average": 26292
+    },
+    "headersSentSize": {
+      "values": [
+        5672,
+        null
+      ],
+      "sum": 5672,
+      "min": 5672,
+      "max": 5672,
+      "median": 5672,
+      "average": 5672
+    },
+    "headersRecvSize": {
+      "values": [
+        20620,
+        null
+      ],
+      "sum": 20620,
+      "min": 20620,
+      "max": 20620,
+      "median": 20620,
+      "average": 20620
+    },
+    "headersBiggerThanContent": {
+      "values": [
+        17,
+        null
+      ],
+      "sum": 17,
+      "min": 17,
+      "max": 17,
+      "median": 17,
+      "average": 17
+    },
+    "documentWriteCalls": {
+      "values": [
+        11,
+        null
+      ],
+      "sum": 11,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "evalCalls": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryOnDOMReadyFunctions": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQuerySizzleCalls": {
+      "values": [
+        3,
+        null
+      ],
+      "sum": 3,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "jsErrors": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "localStorageEntries": {
+      "values": [
+        2,
+        null
+      ],
+      "sum": 2,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "redirects": {
+      "values": [
+        7,
+        null
+      ],
+      "sum": 7,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "redirectsTime": {
+      "values": [
+        16393,
+        null
+      ],
+      "sum": 16393,
+      "min": 16393,
+      "max": 16393,
+      "median": 16393,
+      "average": 16393
+    },
+    "assetsNotGzipped": {
+      "values": [
+        4,
+        null
+      ],
+      "sum": 4,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "assetsWithQueryString": {
+      "values": [
+        7,
+        null
+      ],
+      "sum": 7,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "assetsWithCookies": {
+      "values": [
+        6,
+        null
+      ],
+      "sum": 6,
+      "min": 6,
+      "max": 6,
+      "median": 6,
+      "average": 6
+    },
+    "smallImages": {
+      "values": [
+        11,
+        null
+      ],
+      "sum": 11,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "multipleRequests": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "timeToFirstCss": {
+      "values": [
+        27476,
+        null
+      ],
+      "sum": 27476,
+      "min": 27476,
+      "max": 27476,
+      "median": 27476,
+      "average": 27476
+    },
+    "timeToFirstJs": {
+      "values": [
+        1417,
+        null
+      ],
+      "sum": 1417,
+      "min": 1417,
+      "max": 1417,
+      "median": 1417,
+      "average": 1417
+    },
+    "timeToFirstImage": {
+      "values": [
+        2005,
+        null
+      ],
+      "sum": 2005,
+      "min": 2005,
+      "max": 2005,
+      "median": 2005,
+      "average": 2005
+    },
+    "domInteractive": {
+      "values": [
+        9742,
+        null
+      ],
+      "sum": 9742,
+      "min": 9742,
+      "max": 9742,
+      "median": 9742,
+      "average": 9742
+    },
+    "domContentLoaded": {
+      "values": [
+        9743,
+        null
+      ],
+      "sum": 9743,
+      "min": 9743,
+      "max": 9743,
+      "median": 9743,
+      "average": 9743
+    },
+    "domContentLoadedEnd": {
+      "values": [
+        9755,
+        null
+      ],
+      "sum": 9755,
+      "min": 9755,
+      "max": 9755,
+      "median": 9755,
+      "average": 9755
+    },
+    "domComplete": {
+      "values": [
+        48013,
+        null
+      ],
+      "sum": 48013,
+      "min": 48013,
+      "max": 48013,
+      "median": 48013,
+      "average": 48013
+    },
+    "timeBackend": {
+      "values": [
+        2,
+        null
+      ],
+      "sum": 2,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "timeFrontend": {
+      "values": [
+        98,
+        null
+      ],
+      "sum": 98,
+      "min": 98,
+      "max": 98,
+      "median": 98,
+      "average": 98
+    },
+    "windowAlerts": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowConfirms": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowPrompts": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodyHTMLSize": {
+      "values": [
+        10226,
+        null
+      ],
+      "sum": 10226,
+      "min": 10226,
+      "max": 10226,
+      "median": 10226,
+      "average": 10226
+    },
+    "iframesCount": {
+      "values": [
+        2,
+        null
+      ],
+      "sum": 2,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "imagesWithoutDimensions": {
+      "values": [
+        18,
+        null
+      ],
+      "sum": 18,
+      "min": 18,
+      "max": 18,
+      "median": 18,
+      "average": 18
+    },
+    "smallestResponse": {
+      "values": [
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "biggestResponse": {
+      "values": [
+        164107,
+        null
+      ],
+      "sum": 164107,
+      "min": 164107,
+      "max": 164107,
+      "median": 164107,
+      "average": 164107
+    },
+    "fastestResponse": {
+      "values": [
+        188,
+        null
+      ],
+      "sum": 188,
+      "min": 188,
+      "max": 188,
+      "median": 188,
+      "average": 188
+    },
+    "slowestResponse": {
+      "values": [
+        26662,
+        null
+      ],
+      "sum": 26662,
+      "min": 26662,
+      "max": 26662,
+      "median": 26662,
+      "average": 26662
+    },
+    "smallestLatency": {
+      "values": [
+        183,
+        null
+      ],
+      "sum": 183,
+      "min": 183,
+      "max": 183,
+      "median": 183,
+      "average": 183
+    },
+    "biggestLatency": {
+      "values": [
+        26662,
+        null
+      ],
+      "sum": 26662,
+      "min": 26662,
+      "max": 26662,
+      "median": 26662,
+      "average": 26662
+    },
+    "medianResponse": {
+      "values": [
+        4528,
+        null
+      ],
+      "sum": 4528,
+      "min": 4528,
+      "max": 4528,
+      "median": 4528,
+      "average": 4528
+    },
+    "medianLatency": {
+      "values": [
+        3086,
+        null
+      ],
+      "sum": 3086,
+      "min": 3086,
+      "max": 3086,
+      "median": 3086,
+      "average": 3086
+    }
+  },
+  "offenders": {
+    "gzipRequests": [
+      "http://gruntperfs.lucasramos.me/ (gzip: 11.36 kB / uncompressed: 11.36 kB)",
+      "http://gruntperfs.lucasramos.me/media/js/scripts.js (gzip: 35.71 kB / uncompressed: 35.71 kB)",
+      "http://edge.quantserve.com/quant.js (gzip: 7.69 kB / uncompressed: 7.69 kB)",
+      "http://static.ak.fbcdn.net/connect.php/js/FB.Share (gzip: 160.26 kB / uncompressed: 160.26 kB)",
+      "http://static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me (gzip: 27.39 kB / uncompressed: 27.39 kB)",
+      "http://fld.vmmpxl.com/?bkt=28896 (gzip: 0.85 kB / uncompressed: 0.85 kB)",
+      "https://s-static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me (gzip: 27.44 kB / uncompressed: 27.44 kB)",
+      "http://gruntperfs.lucasramos.me/media/css/style.d328e807.css (gzip: 3.44 kB / uncompressed: 3.44 kB)"
+    ],
+    "httpsRequests": [
+      "https://s-static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me",
+      "https://insight.adsrvr.org/track/evnt/?adv=i5bgqwx&ct=0:pwws4z54&fmt=3",
+      "https://cm.g.doubleclick.net/pixel?google_nid=TheTradeDesk&google_cm&google_sc&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655",
+      "https://match.adsrvr.org/track/cmf/google?g_uuid=&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655&google_gid=CAESEHytmJ3iLESHrR7hc9iG1GU&google_cver=1",
+      "https://www.facebook.com/fr/u.php?p=493123744038507&m=0c4487d2-96eb-456a-9ab4-bc3403ba0655",
+      "https://match.adsrvr.org/track/cmf/generic?ttd_pid=facebook",
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598"
+    ],
+    "htmlCount": [
+      "http://gruntperfs.lucasramos.me/ (11.36 kB)",
+      "http://static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me (27.39 kB)",
+      "https://s-static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me (27.44 kB)",
+      "https://cm.g.doubleclick.net/pixel?google_nid=TheTradeDesk&google_cm&google_sc&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655 (0.35 kB)",
+      "https://match.adsrvr.org/track/cmf/google?g_uuid=&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655&google_gid=CAESEHytmJ3iLESHrR7hc9iG1GU&google_cver=1 (0.21 kB)",
+      "https://www.facebook.com/fr/u.php?p=493123744038507&m=0c4487d2-96eb-456a-9ab4-bc3403ba0655 (0.00 kB)",
+      "https://match.adsrvr.org/track/cmf/generic?ttd_pid=facebook (0.27 kB)"
+    ],
+    "cssCount": [
+      "http://gruntperfs.lucasramos.me/media/css/style.d328e807.css (3.44 kB)"
+    ],
+    "jsCount": [
+      "http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js (0.90 kB)",
+      "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js (0.90 kB)",
+      "http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=8464821320958436? (0.02 kB)",
+      "http://gruntperfs.lucasramos.me/media/js/scripts.js (35.71 kB)",
+      "http://edge.quantserve.com/quant.js (7.69 kB)",
+      "http://static.ak.fbcdn.net/connect.php/js/FB.Share (160.26 kB)",
+      "http://www.google-analytics.com/ga.js (32.85 kB)"
+    ],
+    "imageCount": [
+      "http://gruntperfs.lucasramos.me/media/images/ecardslink.jpg (6.36 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/consultationslink.jpg (8.04 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/asseenontvlink.jpg (7.35 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/testimonialslink.jpg (7.74 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/webcamlink.jpg (7.13 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/saulworkedforme.jpg (21.05 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/videoselectorside.jpg (34.96 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/vidsidebanner_update.jpg (36.61 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/wayfarer515.png (9.11 kB)",
+      "http://ib.adnxs.com/px?id=331467&t=2 (0.04 kB)",
+      "http://ib.adnxs.com/seg?add=2060669&t=2 (0.04 kB)",
+      "http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS (0.08 kB)",
+      "http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903 (0.08 kB)",
+      "http://pixel.quantserve.com/pixel;r=1953987773;a=p-7cUragPyp7i26;labels=AMC%20Digital;fpan=1;fpa=P0-1944363221-1424023588922;ns=0;ce=1;cm=;je=0;sr=1280x800x32;enc=n;dst=1;et=1424023588922;tzo=-60;ref=;url=http%3A%2F%2Fgruntperfs.lucasramos.me%2F;ogl= (0.03 kB)",
+      "http://loadm.exelator.com/load/?p=204&g=380&buid=143872062262196032&j=0 (0.00 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/welcomelawbreakers.jpg (45.52 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/facebooklink.gif (0.06 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/polloshermanos.jpg (39.26 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/anothersatisfiedcustomer_c.jpg (26.13 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/footerespanol_i.jpg (5.13 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/friendbreakingbad.png (1.80 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/blank.gif (0.04 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/mainheader_saul_update.jpg (147.05 kB)",
+      "http://load.s3.amazonaws.com/pixel.gif (0.04 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/fashionshow.jpg (80.15 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/getcashnow_b.jpg (109.57 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/videoselector.jpg (115.29 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/telephonenumber_b.gif (1.85 kB)",
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 (0.04 kB)"
+    ],
+    "otherCount": [
+      "http://ev.ads.pointroll.com/event/?ss=F6025A25-3A50-45BF-9C00-AFBF39FA2F44&av=1508&eid=1422727580116.7307&ev=&item=&q=&val=&r=0.3777344198897481 (0.00 kB)",
+      "http://fld.vmmpxl.com/?bkt=28896 (0.85 kB)",
+      "https://insight.adsrvr.org/track/evnt/?adv=i5bgqwx&ct=0:pwws4z54&fmt=3 (0.00 kB)",
+      "http://rtd.tubemogul.com/upi/?sid=OQ0bKn81jot5h0hjb2Uk (NaN kB)"
+    ],
+    "cacheHits": [
+      "http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js",
+      "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js",
+      "http://www.google-analytics.com/ga.js"
+    ],
+    "cachingNotSpecified": [
+      "http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=8464821320958436?",
+      "http://gruntperfs.lucasramos.me/media/images/ecardslink.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/consultationslink.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/asseenontvlink.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/testimonialslink.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/webcamlink.jpg",
+      "http://gruntperfs.lucasramos.me/media/js/scripts.js",
+      "http://gruntperfs.lucasramos.me/media/images/saulworkedforme.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/videoselectorside.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/vidsidebanner_update.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/wayfarer515.png",
+      "http://ib.adnxs.com/px?id=331467&t=2",
+      "http://ib.adnxs.com/seg?add=2060669&t=2",
+      "http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS",
+      "http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903",
+      "http://pixel.quantserve.com/pixel;r=1953987773;a=p-7cUragPyp7i26;labels=AMC%20Digital;fpan=1;fpa=P0-1944363221-1424023588922;ns=0;ce=1;cm=;je=0;sr=1280x800x32;enc=n;dst=1;et=1424023588922;tzo=-60;ref=;url=http%3A%2F%2Fgruntperfs.lucasramos.me%2F;ogl=",
+      "http://loadm.exelator.com/load/?p=204&g=380&buid=143872062262196032&j=0",
+      "http://gruntperfs.lucasramos.me/media/images/welcomelawbreakers.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/facebooklink.gif",
+      "http://gruntperfs.lucasramos.me/media/images/polloshermanos.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/anothersatisfiedcustomer_c.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/footerespanol_i.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/friendbreakingbad.png",
+      "http://gruntperfs.lucasramos.me/media/images/blank.gif",
+      "http://gruntperfs.lucasramos.me/media/images/mainheader_saul_update.jpg",
+      "http://load.s3.amazonaws.com/pixel.gif",
+      "http://gruntperfs.lucasramos.me/media/images/fashionshow.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/getcashnow_b.jpg",
+      "http://gruntperfs.lucasramos.me/media/images/videoselector.jpg",
+      "http://gruntperfs.lucasramos.me/media/css/style.d328e807.css",
+      "http://gruntperfs.lucasramos.me/media/images/telephonenumber_b.gif"
+    ],
+    "cachingTooShort": [
+      "http://edge.quantserve.com/quant.js cached for 86400 s",
+      "http://static.ak.fbcdn.net/connect.php/js/FB.Share cached for 300 s",
+      "http://www.google-analytics.com/ga.js cached for 7200 s"
+    ],
+    "cachingDisabled": [
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598"
+    ],
+    "oldCachingHeaders": [
+      "http://gruntperfs.lucasramos.me/ - Expires: Sun, 15 Feb 2015 19:06:19 GMT",
+      "http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js - Expires: Sat, 13 Feb 2016 15:27:24 GMT",
+      "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js - Expires: Sat, 13 Feb 2016 15:27:37 GMT",
+      "http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=8464821320958436? - Pragma: no-cache",
+      "http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=8464821320958436? - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/ecardslink.jpg - Expires: Mon, 15 Feb 2016 18:06:20 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/consultationslink.jpg - Expires: Mon, 15 Feb 2016 18:06:20 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/asseenontvlink.jpg - Expires: Mon, 15 Feb 2016 18:06:20 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/testimonialslink.jpg - Expires: Mon, 15 Feb 2016 18:06:20 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/webcamlink.jpg - Expires: Mon, 15 Feb 2016 18:06:23 GMT",
+      "http://gruntperfs.lucasramos.me/media/js/scripts.js - Expires: Mon, 15 Feb 2016 18:06:20 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/saulworkedforme.jpg - Expires: Mon, 15 Feb 2016 18:06:21 GMT",
+      "http://edge.quantserve.com/quant.js - Expires: Mon, 16 Feb 2015 18:06:28 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/videoselectorside.jpg - Expires: Mon, 15 Feb 2016 18:06:23 GMT",
+      "http://static.ak.fbcdn.net/connect.php/js/FB.Share - Expires: Sun, 15 Feb 2015 18:11:28 GMT",
+      "http://ev.ads.pointroll.com/event/?ss=F6025A25-3A50-45BF-9C00-AFBF39FA2F44&av=1508&eid=1422727580116.7307&ev=&item=&q=&val=&r=0.3777344198897481 - Pragma: no-cache",
+      "http://ev.ads.pointroll.com/event/?ss=F6025A25-3A50-45BF-9C00-AFBF39FA2F44&av=1508&eid=1422727580116.7307&ev=&item=&q=&val=&r=0.3777344198897481 - Expires: -1",
+      "http://static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me - Expires: Wed, 27 Jan 2016 14:43:46 GMT",
+      "http://www.google-analytics.com/ga.js - Expires: Sun, 15 Feb 2015 18:13:01 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/vidsidebanner_update.jpg - Expires: Mon, 15 Feb 2016 18:06:22 GMT",
+      "https://s-static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me - Expires: Wed, 27 Jan 2016 14:42:44 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/wayfarer515.png - Expires: Mon, 15 Feb 2016 18:06:28 GMT",
+      "http://ib.adnxs.com/px?id=331467&t=2 - Pragma: no-cache",
+      "http://ib.adnxs.com/px?id=331467&t=2 - Expires: Sat, 15 Nov 2008 16:00:00 GMT",
+      "http://ib.adnxs.com/seg?add=2060669&t=2 - Pragma: no-cache",
+      "http://ib.adnxs.com/seg?add=2060669&t=2 - Expires: Sat, 15 Nov 2008 16:00:00 GMT",
+      "https://insight.adsrvr.org/track/evnt/?adv=i5bgqwx&ct=0:pwws4z54&fmt=3 - Pragma: no-cache",
+      "http://rtd.tubemogul.com/upi/?sid=OQ0bKn81jot5h0hjb2Uk - Pragma: no-cache",
+      "http://rtd.tubemogul.com/upi/?sid=OQ0bKn81jot5h0hjb2Uk - Expires: Thu, 01 Jan 1970 00:00:00 GMT",
+      "http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS - Pragma: no-cache",
+      "http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS - Expires: Thu, 01 Jan 1970 00:00:00 GMT",
+      "https://cm.g.doubleclick.net/pixel?google_nid=TheTradeDesk&google_cm&google_sc&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655 - Pragma: no-cache",
+      "https://cm.g.doubleclick.net/pixel?google_nid=TheTradeDesk&google_cm&google_sc&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655 - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
+      "http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903 - Pragma: no-cache",
+      "http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903 - Expires: Thu, 01 Jan 1970 00:00:00 GMT",
+      "http://pixel.quantserve.com/pixel;r=1953987773;a=p-7cUragPyp7i26;labels=AMC%20Digital;fpan=1;fpa=P0-1944363221-1424023588922;ns=0;ce=1;cm=;je=0;sr=1280x800x32;enc=n;dst=1;et=1424023588922;tzo=-60;ref=;url=http%3A%2F%2Fgruntperfs.lucasramos.me%2F;ogl= - Pragma: no-cache",
+      "http://pixel.quantserve.com/pixel;r=1953987773;a=p-7cUragPyp7i26;labels=AMC%20Digital;fpan=1;fpa=P0-1944363221-1424023588922;ns=0;ce=1;cm=;je=0;sr=1280x800x32;enc=n;dst=1;et=1424023588922;tzo=-60;ref=;url=http%3A%2F%2Fgruntperfs.lucasramos.me%2F;ogl= - Expires: Fri, 04 Aug 1978 12:00:00 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/welcomelawbreakers.jpg - Expires: Mon, 15 Feb 2016 18:06:24 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/facebooklink.gif - Expires: Mon, 15 Feb 2016 18:06:35 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/polloshermanos.jpg - Expires: Mon, 15 Feb 2016 18:06:30 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/anothersatisfiedcustomer_c.jpg - Expires: Mon, 15 Feb 2016 18:06:35 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/footerespanol_i.jpg - Expires: Mon, 15 Feb 2016 18:06:37 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/friendbreakingbad.png - Expires: Mon, 15 Feb 2016 18:06:38 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/blank.gif - Expires: Mon, 15 Feb 2016 18:06:38 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/mainheader_saul_update.jpg - Expires: Mon, 15 Feb 2016 18:06:22 GMT",
+      "https://match.adsrvr.org/track/cmf/google?g_uuid=&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655&google_gid=CAESEHytmJ3iLESHrR7hc9iG1GU&google_cver=1 - Pragma: no-cache",
+      "https://www.facebook.com/fr/u.php?p=493123744038507&m=0c4487d2-96eb-456a-9ab4-bc3403ba0655 - Pragma: public",
+      "https://www.facebook.com/fr/u.php?p=493123744038507&m=0c4487d2-96eb-456a-9ab4-bc3403ba0655 - Expires: Sun, 15 Feb 2015 10:06:40 PST",
+      "https://match.adsrvr.org/track/cmf/generic?ttd_pid=facebook - Pragma: no-cache",
+      "http://gruntperfs.lucasramos.me/media/images/fashionshow.jpg - Expires: Mon, 15 Feb 2016 18:06:29 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/getcashnow_b.jpg - Expires: Mon, 15 Feb 2016 18:06:24 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/videoselector.jpg - Expires: Mon, 15 Feb 2016 18:06:22 GMT",
+      "http://gruntperfs.lucasramos.me/media/css/style.d328e807.css - Expires: Mon, 15 Feb 2016 18:06:46 GMT",
+      "http://gruntperfs.lucasramos.me/media/images/telephonenumber_b.gif - Expires: Mon, 15 Feb 2016 18:06:47 GMT",
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 - Expires: Sun, 15 Feb 2015 18:07:07 GMT",
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 - Pragma: no-cache"
+    ],
+    "domainsWithCookies": [
+      "ad.us.doubleclick.net: 1 cookie(s)",
+      "fld.vmmpxl.com: 1 cookie(s)",
+      "ib.adnxs.com: 4 cookie(s)",
+      "insight.adsrvr.org: 2 cookie(s)",
+      "rtd.tubemogul.com: 3 cookie(s)",
+      "cm.g.doubleclick.net: 2 cookie(s)",
+      "pixel.quantserve.com: 1 cookie(s)",
+      "match.adsrvr.org: 4 cookie(s)",
+      "dsum-sec.casalemedia.com: 6 cookie(s)"
+    ],
+    "domains": [
+      "gruntperfs.lucasramos.me: 24 request(s)",
+      "rtd.tubemogul.com: 3 request(s)",
+      "ajax.googleapis.com: 2 request(s)",
+      "ib.adnxs.com: 2 request(s)",
+      "match.adsrvr.org: 2 request(s)",
+      "ad.us.doubleclick.net: 1 request(s)",
+      "edge.quantserve.com: 1 request(s)",
+      "static.ak.fbcdn.net: 1 request(s)",
+      "ev.ads.pointroll.com: 1 request(s)",
+      "static.ak.facebook.com: 1 request(s)",
+      "www.google-analytics.com: 1 request(s)",
+      "fld.vmmpxl.com: 1 request(s)",
+      "s-static.ak.facebook.com: 1 request(s)",
+      "insight.adsrvr.org: 1 request(s)",
+      "cm.g.doubleclick.net: 1 request(s)",
+      "pixel.quantserve.com: 1 request(s)",
+      "loadm.exelator.com: 1 request(s)",
+      "www.facebook.com: 1 request(s)",
+      "load.s3.amazonaws.com: 1 request(s)",
+      "dsum-sec.casalemedia.com: 1 request(s)"
+    ],
+    "nodesWithInlineCSS": [
+      "body > div#container > div#mainheader > div#saulvideointro ()",
+      "body > div#container > div#mainheader > div#saulvideointro > div#noflashcontent (visibility: visible; )",
+      "body > div#container > div#bottomads > div#rightadmodule > img#anothersatisfiedcustomer (position: relative; z-index: 100)",
+      "body > div#container > div#telephonenumberfooter > div#facebookfriend > a[0] (width: 159px; height: 31px)",
+      "body > div#fb-root > div[0] (position: absolute; top: -10000px; height: 0px; width: 0px; )",
+      "body > div#fb-root > div[0] > div[0] > iframe#fb_xdm_frame_http (border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; )",
+      "body > div#fb-root > div[0] > div[0] > iframe#fb_xdm_frame_https (border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; )",
+      "body > div#fb-root > div[1] (position: absolute; top: -10000px; height: 0px; width: 0px; )"
+    ],
+    "DOMqueriesByClassName": [
+      ".e"
+    ],
+    "DOMqueriesByTagName": [
+      "script",
+      "fb:comments",
+      "*",
+      "a",
+      "tbody",
+      "link",
+      "input",
+      "meta",
+      "head",
+      "HEAD",
+      "body"
+    ],
+    "DOMqueriesByQuerySelectorAll": [
+      ".TEST",
+      "#videocontentmodule div",
+      ".consultationsside",
+      ".dresslikesaul"
+    ],
+    "DOMinserts": [
+      "\"link\" appended to \"head\"",
+      "\"div#fb-root\" appended to \"body\"",
+      "\"div\" appended to \"body > div#fb-root\"",
+      "\"div\" appended to \"body > div#fb-root > div[0]\"",
+      "\"iframe#fb_xdm_frame_http\" appended to \"body > div#fb-root > div[0] > div[0]\"",
+      "\"iframe#fb_xdm_frame_https\" appended to \"body > div#fb-root > div[0] > div[0]\"",
+      "\"script\" appended to \"html\"",
+      "\"div\" appended to \"html\"",
+      "\"style\" appended to \"head\"",
+      "\"#text\" appended to \"head > style[13]\"",
+      "\"div\" appended to \"body > div#fb-root > div[1]\"",
+      "\"div\" appended to \"body\"",
+      "\"span\" appended to \"body\""
+    ],
+    "DOMqueriesDuplicated": [
+      "tag name \"*\": 3 queries",
+      "tag name \"head\": 3 queries",
+      "tag name \"script\": 2 queries",
+      "class \".e\": 2 queries",
+      "id \"#espanolfooter\": 2 queries",
+      "id \"#noflashcontent\": 2 queries",
+      "id \"#noflashenespanol\": 2 queries"
+    ],
+    "eventsBound": [
+      "\"DOMContentLoaded\" bound to \"#document\"",
+      "\"load\" bound to \"window\"",
+      "\"message\" bound to \"window\"",
+      "\"click\" bound to \"body > div#container > div#content > div#videocontentmodule > div#suelink\"",
+      "\"click\" bound to \"body > div#container > div#content > div#videocontentmodule > div#tigertrouble\"",
+      "\"click\" bound to \"body > div#container > div#content > div#videocontentmodule > div#mailbag\"",
+      "\"click\" bound to \"body > div#container > div#content > div#videocontentmodule > div#wayfarer\"",
+      "\"click\" bound to \"body > div#container > div#content > div#rightcontentmodule > div#rightcolnav > div#suelinkside\"",
+      "\"click\" bound to \"body > div#container > div#content > div#rightcontentmodule > div#rightcolnav > div#tigertroubleside\"",
+      "\"click\" bound to \"body > div#container > div#content > div#rightcontentmodule > div#rightcolnav > div#mailbagside\"",
+      "\"click\" bound to \"body > div#container > div#content > div#rightcontentmodule > div#rightcolnav > div#wayfarerside\"",
+      "\"mouseover\" bound to \"body > div#container > div#telephonenumberfooter > div#saulenespanol > img#espanolfooter\"",
+      "\"mouseout\" bound to \"body > div#container > div#telephonenumberfooter > div#saulenespanol > img#espanolfooter\"",
+      "\"click\" bound to \"body > div#container > div#telephonenumberfooter > div#saulenespanol > img#espanolfooter\"",
+      "\"click\" bound to \"body > div#container > div#bottomads > div#middleadmodule > a.dresslikesaul\""
+    ],
+    "globalVariables": [
+      "s_giqf",
+      "pru",
+      "pr_eid",
+      "prd",
+      "quantserve",
+      "swfobject",
+      "pr_event",
+      "callOmniture",
+      "s_account",
+      "s_doPlugins",
+      "gaJsHost",
+      "killVideoespanol",
+      "attributes",
+      "s_code",
+      "s_objectID",
+      "pr_quantity",
+      "params",
+      "pr_item",
+      "s_gi",
+      "pr_value",
+      "killVideo",
+      "flashvars",
+      "s",
+      "__qc",
+      "jQuery",
+      "ord",
+      "FB",
+      "FB_RequireFeatures",
+      "_gat",
+      "_gaq",
+      "_qoptions",
+      "$",
+      "_qevents",
+      "uh",
+      "s_an",
+      "s_sp",
+      "s_jn",
+      "s_rep",
+      "s_d",
+      "s_fe",
+      "s_fa",
+      "s_ft",
+      "s_c_il",
+      "s_c_in",
+      "s_giq",
+      "full_value",
+      "n"
+    ],
+    "globalVariablesFalsy": [
+      "_qoptions = null",
+      "uh = null"
+    ],
+    "headersBiggerThanContent": [
+      "http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=8464821320958436? (body: 0.02 kB / headers: 0.73 kB)",
+      "http://ev.ads.pointroll.com/event/?ss=F6025A25-3A50-45BF-9C00-AFBF39FA2F44&av=1508&eid=1422727580116.7307&ev=&item=&q=&val=&r=0.3777344198897481 (body: 0.00 kB / headers: 0.23 kB)",
+      "http://ib.adnxs.com/px?id=331467&t=2 (body: 0.04 kB / headers: 0.51 kB)",
+      "http://ib.adnxs.com/seg?add=2060669&t=2 (body: 0.04 kB / headers: 0.51 kB)",
+      "https://insight.adsrvr.org/track/evnt/?adv=i5bgqwx&ct=0:pwws4z54&fmt=3 (body: 0.00 kB / headers: 0.63 kB)",
+      "http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS (body: 0.08 kB / headers: 0.36 kB)",
+      "https://cm.g.doubleclick.net/pixel?google_nid=TheTradeDesk&google_cm&google_sc&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655 (body: 0.35 kB / headers: 0.85 kB)",
+      "http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903 (body: 0.08 kB / headers: 0.36 kB)",
+      "http://pixel.quantserve.com/pixel;r=1953987773;a=p-7cUragPyp7i26;labels=AMC%20Digital;fpan=1;fpa=P0-1944363221-1424023588922;ns=0;ce=1;cm=;je=0;sr=1280x800x32;enc=n;dst=1;et=1424023588922;tzo=-60;ref=;url=http%3A%2F%2Fgruntperfs.lucasramos.me%2F;ogl= (body: 0.03 kB / headers: 0.41 kB)",
+      "http://loadm.exelator.com/load/?p=204&g=380&buid=143872062262196032&j=0 (body: 0.00 kB / headers: 0.39 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/facebooklink.gif (body: 0.06 kB / headers: 0.35 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/blank.gif (body: 0.04 kB / headers: 0.35 kB)",
+      "https://match.adsrvr.org/track/cmf/google?g_uuid=&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655&google_gid=CAESEHytmJ3iLESHrR7hc9iG1GU&google_cver=1 (body: 0.21 kB / headers: 0.68 kB)",
+      "https://www.facebook.com/fr/u.php?p=493123744038507&m=0c4487d2-96eb-456a-9ab4-bc3403ba0655 (body: 0.00 kB / headers: 0.48 kB)",
+      "https://match.adsrvr.org/track/cmf/generic?ttd_pid=facebook (body: 0.27 kB / headers: 0.75 kB)",
+      "http://load.s3.amazonaws.com/pixel.gif (body: 0.04 kB / headers: 0.40 kB)",
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 (body: 0.04 kB / headers: 0.80 kB)"
+    ],
+    "localStorageEntries": [
+      "_chartbeat2",
+      "_chartbeat2_expires"
+    ],
+    "redirects": [
+      "https://insight.adsrvr.org/track/evnt/?adv=i5bgqwx&ct=0:pwws4z54&fmt=3 is a redirect (HTTP 302 Moved Temporarily) to https://cm.g.doubleclick.net/pixel?google_nid=TheTradeDesk&google_cm&google_sc&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655 (took 1507 ms)",
+      "http://rtd.tubemogul.com/upi/?sid=OQ0bKn81jot5h0hjb2Uk is a redirect (HTTP 302 Moved Temporarily) to http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903 (took 1762 ms)",
+      "https://cm.g.doubleclick.net/pixel?google_nid=TheTradeDesk&google_cm&google_sc&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655 is a redirect (HTTP 302 Moved Temporarily) to https://match.adsrvr.org/track/cmf/google?g_uuid=&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655&google_gid=CAESEHytmJ3iLESHrR7hc9iG1GU&google_cver=1 (took 465 ms)",
+      "http://loadm.exelator.com/load/?p=204&g=380&buid=143872062262196032&j=0 is a redirect (HTTP 302 Moved Temporarily) to http://load.s3.amazonaws.com/pixel.gif (took 3193 ms)",
+      "https://match.adsrvr.org/track/cmf/google?g_uuid=&ttd_tdid=0c4487d2-96eb-456a-9ab4-bc3403ba0655&google_gid=CAESEHytmJ3iLESHrR7hc9iG1GU&google_cver=1 is a redirect (HTTP 302 Moved Temporarily) to https://www.facebook.com/fr/u.php?p=493123744038507&m=0c4487d2-96eb-456a-9ab4-bc3403ba0655 (took 8962 ms)",
+      "https://www.facebook.com/fr/u.php?p=493123744038507&m=0c4487d2-96eb-456a-9ab4-bc3403ba0655 is a redirect (HTTP 302 Moved Temporarily) to https://match.adsrvr.org/track/cmf/generic?ttd_pid=facebook (took 432 ms)",
+      "https://match.adsrvr.org/track/cmf/generic?ttd_pid=facebook is a redirect (HTTP 302 Moved Temporarily) to https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 (took 72 ms)"
+    ],
+    "assetsNotGzipped": [
+      "http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js (JS)",
+      "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js (JS)",
+      "http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=8464821320958436? (JS)",
+      "http://www.google-analytics.com/ga.js (JS)"
+    ],
+    "assetsWithQueryString": [
+      "http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=8464821320958436? (JS)",
+      "http://ib.adnxs.com/px?id=331467&t=2 (IMAGE)",
+      "http://ib.adnxs.com/seg?add=2060669&t=2 (IMAGE)",
+      "http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS (IMAGE)",
+      "http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903 (IMAGE)",
+      "http://loadm.exelator.com/load/?p=204&g=380&buid=143872062262196032&j=0 (IMAGE)",
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 (IMAGE)"
+    ],
+    "assetsWithCookies": [
+      "http://ad.us.doubleclick.net/adj/rb.amctv.bettercallsaul/home;pos=top;tile=1;sz=728x90;ord=8464821320958436? (JS)",
+      "http://ib.adnxs.com/px?id=331467&t=2 (IMAGE)",
+      "http://ib.adnxs.com/seg?add=2060669&t=2 (IMAGE)",
+      "http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS (IMAGE)",
+      "http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903 (IMAGE)",
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 (IMAGE)"
+    ],
+    "smallImages": [
+      "http://ib.adnxs.com/px?id=331467&t=2 (0.04 kB)",
+      "http://ib.adnxs.com/seg?add=2060669&t=2 (0.04 kB)",
+      "http://rtd.tubemogul.com/stats/1/conv?cpk=06QxYmTyQFqx4eNqCjLS&cak=9c7OkgIQiewaO9JMtOIS (0.08 kB)",
+      "http://rtd.tubemogul.com/ct/upi/?sid=OQ0bKn81jot5h0hjb2Uk&_test=-1848578886754474903 (0.08 kB)",
+      "http://loadm.exelator.com/load/?p=204&g=380&buid=143872062262196032&j=0 (0.00 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/facebooklink.gif (0.06 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/friendbreakingbad.png (1.80 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/blank.gif (0.04 kB)",
+      "http://load.s3.amazonaws.com/pixel.gif (0.04 kB)",
+      "http://gruntperfs.lucasramos.me/media/images/telephonenumber_b.gif (1.85 kB)",
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 (0.04 kB)"
+    ],
+    "timeToFirstCss": [
+      "http://gruntperfs.lucasramos.me/media/css/style.d328e807.css received in 27476 ms"
+    ],
+    "timeToFirstJs": [
+      "http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js received in 1417 ms"
+    ],
+    "timeToFirstImage": [
+      "http://gruntperfs.lucasramos.me/media/images/ecardslink.jpg received in 2005 ms"
+    ],
+    "imagesWithoutDimensions": [
+      "body > div#container > div#mainheader > a[1] > img#saulheader",
+      "body > div#container > div#content > div#leftcontentmodule > ul#nav > li[0] > a[0] > img[0]",
+      "body > div#container > div#content > div#leftcontentmodule > ul#nav > li[1] > a[0] > img[0]",
+      "body > div#container > div#content > div#leftcontentmodule > ul#nav > li[2] > a[0] > img[0]",
+      "body > div#container > div#content > div#leftcontentmodule > ul#nav > li[3] > a[0] > img[0]",
+      "body > div#container > div#content > div#leftcontentmodule > ul#nav > li[4] > a[0] > img[0]",
+      "body > div#container > div#content > div#leftcontentmodule > a[1] > img#badgershortcut",
+      "body > div#container > div#content > div#videocontentmodule > img[4]",
+      "body > div#container > div#content > div#rightcontentmodule > div#rightcoltemp > a[0] > img[0]",
+      "body > div#container > div#content > div#rightcontentmodule > div#rightcolnav > img[4]",
+      "body > div#container > div#welcomelawbreakers > img[0]",
+      "body > div#container > div#bottomads > div#leftadmodule > img[0]",
+      "body > div#container > div#bottomads > div#middleadmodule > div#topmiddleads > div.left > img[0]",
+      "body > div#container > div#bottomads > div#middleadmodule > div#topmiddleads > div.right > img[0]",
+      "body > div#container > div#bottomads > div#middleadmodule > a.dresslikesaul > img[0]",
+      "body > div#container > div#bottomads > div#rightadmodule > div#facebooklink > a[0] > img[0]",
+      "body > div#container > div#telephonenumberfooter > div#saulenespanol > img#espanolfooter",
+      "body > div#container > div#telephonenumberfooter > div#facebookfriend > a[0] > img[0]"
+    ],
+    "smallestResponse": [
+      "http://ev.ads.pointroll.com/event/?ss=F6025A25-3A50-45BF-9C00-AFBF39FA2F44&av=1508&eid=1422727580116.7307&ev=&item=&q=&val=&r=0.3777344198897481 (0.00 kB)"
+    ],
+    "biggestResponse": [
+      "http://static.ak.fbcdn.net/connect.php/js/FB.Share (160.26 kB)"
+    ],
+    "fastestResponse": [
+      "http://static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me (188 ms)"
+    ],
+    "slowestResponse": [
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 (26662 ms)"
+    ],
+    "smallestLatency": [
+      "http://static.ak.facebook.com/connect/xd_arbiter/DU1Ia251o0y.js?version=41#channel=f26e6b6264&origin=http%3A%2F%2Fgruntperfs.lucasramos.me (183 ms)"
+    ],
+    "biggestLatency": [
+      "https://dsum-sec.casalemedia.com/rum?cm_dsp_id=39&external_user_id=0c4487d2-96eb-456a-9ab4-bc3403ba0655&expiration=1426615598 (26662 ms)"
+    ]
+  }
+}

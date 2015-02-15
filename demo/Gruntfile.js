@@ -7,6 +7,8 @@ var ngrokUrl = 'http://3da7ad24.ngrok.com',
 
 module.exports = function(grunt) {
 
+  var yslowTestFile = 'perfs-analytics/yslow-reports/yslow_' + grunt.template.today('dd-mm-yyyy_hh.mm.ss') + '.json';
+
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
@@ -15,34 +17,21 @@ module.exports = function(grunt) {
         threshold : 3
       },
       files: {
-        src: ['media/css/style.css'],
+        src: ['dev/media/css/style.css'],
       }
     },
-    cssmin: {
-      options: {
-        keepSpecialComments: 0
-      },
-      first: {
+    less: {
+      dev: {
+        options: {
+          paths: ["dev/media/less"]
+        },
         files: {
-          'media/css/style.min.css': ['media/css/style.css']
+          "dev/media/css/style.css": "dev/media/less/style.less"
         }
-      },
-      second: {
-        files: {
-          'media/css/style.min.css': ['media/css/style.uncss.css']
-        }
-      },
-      third: {
-        files: [{
-          expand: true,
-          cwd: 'media/css',
-          src: ['style.min.*.css'],
-          dest: 'media/css/'
-        }]
       }
     },
     uncss: {
-      dist: {
+      dev: {
         options: {
           media: ['all'],
           ignore: [],
@@ -50,25 +39,38 @@ module.exports = function(grunt) {
           report: 'min'
         },
         files: {
-          'media/css/style.uncss.css': ['index.original.html']
+          'dev/media/css/style.css': ['dev/index.html']
         }
       }
     },
     critical: {
-      dist: {
+      dev: {
         options: {
           minify: true,
           extract: true,
-          base: './',
+          base: 'dev/',
           width: 980,
           height: 600
         },
-        src: 'index.original.html',
-        dest: 'index.critical.html'
+        src: 'dev/index.html',
+        dest: 'dev/index.critical.html'
+      }
+    },
+    cssmin: {
+      dev: {
+        options: {
+          keepSpecialComments: 0
+        },
+        files: [{
+          expand: true,
+          cwd: 'dev/media/css',
+          src: ['style.*.css'],
+          dest: 'prod/media/css/'
+        }]
       }
     },
     htmlmin: {
-      dist: {
+      dev: {
         options: {
           removeComments: true,
           collapseWhitespace: true,
@@ -80,19 +82,19 @@ module.exports = function(grunt) {
           removeOptionalTags: true
         },
         files: {
-          'index.html': 'index.critical.html'
+          'prod/index.html': 'dev/index.critical.html'
         }
       }
     },
     uglify: {
       options: {
         mangle: {
-          except: ['jQuery', '$', 'Modernizr','_slot']
+          except: ['jQuery', '$']
         }
       },
-      my_target: {
+      dev: {
         files: {
-          'media/js/unified.min.js': ['media/js/unified.js']
+          'prod/media/js/scripts.js': ['dev/media/js/scripts.js']
         }
       }
     },
@@ -106,24 +108,24 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'media/images_no_compression',
+          cwd: 'dev/media/images',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'media/images'
+          dest: 'prod/media/images'
         }]
       }
     },
     phantomcss: {
       options: {
-        screenshots: 'diffs/screenshots/',
-        results: 'diffs/results/',
+        screenshots: 'perfs-analytics/diffs/screenshots/',
+        results: 'perfs-analytics/diffs/results/',
         viewportSize: [1280, 800]
       },
       src: [
-        'diffs/tests/casper.js'
+        'perfs-analytics/diffs/tests/casper.js'
       ]
     },
     perfbudget: {
-      default: {
+      prod: {
         options: {
           url: remoteUrl,
           key: 'A.d01077156635968a5bd2637fda103bd2',
@@ -139,16 +141,16 @@ module.exports = function(grunt) {
     yslow_test: {
       options: {
         info: "grade",
-        format: "junit",
+        format: "json",
         urls: [remoteUrl],
-        reports: ['./yslow-reports/yslow.xml']
+        reports: [yslowTestFile]
       },
       your_target: {
         files: []
       }
     },
     pagespeed: {
-      dev: {
+      prod: {
         options: {
           nokey: true,
           locale: "it_IT",
@@ -164,7 +166,7 @@ module.exports = function(grunt) {
         numberOfRuns: 1,
         timeout: 120,
         openResults: true,
-        resultsFolder: './devperf'
+        resultsFolder: 'perfs-analytics/devperf'
       },
       phantomasOptions: {
         numberOfRuns: 1,
@@ -188,32 +190,31 @@ module.exports = function(grunt) {
         }
       },
       pages: {
-        files: [
-          {
-            src: remoteUrl
-          }
-        ]
+        files: [{
+          src: remoteUrl
+        }]
       }
     }
   });
 
-  grunt.registerTask('default', [  
-    'colorguard',
-    'cssmin:first',
+  grunt.registerTask('dev', ['colorguard', 'phantomcss' /* csslint, jslint */]);
+
+  grunt.registerTask('build', [
+    'less',
     'uncss',
-    'cssmin:second',
     'critical',
-    'cssmin:third',
-    'htmlmin'
+    'cssmin',
+    'htmlmin',
     'uglify',
     'imagemin',
-    
-    'phantomcss',
+    'phantomcss'
+  ]);
+
+  grunt.registerTask('analysis', [
     'perfbudget',
-    'yslow_test',
     'pagespeed',
     'devperf',
+    'yslow_test',
     'yslow'
   ]);
 };
-
