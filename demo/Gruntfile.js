@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         threshold : 3
       },
       files: {
-        src: ['dev/media/css/style.css'],
+        src: ['dev/media/css/style.css']
       }
     },
     less: {
@@ -133,7 +133,7 @@ module.exports = function(grunt) {
           runs: 2,
           budget: {
             render: '30000',
-            SpeedIndex: '100000',
+            SpeedIndex: '100000'
           }
         }
       }

@@ -1,0 +1,25 @@
+http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/
+
+Gnork for pahtomas (out of support)
+grunt-resemble-cli With imagemagick & gm
+bower/casperjs x phantomcss
+ngrok -authtoken kVKmavX14dtaS8jtAT5r 80
+
+cd node_modules && git clone https://github.com/chrisgladd/grunt-phantomcss.git && cd grunt-phantomcss && bower install && npm install && cd ../../
+
+https://github.com/chrisgladd/grunt-phantomcss/issues/1
+
+WPT results:
+
+Original
+0: http://www.webpagetest.org/result/150108_HV_15V6/
+Improved
+1: http://www.webpagetest.org/result/150214_KX_H7M/
+Img opt
+2: http://www.webpagetest.org/result/150214_GC_JKF/
+Minify CSS + JS + HTML
+3: http://www.webpagetest.org/result/150214_XJ_K05/
+UnCSS
+4: http://www.webpagetest.org/result/150214_2Z_KCW/
+CriticalCSS
+5: http://www.webpagetest.org/result/150214_MD_RGX/
